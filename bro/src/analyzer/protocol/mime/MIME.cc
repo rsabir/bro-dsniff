@@ -1,4 +1,4 @@
-#include "bro-config.h"
+#include "config.h"
 
 #include "NetVar.h"
 #include "MIME.h"
@@ -1134,15 +1134,7 @@ void MIME_Entity::StartDecodeBase64()
 		delete base64_decoder;
 		}
 
-	analyzer::Analyzer* analyzer = message->GetAnalyzer();
-
-	if ( ! analyzer )
-		{
-		reporter->InternalWarning("no analyzer associated with MIME message");
-		return;
-		}
-
-	base64_decoder = new Base64Converter(analyzer->Conn());
+	base64_decoder = new Base64Converter(message->GetAnalyzer());
 	}
 
 void MIME_Entity::FinishDecodeBase64()

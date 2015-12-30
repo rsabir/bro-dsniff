@@ -7,8 +7,6 @@
 #include "../PktSrc.h"
 #include "../../Net.h"
 
-#include "const.bif.h"
-
 using namespace iosource::pcap;
 
 PcapDumper::PcapDumper(const std::string& path, bool arg_append)
@@ -27,8 +25,7 @@ void PcapDumper::Open()
 	{
 	int linktype = -1;
 
-	pd = pcap_open_dead(DLT_EN10MB, BifConst::Pcap::snaplen);
-
+	pd = pcap_open_dead(DLT_EN10MB, snaplen);
 	if ( ! pd )
 		{
 		Error("error for pcap_open_dead");
@@ -82,7 +79,7 @@ void PcapDumper::Open()
 		}
 
 	props.open_time = network_time;
-	props.hdr_size = Packet::GetLinkHeaderSize(pcap_datalink(pd));
+	props.hdr_size = PktSrc::GetLinkHeaderSize(pcap_datalink(pd));
 	Opened(props);
 	}
 
@@ -104,12 +101,8 @@ bool PcapDumper::Dump(const Packet* pkt)
 	if ( ! dumper )
 		return false;
 
-	// Reconstitute the pcap_pkthdr.
-	const struct pcap_pkthdr phdr = {
-		.ts = pkt->ts, .caplen = pkt->cap_len, .len = pkt->len
-	};
+	pcap_dump((u_char*) dumper, pkt->hdr, pkt->data);
 
-	pcap_dump((u_char*) dumper, &phdr, pkt->data);
 	return true;
 	}
 

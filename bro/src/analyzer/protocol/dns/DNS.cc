@@ -1,6 +1,6 @@
 // See the file "COPYING" in the main distribution directory for copyright.
 
-#include "bro-config.h"
+#include "config.h"
 
 #include <ctype.h>
 #include <sys/types.h>
@@ -32,7 +32,7 @@ int DNS_Interpreter::ParseMessage(const u_char* data, int len, int is_query)
 		return 0;
 		}
 
-	DNS_MsgInfo msg((DNS_RawMsgHdr*) data, is_query); // <=> DNS_MsgInfo *msg =  new DNS_MsgInfo((DNS_RawMsgHdr*) data, is_query);
+	DNS_MsgInfo msg((DNS_RawMsgHdr*) data, is_query);
 
 	if ( first_message && msg.QR && is_query == 1 )
 		{

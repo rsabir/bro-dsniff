@@ -28,7 +28,7 @@ protected:
 private:
 	void OpenLive();
 	void OpenOffline();
-	void PcapError(const char* where = 0);
+	void PcapError();
 	void SetHdrSize();
 
 	Properties props;

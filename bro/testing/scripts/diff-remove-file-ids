@@ -1,8 +1,7 @@
-#! /usr/bin/env bash
+#! /usr/bin/awk -f
 #
 # A diff canonifier that removes all file IDs from files.log
 
-awk '
 BEGIN {
     FS="\t";
     OFS="\t";
@@ -13,15 +12,13 @@ $1 == "#path" && $2 == "files" {
     process = 1;
     }
 
-/^[^#]/ {
-    if ( process && column1 > 0 && column2 > 0 ) {
-        $column1 = "XXXXXXXXXXX";
-        $column2 = "XXXXXXXXXXX";
-        }
+process && column1 > 0 && column2 > 0 {
+    $column1 = "XXXXXXXXXXX";
+    $column2 = "XXXXXXXXXXX";
     }
 
-/^#fields/ {
-    for ( i = 2; i <= NF; ++i ) {
+/^#/ {
+    for ( i = 0; i < NF; ++i ) {
         if ( $i == "fuid" )
             column1 = i - 1;
 
@@ -31,4 +28,6 @@ $1 == "#path" && $2 == "files" {
     }
 
 { print }
-'
+
+
+

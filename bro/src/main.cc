@@ -1,6 +1,6 @@
 // See the file "COPYING" in the main distribution directory for copyright.
 
-#include "bro-config.h"
+#include "config.h"
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -121,6 +121,7 @@ char* command_line_policy = 0;
 vector<string> params;
 set<string> requested_plugins;
 char* proc_status_file = 0;
+int snaplen = 0;	// this gets set from the scripting-layer's value
 
 OpaqueType* md5_type = 0;
 OpaqueType* sha1_type = 0;
@@ -178,8 +179,8 @@ void usage()
 	fprintf(stderr, "    -r|--readfile <readfile>       | read from given tcpdump file\n");
 	fprintf(stderr, "    -s|--rulefile <rulefile>       | read rules from given file\n");
 	fprintf(stderr, "    -t|--tracefile <tracefile>     | activate execution tracing\n");
-	fprintf(stderr, "    -v|--version                   | print version and exit\n");
 	fprintf(stderr, "    -w|--writefile <writefile>     | write to given tcpdump file\n");
+	fprintf(stderr, "    -v|--version                   | print version and exit\n");
 	fprintf(stderr, "    -x|--print-state <file.bst>    | print contents of state file\n");
 	fprintf(stderr, "    -z|--analyze <analysis>        | run the specified policy file analysis\n");
 #ifdef DEBUG
@@ -187,8 +188,6 @@ void usage()
 #endif
 	fprintf(stderr, "    -C|--no-checksums              | ignore checksums\n");
 	fprintf(stderr, "    -F|--force-dns                 | force DNS\n");
-	fprintf(stderr, "    -G|--load-seeds <file>         | load seeds from given file\n");
-	fprintf(stderr, "    -H|--save-seeds <file>         | save seeds to given file\n");
 	fprintf(stderr, "    -I|--print-id <ID name>        | print out given ID\n");
 	fprintf(stderr, "    -J|--set-seed <seed>           | set the random number seed\n");
 	fprintf(stderr, "    -K|--md5-hashkey <hashkey>     | set key for MD5-keyed hashing\n");
@@ -210,6 +209,8 @@ void usage()
 	fprintf(stderr, "    -X <file.bst>                  | print contents of state file as XML\n");
 #endif
 	fprintf(stderr, "    --pseudo-realtime[=<speedup>]  | enable pseudo-realtime for performance evaluation (default 1)\n");
+	fprintf(stderr, "    --load-seeds <file>            | load seeds from given file\n");
+	fprintf(stderr, "    --save-seeds <file>            | save seeds to given file\n");
 
 #ifdef USE_IDMEF
 	fprintf(stderr, "    -n|--idmef-dtd <idmef-msg.dtd> | specify path to IDMEF DTD file\n");
@@ -546,7 +547,7 @@ int main(int argc, char** argv)
 	opterr = 0;
 
 	char opts[256];
-	safe_strncpy(opts, "B:e:f:G:H:I:i:J:K:n:p:R:r:s:T:t:U:w:x:X:z:CFNPQSWabdghv",
+	safe_strncpy(opts, "B:e:f:I:i:J:K:n:p:R:r:s:T:t:U:w:x:X:z:CFNPSWabdghvQ",
 		     sizeof(opts));
 
 #ifdef USE_PERFTOOLS_DEBUG
@@ -581,10 +582,6 @@ int main(int argc, char** argv)
 			dump_cfg = true;
 			break;
 
-		case 'h':
-			usage();
-			break;
-
 		case 'i':
 			interfaces.append(optarg);
 			break;
@@ -606,17 +603,8 @@ int main(int argc, char** argv)
 			g_trace_state.TraceOn();
 			break;
 
-		case 'v':
-			fprintf(stderr, "%s version %s\n", prog, bro_version());
-			exit(0);
-			break;
-
 		case 'w':
 			writefile = optarg;
-			break;
-
-		case 'x':
-			bst_file = optarg;
 			break;
 
 		case 'z':
@@ -627,10 +615,6 @@ int main(int argc, char** argv)
 				fprintf(stderr, "Unknown analysis type: %s\n", optarg);
 				exit(1);
 				}
-			break;
-
-		case 'B':
-			debug_streams = optarg;
 			break;
 
 		case 'C':
@@ -704,8 +688,13 @@ int main(int argc, char** argv)
 			do_watchdog = 1;
 			break;
 
-		case 'X':
-			broxygen_config = optarg;
+		case 'h':
+			usage();
+			break;
+
+		case 'v':
+			fprintf(stderr, "%s version %s\n", prog, bro_version());
+			exit(0);
 			break;
 
 #ifdef USE_PERFTOOLS_DEBUG
@@ -718,6 +707,9 @@ int main(int argc, char** argv)
 			break;
 #endif
 
+		case 'x':
+			bst_file = optarg;
+			break;
 #if 0 // broken
 		case 'X':
 			bst_file = optarg;
@@ -725,12 +717,20 @@ int main(int argc, char** argv)
 			break;
 #endif
 
+		case 'X':
+			broxygen_config = optarg;
+			break;
+
 #ifdef USE_IDMEF
 		case 'n':
 			fprintf(stderr, "Using IDMEF XML DTD from %s\n", optarg);
 			libidmef_dtd_path = optarg;
 			break;
 #endif
+
+		case 'B':
+			debug_streams = optarg;
+			break;
 
 		case 0:
 			// This happens for long options that don't have
@@ -987,6 +987,8 @@ int main(int argc, char** argv)
 			delete [] interfaces_str;
 			}
 		}
+
+	snaplen = internal_val("snaplen")->AsCount();
 
 	if ( dns_type != DNS_PRIME )
 		net_init(interfaces, read_files, writefile, do_watchdog);

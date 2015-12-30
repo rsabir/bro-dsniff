@@ -64,8 +64,6 @@ type ModbusTCP_PDU(is_orig: bool) = record {
 		true  -> request:  ModbusTCP_Request(header);
 		false -> response: ModbusTCP_Response(header);
 	};
-} &let {
-	deliver: bool = $context.flow.deliver_ModbusTCP_PDU(this);
 } &length=header.len+6, &byteorder=bigendian;
 
 type ModbusTCP_TransportHeader = record {

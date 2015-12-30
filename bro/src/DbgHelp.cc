@@ -1,5 +1,5 @@
 // Bro Debugger Help
 
-#include "bro-config.h"
+#include "config.h"
 
 #include "Debug.h"

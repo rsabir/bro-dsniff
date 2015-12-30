@@ -340,18 +340,15 @@ Here is a more detailed description of each type:
 
         table [ type^+ ] of type
 
-    where *type^+* is one or more types, separated by commas.  The
-    index type cannot be any of the following types:  pattern, table, set,
-    vector, file, opaque, any.
-
-    Here is an example of declaring a table indexed by "count" values
-    and yielding "string" values:
+    where *type^+* is one or more types, separated by commas.
+    For example:
 
     .. code:: bro
 
         global a: table[count] of string;
 
-    The yield type can also be more complex:
+    declares a table indexed by "count" values and yielding
+    "string" values.  The yield type can also be more complex:
 
     .. code:: bro
 
@@ -444,9 +441,7 @@ Here is a more detailed description of each type:
 
         set [ type^+ ]
 
-    where *type^+* is one or more types separated by commas.  The
-    index type cannot be any of the following types:  pattern, table, set,
-    vector, file, opaque, any.
+    where *type^+* is one or more types separated by commas.
 
     Sets can be initialized by listing elements enclosed by curly braces:
 

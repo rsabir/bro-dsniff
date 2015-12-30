@@ -345,12 +345,6 @@ type connection: record {
 	## for the connection unless the :bro:id:`tunnel_changed` event is
 	## handled and reassigns this field to the new encapsulation.
 	tunnel: EncapsulatingConnVector &optional;
-
-	## The outer VLAN, if applicable, for this connection.
-	vlan: int &optional;
-
-	## The inner VLAN, if applicable, for this connection.
-	inner_vlan: int &optional;
 };
 
 ## Default amount of time a file can be inactive before the file analysis
@@ -746,7 +740,6 @@ type pcap_packet: record {
 	caplen: count;	##< The number of bytes captured (<= *len*).
 	len: count;	##< The length of the packet in bytes, including link-level header.
 	data: string;	##< The payload of the packet, including link-level header.
-	link_type: link_encap;	##< Layer 2 link encapsulation type.
 };
 
 ## GeoIP location information.
@@ -960,11 +953,6 @@ const tcp_max_above_hole_without_any_acks = 16384 &redef;
 ##
 ## .. bro:see:: tcp_max_initial_window tcp_max_above_hole_without_any_acks
 const tcp_excessive_data_without_further_acks = 10 * 1024 * 1024 &redef;
-
-## Number of TCP segments to buffer beyond what's been acknowledged already
-## to detect retransmission inconsistencies. Zero disables any additonal
-## buffering.
-const tcp_max_old_segments = 0 &redef;
 
 ## For services without a handler, these sets define originator-side ports
 ## that still trigger reassembly.
@@ -1500,34 +1488,6 @@ type icmp_hdr: record {
 ##
 ## .. bro:see:: new_packet
 type pkt_hdr: record {
-	ip: ip4_hdr &optional;		##< The IPv4 header if an IPv4 packet.
-	ip6: ip6_hdr &optional;		##< The IPv6 header if an IPv6 packet.
-	tcp: tcp_hdr &optional;		##< The TCP header if a TCP packet.
-	udp: udp_hdr &optional;		##< The UDP header if a UDP packet.
-	icmp: icmp_hdr &optional;	##< The ICMP header if an ICMP packet.
-};
-
-## Values extracted from the layer 2 header.
-##
-## .. bro:see:: pkt_hdr
-type l2_hdr: record {
-	encap: link_encap;      ##< L2 link encapsulation.
-	len: count;		##< Total frame length on wire.
-	cap_len: count;		##< Captured length.
-	src: string &optional;	##< L2 source (if Ethernet).
-	dst: string &optional;	##< L2 destination (if Ethernet).
-	vlan: count &optional;	##< Outermost VLAN tag if any (and Ethernet).
-	inner_vlan: count &optional;	##< Innermost VLAN tag if any (and Ethernet).
-	eth_type: count &optional;	##< Innermost Ethertype (if Ethernet).
-	proto: layer3_proto;	##< L3 protocol.
-};
-
-## A raw packet header, consisting of L2 header and everything in
-## :bro:id:`pkt_hdr`. .
-##
-## .. bro:see:: raw_packet pkt_hdr
-type raw_pkt_hdr: record {
-	l2: l2_hdr;			##< The layer 2 header.
 	ip: ip4_hdr &optional;		##< The IPv4 header if an IPv4 packet.
 	ip6: ip6_hdr &optional;		##< The IPv6 header if an IPv6 packet.
 	tcp: tcp_hdr &optional;		##< The TCP header if a TCP packet.
@@ -2509,7 +2469,7 @@ global dns_skip_all_addl = T &redef;
 
 ## If a DNS request includes more than this many queries, assume it's non-DNS
 ## traffic and do not process it.  Set to 0 to turn off this functionality.
-global dns_max_queries = 25 &redef;
+global dns_max_queries = 5 &redef;
 
 ## HTTP session statistics.
 ##
@@ -3662,11 +3622,20 @@ export {
 	## Toggle whether to do GRE decapsulation.
 	const enable_gre = T &redef;
 
+	## With this option set, the Teredo analysis will first check to see if
+	## other protocol analyzers have confirmed that they think they're
+	## parsing the right protocol and only continue with Teredo tunnel
+	## decapsulation if nothing else has yet confirmed.  This can help
+	## reduce false positives of UDP traffic (e.g. DNS) that also happens
+	## to have a valid Teredo encapsulation.
+	const yielding_teredo_decapsulation = T &redef;
+
 	## With this set, the Teredo analyzer waits until it sees both sides
 	## of a connection using a valid Teredo encapsulation before issuing
 	## a :bro:see:`protocol_confirmation`.  If it's false, the first
 	## occurrence of a packet with valid Teredo encapsulation causes a
-	## confirmation.
+	## confirmation.  Both cases are still subject to effects of
+	## :bro:see:`Tunnel::yielding_teredo_decapsulation`.
 	const delay_teredo_confirmation = T &redef;
 
 	## With this set, the GTP analyzer waits until the most-recent upflow
@@ -3682,6 +3651,7 @@ export {
 	## (includes GRE tunnels).
 	const ip_tunnel_timeout = 24hrs &redef;
 } # end export
+module GLOBAL;
 
 module Reporter;
 export {
@@ -3700,29 +3670,10 @@ export {
 	## external harness and shouldn't output anything to the console.
 	const errors_to_stderr = T &redef;
 }
-
-module Pcap;
-export {
-	## Number of bytes per packet to capture from live interfaces.
-	const snaplen = 8192 &redef;
-
-	## Number of Mbytes to provide as buffer space when capturing from live
-	## interfaces. 
-	const bufsize = 128 &redef;
-
-	## Toggle whether to do packet fanout (Linux-only).
-	const packet_fanout_enable = F &redef;
-
-	## If packet fanout is enabled, the id to sue for it. This should be shared amongst
-	## worker processes processing the same socket.
-	const packet_fanout_id = 0 &redef;
-
-	## If packet fanout is enabled, whether packets are to be defragmented before
-	## fanout is applied.
-	const packet_fanout_defrag = T &redef;
-} # end export
-
 module GLOBAL;
+
+## Number of bytes per packet to capture from live interfaces.
+const snaplen = 8192 &redef;
 
 ## Seed for hashes computed internally for probabilistic data structures. Using
 ## the same value here will make the hashes compatible between independent Bro

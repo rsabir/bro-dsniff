@@ -1,0 +1,64 @@
+# Test that the start command can start all stopped nodes, or just a specified
+# node.  Test that the stop command can stop all running nodes, or just a
+# specified node.  Test that the start and stop commands return exit status
+# of zero when all nodes started or stopped successfully.
+#
+# @TEST-EXEC: bash %INPUT
+# @TEST-EXEC: btest-diff start-all.out
+# @TEST-EXEC: TEST_DIFF_CANONIFIER=$SCRIPTS/diff-status-output btest-diff status1.out
+# @TEST-EXEC: btest-diff stop-one.out
+# @TEST-EXEC: TEST_DIFF_CANONIFIER=$SCRIPTS/diff-status-output btest-diff status2.out
+# @TEST-EXEC: btest-diff stop-remaining.out
+# @TEST-EXEC: btest-diff status3.out
+# @TEST-EXEC: btest-diff start-one.out
+# @TEST-EXEC: TEST_DIFF_CANONIFIER=$SCRIPTS/diff-status-output btest-diff status4.out
+# @TEST-EXEC: btest-diff start-remaining.out
+# @TEST-EXEC: TEST_DIFF_CANONIFIER=$SCRIPTS/diff-status-output btest-diff status5.out
+# @TEST-EXEC: btest-diff stop-all.out
+# @TEST-EXEC: btest-diff status6.out
+
+. broctl-test-setup
+
+while read line; do installcfgfile "$line"; done << EOF
+etc/broctl.cfg__no_email
+etc/node.cfg__cluster
+bin/bro__test
+EOF
+
+ret=0
+broctl install
+
+# start all nodes
+broctl start > start-all.out 2>&1
+test $? -eq 0 || ret=1
+
+broctl status > status1.out 2>&1
+
+# stop one node
+broctl stop worker-1 > stop-one.out 2>&1
+
+broctl status > status2.out 2>&1
+
+# stop all remaining running nodes
+broctl stop > stop-remaining.out 2>&1
+
+broctl status > status3.out 2>&1
+
+# start one node
+broctl start manager > start-one.out 2>&1
+
+broctl status > status4.out 2>&1
+
+# start all remaining stopped nodes
+broctl start > start-remaining.out 2>&1
+
+broctl status > status5.out 2>&1
+
+# stop all nodes
+broctl stop > stop-all.out 2>&1
+test $? -eq 0 || ret=1
+
+broctl status > status6.out 2>&1
+
+exit $ret
+

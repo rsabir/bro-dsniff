@@ -1,7 +1,7 @@
 #include <algorithm>
 #include <functional>
 
-#include "bro-config.h"
+#include "config.h"
 
 #include "analyzer/Analyzer.h"
 #include "RuleMatcher.h"

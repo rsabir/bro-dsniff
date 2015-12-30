@@ -19,6 +19,26 @@ ARP_Analyzer::~ARP_Analyzer()
 	{
 	}
 
+bool ARP_Analyzer::IsARP(const u_char* pkt, int hdr_size)
+	{
+	if ( hdr_size < 2 )
+		return false;
+
+	// This is a quite hack ... Newer Bro versions relocate this code to
+	// the layer-2 parsing.
+	unsigned short network_protocol =
+		*(unsigned short*) (pkt + hdr_size - 2);
+
+	switch ( ntohs(network_protocol) ) {
+	case ETHERTYPE_ARP:
+	case ETHERTYPE_REVARP:
+		return true;
+	default:
+		return false;
+	}
+	}
+
+
 // Argh! FreeBSD and Linux have almost completely different net/if_arp.h .
 // ... and on Solaris we are missing half of the ARPOP codes, so define
 // them here as necessary:
@@ -78,16 +98,16 @@ ARP_Analyzer::~ARP_Analyzer()
 #endif
 
 
-void ARP_Analyzer::NextPacket(double t, const Packet* pkt)
+void ARP_Analyzer::NextPacket(double t, const struct pcap_pkthdr* hdr,
+				const u_char* const pkt, int hdr_size)
 	{
-	const u_char *data = pkt->data;
 	// Check whether the packet is OK ("inspired" in tcpdump's print-arp.c).
 	const struct arp_pkthdr* ah =
-		(const struct arp_pkthdr*) (data + pkt->hdr_size);
+		(const struct arp_pkthdr*) (pkt + hdr_size);
 
 	// Check the size.
-	int min_length = (ar_tpa(ah) - (char*) (data + pkt->hdr_size)) + ah->ar_pln;
-	int real_length = pkt->cap_len - pkt->hdr_size;
+	int min_length = (ar_tpa(ah) - (char*) (pkt + hdr_size)) + ah->ar_pln;
+	int real_length = hdr->caplen - hdr_size;
 	if ( min_length > real_length )
 		{
 		Corrupted("truncated_ARP");
@@ -143,7 +163,7 @@ void ARP_Analyzer::NextPacket(double t, const Packet* pkt)
 
 
 	// Check MAC src address = ARP sender MAC address.
-	if ( memcmp((const char*) (data+6), ar_sha(ah), ah->ar_hln) )
+	if ( memcmp((const char*) (pkt+6), ar_sha(ah), ah->ar_hln) )
 		{
 		BadARP(ah, "weird-arp-sha");
 		return;
@@ -152,12 +172,12 @@ void ARP_Analyzer::NextPacket(double t, const Packet* pkt)
 	// Check the code is supported.
 	switch ( ntohs(ah->ar_op) ) {
 	case ARPOP_REQUEST:
-		RREvent(arp_request, data+6, data,
+		RREvent(arp_request, pkt+6, pkt,
 				ar_spa(ah), ar_sha(ah), ar_tpa(ah), ar_tha(ah));
 		break;
 
 	case ARPOP_REPLY:
-		RREvent(arp_reply, data+6, data,
+		RREvent(arp_reply, pkt+6, pkt,
 				ar_spa(ah), ar_sha(ah), ar_tpa(ah), ar_tha(ah));
 		break;
 

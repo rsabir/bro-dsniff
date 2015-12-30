@@ -1,6 +1,6 @@
 // See the file "COPYING" in the main distribution directory for copyright.
 
-#include "bro-config.h"
+#include "config.h"
 
 #include "Var.h"
 #include "NetVar.h"
@@ -49,7 +49,6 @@ double tcp_partial_close_delay;
 int tcp_max_initial_window;
 int tcp_max_above_hole_without_any_acks;
 int tcp_excessive_data_without_further_acks;
-int tcp_max_old_segments;
 
 RecordType* socks_address;
 
@@ -226,6 +225,8 @@ int suppress_local_output;
 
 double timer_mgr_inactivity_timeout;
 
+int time_machine_profiling;
+
 StringVal* trace_output_file;
 
 int record_all_packets;
@@ -353,7 +354,6 @@ void init_net_var()
 		opt_internal_int("tcp_max_above_hole_without_any_acks");
 	tcp_excessive_data_without_further_acks =
 		opt_internal_int("tcp_excessive_data_without_further_acks");
-	tcp_max_old_segments = opt_internal_int("tcp_max_old_segments");
 
 	socks_address = internal_type("SOCKS::Address")->AsRecordType();
 
@@ -520,6 +520,7 @@ void init_net_var()
 
 	timer_mgr_inactivity_timeout =
 		opt_internal_double("timer_mgr_inactivity_timeout");
+	time_machine_profiling = opt_internal_int("time_machine_profiling");
 
 	script_id = internal_type("script_id")->AsRecordType();
 	id_table = internal_type("id_table")->AsTableType();

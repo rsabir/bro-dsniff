@@ -7,14 +7,14 @@
 #include <string>
 #include <utility>
 
-#include "bro-config.h"
+#include "config.h"
 #include "analyzer/Component.h"
 #include "file_analysis/Component.h"
 #include "iosource/Component.h"
 
 // We allow to override this externally for testing purposes.
 #ifndef BRO_PLUGIN_API_VERSION
-#define BRO_PLUGIN_API_VERSION 4
+#define BRO_PLUGIN_API_VERSION 2
 #endif
 
 class ODesc;
@@ -39,7 +39,6 @@ enum HookType {
 	HOOK_DRAIN_EVENTS,		//< Activates Plugin::HookDrainEvents()
 	HOOK_UPDATE_NETWORK_TIME,	//< Activates Plugin::HookUpdateNetworkTime.
 	HOOK_BRO_OBJ_DTOR,		//< Activates Plugin::HookBroObjDtor.
-	HOOK_SETUP_ANALYZER_TREE,	//< Activates Plugin::HookAddToAnalyzerTree
 
 	// Meta hooks.
 	META_HOOK_PRE,			//< Activates Plugin::MetaHookPre().
@@ -636,8 +635,6 @@ protected:
 	 * @param network_time The new network time.
 	 */
 	virtual void HookUpdateNetworkTime(double network_time);
-
-	virtual void HookSetupAnalyzerTree(Connection *conn);
 
 	/**
 	 * Hook for destruction of objects registered with

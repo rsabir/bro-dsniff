@@ -1,0 +1,35 @@
+# Test bro-cut with time conversion options (-d/-u).
+#
+
+# Test -d option.
+# @TEST-EXEC: cat $LOGS/conn.log | bro-cut -d > local
+# @TEST-EXEC: btest-diff local
+
+# Test -u option.
+# @TEST-EXEC: cat $LOGS/conn.log | bro-cut -u > utc
+# @TEST-EXEC: TEST_DIFF_CANONIFIER=$SCRIPTS/diff-time-zone btest-diff utc
+
+# Test that -u can override -d. 
+# @TEST-EXEC: cat $LOGS/conn.log | bro-cut -d -u > both-1
+# @TEST-EXEC: TEST_DIFF_CANONIFIER=$SCRIPTS/diff-time-zone btest-diff both-1
+
+# Test that -d can override -u. 
+# @TEST-EXEC: cat $LOGS/conn.log | bro-cut -u -d > both-2
+# @TEST-EXEC: btest-diff both-2
+
+# Test with a file that has timestamp, but not in the first column.
+# @TEST-EXEC: cat $LOGS/conntimelast.log | bro-cut -d > time-last-col
+# @TEST-EXEC: btest-diff time-last-col
+
+# Column order changes between two log files.
+# @TEST-EXEC: cat $LOGS/conn.log $LOGS/conntimelast.log | bro-cut -d > different-col-order
+# @TEST-EXEC: btest-diff different-col-order
+
+# Test with a file that has no timestamps.
+# @TEST-EXEC: cat $LOGS/onecolumn.log | bro-cut -d > no-timestamps
+# @TEST-EXEC: btest-diff no-timestamps
+
+# Test what happens when input is missing the log header lines.
+# @TEST-EXEC: grep -v '^#' $LOGS/conn.log | bro-cut -d > missing-header
+# @TEST-EXEC: btest-diff missing-header
+

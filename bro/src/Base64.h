@@ -8,17 +8,15 @@
 #include "util.h"
 #include "BroString.h"
 #include "Reporter.h"
-#include "Conn.h"
+#include "analyzer/Analyzer.h"
 
 // Maybe we should have a base class for generic decoders?
 class Base64Converter {
 public:
-	// <conn> is used for error reporting. If it is set to zero (as,
-	// e.g., done by the built-in functions decode_base64() and
-	// encode_base64()), encoding-errors will go to Reporter instead of
-	// Weird. Usage errors go to Reporter in any case. Empty alphabet
-	// indicates the default base64 alphabet.
-	Base64Converter(Connection* conn, const string& alphabet = "");
+	// <analyzer> is used for error reporting, and it should be zero when
+	// the decoder is called by the built-in function decode_base64() or encode_base64().
+	// Empty alphabet indicates the default base64 alphabet.
+	Base64Converter(analyzer::Analyzer* analyzer, const string& alphabet = "");
 	~Base64Converter();
 
 	// A note on Decode():
@@ -44,8 +42,8 @@ public:
 	void IllegalEncoding(const char* msg)
 		{
 		// strncpy(error_msg, msg, sizeof(error_msg));
-		if ( conn )
-			conn->Weird("base64_illegal_encoding", msg);
+		if ( analyzer )
+			analyzer->Weird("base64_illegal_encoding", msg);
 		else
 			reporter->Error("%s", msg);
 		}
@@ -65,11 +63,11 @@ protected:
 	int base64_after_padding;
 	int* base64_table;
 	int errored;	// if true, we encountered an error - skip further processing
-	Connection* conn;
+	analyzer::Analyzer* analyzer;
 
 };
 
-BroString* decode_base64(const BroString* s, const BroString* a = 0, Connection* conn = 0);
-BroString* encode_base64(const BroString* s, const BroString* a = 0, Connection* conn = 0);
+BroString* decode_base64(const BroString* s, const BroString* a = 0);
+BroString* encode_base64(const BroString* s, const BroString* a = 0);
 
 #endif /* base64_h */

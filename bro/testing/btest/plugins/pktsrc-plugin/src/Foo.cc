@@ -17,6 +17,7 @@ Foo::Foo(const std::string& path, bool is_live)
 	props.path = path;
 	props.selectable_fd = open("/bin/sh", O_RDONLY); // any fd is fine.
 	props.link_type = DLT_RAW;
+	props.hdr_size = 0;
 	props.netmask = 0;
 	props.is_live = 0;
 	}
@@ -44,9 +45,12 @@ bool Foo::ExtractNextPacket(Packet* pkt)
 		return false;
 		}
 
-	struct timeval ts = { 1409193037, 0 };
-	pkt->Init(props.link_type, &ts, packet.size(), packet.size(), 
-		(const u_char *)packet.c_str());
+	hdr.ts.tv_sec = 1409193037;
+	hdr.ts.tv_usec = 0;
+	hdr.caplen = hdr.len = packet.size();
+	pkt->ts = hdr.ts.tv_sec;
+	pkt->hdr = &hdr;
+	pkt->data = (const u_char *)packet.c_str();
 	return true;
 	}
 

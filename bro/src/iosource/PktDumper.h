@@ -3,7 +3,6 @@
 #ifndef IOSOURCE_PKTSRC_PKTDUMPER_H
 #define IOSOURCE_PKTSRC_PKTDUMPER_H
 
-#include "Packet.h"
 #include "IOSource.h"
 
 namespace iosource {
@@ -13,6 +12,21 @@ namespace iosource {
  */
 class PktDumper {
 public:
+	/**
+	 * Structure describing a packet.
+	 */
+	struct Packet {
+		/**
+		 * The pcap header associated with the packet.
+		 */
+		const struct pcap_pkthdr* hdr;
+
+		/**
+		 * The full content of the packet.
+		 */
+		const unsigned char* data;
+	};
+
 	/**
 	 * Constructor.
 	 */

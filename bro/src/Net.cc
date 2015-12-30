@@ -1,6 +1,6 @@
 // See the file "COPYING" in the main distribution directory for copyright.
 
-#include "bro-config.h"
+#include "config.h"
 
 #include <sys/types.h>
 #ifdef TIME_WITH_SYS_TIME
@@ -62,8 +62,10 @@ double bro_start_network_time;	// timestamp of first packet
 double last_watchdog_proc_time = 0.0;	// value of above during last watchdog
 bool terminating = false;	// whether we're done reading and finishing up
 
-const Packet *current_pkt = 0;
+const struct pcap_pkthdr* current_hdr = 0;
+const u_char* current_pkt = 0;
 int current_dispatched = 0;
+int current_hdr_size = 0;
 double current_timestamp = 0.0;
 iosource::PktSrc* current_pktsrc = 0;
 iosource::IOSource* current_iosrc = 0;
@@ -107,7 +109,7 @@ RETSIGTYPE watchdog(int /* signo */)
 			int frac_pst =
 				int((processing_start_time - int_pst) * 1e6);
 
-			if ( current_pkt )
+			if ( current_hdr )
 				{
 				if ( ! pkt_dumper )
 					{
@@ -124,8 +126,12 @@ RETSIGTYPE watchdog(int /* signo */)
 					}
 
 				if ( pkt_dumper )
-					pkt_dumper->Dump(current_pkt);
-
+					{
+					iosource::PktDumper::Packet p;
+					p.hdr = current_hdr;
+					p.data = current_pkt;
+					pkt_dumper->Dump(&p);
+					}
 				}
 
 			net_get_final_stats();
@@ -234,7 +240,9 @@ void expire_timers(iosource::PktSrc* src_ps)
 				max_timer_expires - current_dispatched);
 	}
 
-void net_packet_dispatch(double t, const Packet* pkt, iosource::PktSrc* src_ps)
+void net_packet_dispatch(double t, const struct pcap_pkthdr* hdr,
+			 const u_char* pkt, int hdr_size,
+			 iosource::PktSrc* src_ps)
 	{
 	if ( ! bro_start_network_time )
 		bro_start_network_time = t;
@@ -270,7 +278,7 @@ void net_packet_dispatch(double t, const Packet* pkt, iosource::PktSrc* src_ps)
 			}
 		}
 
-	sessions->NextPacket(t, pkt);
+	sessions->DispatchPacket(t, hdr, pkt, hdr_size, src_ps);
 	mgr.Drain();
 
 	if ( sp )

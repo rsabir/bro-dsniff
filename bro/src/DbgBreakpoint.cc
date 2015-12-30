@@ -1,6 +1,6 @@
 // Implementation of breakpoints.
 
-#include "bro-config.h"
+#include "config.h"
 
 #include <assert.h>
 

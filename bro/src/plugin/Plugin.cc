@@ -23,7 +23,6 @@ const char* plugin::hook_name(HookType h)
 		"DrainEvents",
 		"UpdateNetworkTime",
 		"BroObjDtor",
-		"SetupAnalyzerTree",
 		// MetaHooks
 		"MetaHookPre",
 		"MetaHookPost",
@@ -308,10 +307,6 @@ void Plugin::HookDrainEvents()
 	}
 
 void Plugin::HookUpdateNetworkTime(double network_time)
-	{
-	}
-
-void Plugin::HookSetupAnalyzerTree(Connection *conn)
 	{
 	}
 

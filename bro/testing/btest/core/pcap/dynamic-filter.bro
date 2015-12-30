@@ -13,20 +13,20 @@ event new_packet(c: connection, p: pkt_hdr)
 	print cnt, c$id;
 	
 	if ( cnt == 1 )
-		if ( ! Pcap::install_pcap_filter(A) )
+		if ( ! install_pcap_filter(A) )
 			print "error 3";
 
 	if ( cnt == 2 )
-		if ( ! Pcap::install_pcap_filter(B) )
+		if ( ! install_pcap_filter(B) )
 			print "error 4";
 	}
 
 event bro_init()
 	{
-	if ( ! Pcap::precompile_pcap_filter(A, "port 80") )
+	if ( ! precompile_pcap_filter(A, "port 80") )
 		print "error 1";
 	
-	if ( ! Pcap::precompile_pcap_filter(B, "port 53") )
+	if ( ! precompile_pcap_filter(B, "port 53") )
 		print "error 2";
 	}
 

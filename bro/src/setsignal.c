@@ -2,7 +2,7 @@
  * See the file "COPYING" in the main distribution directory for copyright.
  */
 
-#include "bro-config.h"			/* must appear before first ifdef */
+#include "config.h"			/* must appear before first ifdef */
 
 #include <sys/types.h>
 

@@ -4,67 +4,6 @@ release. For an exhaustive list of changes, see the ``CHANGES`` file
 (note that submodules, such as BroControl and Broccoli, come with
 their own ``CHANGES``.)
 
-Bro 2.5 (in progress)
-=====================
-
-New Dependencies
-----------------
-
-- Bro now requires a compiler with C++11 support for building the
-  source code.
-
-- Bro now requires the C++ Actor Framework, CAF, which must be
-  installed first. See http://actor-framework.org.
-
-- Bro now requires Python instead of Perl to compile the source code.
-
-- The pcap buffer size can set through the new option Pcap::bufsize.
-
-- Bro can now leverage packet fanout mode on Linux through the new
-  options Pcap::packet_fanout_enable, Pcap::packet_fanout_id, and
-  Pcap::packet_fanout_defrag.
-
-
-New Functionality
------------------
-
-- Bro now tracks VLAN IDs. To record them inside the connection log,
-  load protocols/conn/vlan-logging.bro.
-
-- A new per-packet event raw_packet() provides access to layer 2
-  information. Use with care, generating events per packet is
-  expensive.
-
-- A new built-in function, decode_base64_conn() for Base64 decoding.
-  It works like decode_base64() but receives an additional connection
-  argument that will be used for decoding errors into weird.log
-  (instead of reporter.log).
-
-- New Bro plugins in aux/plugins:
-
-    - pf_ring: Native PF_RING support.
-    - redis:   An experimental log writer for Redis.
-
-Changed Functionality
----------------------
-
-- Some script-level identifier have changed their names:
-
-      snaplen                  -> Pcap::snaplen
-      precompile_pcap_filter() -> Pcap::precompile_pcap_filter()
-      install_pcap_filter()    -> Pcap::install_pcap_filter()
-      pcap_error()             -> Pcap::pcap_error()
-
-
-Deprecated Functionality
-------------------------
-
-    - The built-in functions decode_base64_custom() and
-      encode_base64_custom() are no longer needed and will be removed
-      in the future. Their functionality is now provided directly by
-      decode_base64() and encode_base64(), which take an optional
-      parameter to change the Base64 alphabet.
-
 Bro 2.4
 =======
 

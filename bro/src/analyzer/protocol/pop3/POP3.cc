@@ -1,7 +1,7 @@
 // This code contributed to Bro by Florian Schimandl, Hugh Dollman and
 // Robin Sommer.
 
-#include "bro-config.h"
+#include "config.h"
 
 #include <stdlib.h>
 #include <iostream>
@@ -137,7 +137,7 @@ void POP3_Analyzer::ProcessRequest(int length, const char* line)
 		++authLines;
 
 		BroString encoded(line);
-		BroString* decoded = decode_base64(&encoded, 0, Conn());
+		BroString* decoded = decode_base64(&encoded);
 
 		if ( ! decoded )
 			{
@@ -720,18 +720,14 @@ void POP3_Analyzer::ProcessReply(int length, const char* line)
 			break;
 			}
 
-		case CAPA:
-			ProtocolConfirmation();
-			// Fall-through.
-
 		case UIDL:
 		case LIST:
+		case CAPA:
 			if (requestForMultiLine == true)
 				multiLine = true;
 			break;
 
 		case STLS:
-			ProtocolConfirmation();
 			tls = true;
 			StartTLS();
 			return;

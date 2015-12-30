@@ -1,0 +1,1 @@
+    worker-2   Log::default_rotation_interval = 1.0 day

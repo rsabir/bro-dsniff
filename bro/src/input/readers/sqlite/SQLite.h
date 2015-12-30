@@ -1,9 +1,9 @@
 // See the file "COPYING" in the main distribution directory for copyright.
 
-#ifndef INPUT_READERS_SQLITE_H
-#define INPUT_READERS_SQLITE_H
+#ifndef INPUT_READERS_POSTGRES_H
+#define INPUT_READERS_POSTGRES_H
 
-#include "bro-config.h"
+#include "config.h"
 
 #include <iostream>
 #include <vector>
@@ -50,5 +50,5 @@ private:
 }
 }
 
-#endif /* INPUT_READERS_SQLITE_H */
+#endif /* INPUT_READERS_POSTGRES_H */
 

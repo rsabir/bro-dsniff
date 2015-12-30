@@ -1,0 +1,26 @@
+# Test that the diag command can output diags for all nodes in a cluster, or
+# just one node.
+#
+# @TEST-EXEC: bash %INPUT
+# @TEST-EXEC: TEST_DIFF_CANONIFIER=$SCRIPTS/diff-diag-output btest-diff all.out
+# @TEST-EXEC: TEST_DIFF_CANONIFIER=$SCRIPTS/diff-diag-output btest-diff onenode.out
+
+. broctl-test-setup
+
+while read line; do installcfgfile "$line"; done << EOF
+etc/broctl.cfg__no_email
+etc/node.cfg__cluster
+bin/bro__test
+EOF
+
+broctl install
+broctl start
+
+# output diags for all nodes
+broctl diag > all.out 2>&1
+
+# output diags for one node
+broctl diag worker-2 > onenode.out 2>&1
+
+broctl stop
+
