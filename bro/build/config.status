@@ -1,2 +1,0 @@
-# This is the command used to configure this build
-./configure --enable-debug

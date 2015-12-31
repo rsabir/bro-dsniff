@@ -1,2 +1,0 @@
-/usr/bin/ar cr libplugin-Bro-SSL.a  CMakeFiles/plugin-Bro-SSL.dir/SSL.cc.o CMakeFiles/plugin-Bro-SSL.dir/DTLS.cc.o CMakeFiles/plugin-Bro-SSL.dir/Plugin.cc.o CMakeFiles/plugin-Bro-SSL.dir/events.bif.cc.o CMakeFiles/plugin-Bro-SSL.dir/events.bif.init.cc.o CMakeFiles/plugin-Bro-SSL.dir/tls-handshake_pac.cc.o CMakeFiles/plugin-Bro-SSL.dir/ssl_pac.cc.o CMakeFiles/plugin-Bro-SSL.dir/dtls_pac.cc.o
-/usr/bin/ranlib libplugin-Bro-SSL.a

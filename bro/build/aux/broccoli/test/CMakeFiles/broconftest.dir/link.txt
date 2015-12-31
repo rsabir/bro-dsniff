@@ -1,1 +1,0 @@
-/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG -g    CMakeFiles/broconftest.dir/broconftest.c.o  -o broconftest -rdynamic ../src/libbroccoli.so.5.1.0 -lssl -lcrypto -Wl,-Bstatic -lresolv -Wl,-Bdynamic -Wl,-rpath,/home/rhost/Downloads/bro-2.4.1/build/aux/broccoli/src 
