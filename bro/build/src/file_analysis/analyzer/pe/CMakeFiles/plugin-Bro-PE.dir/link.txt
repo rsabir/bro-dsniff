@@ -1,0 +1,2 @@
+/usr/bin/ar cr libplugin-Bro-PE.a  CMakeFiles/plugin-Bro-PE.dir/PE.cc.o CMakeFiles/plugin-Bro-PE.dir/Plugin.cc.o CMakeFiles/plugin-Bro-PE.dir/events.bif.cc.o CMakeFiles/plugin-Bro-PE.dir/events.bif.init.cc.o CMakeFiles/plugin-Bro-PE.dir/pe_pac.cc.o
+/usr/bin/ranlib libplugin-Bro-PE.a

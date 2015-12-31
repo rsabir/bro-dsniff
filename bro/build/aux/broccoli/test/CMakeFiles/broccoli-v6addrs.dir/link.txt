@@ -1,0 +1,1 @@
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG -g    CMakeFiles/broccoli-v6addrs.dir/broccoli-v6addrs.c.o  -o broccoli-v6addrs -rdynamic ../src/libbroccoli.so.5.1.0 -lssl -lcrypto -Wl,-Bstatic -lresolv -Wl,-Bdynamic -Wl,-rpath,/home/rhost/Downloads/bro-2.4.1/build/aux/broccoli/src 

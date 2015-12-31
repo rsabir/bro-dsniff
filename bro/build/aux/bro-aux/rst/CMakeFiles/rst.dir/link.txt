@@ -1,0 +1,1 @@
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG -g    CMakeFiles/rst.dir/rst.c.o  -o rst -rdynamic -Wl,-Bstatic -lresolv -Wl,-Bdynamic 

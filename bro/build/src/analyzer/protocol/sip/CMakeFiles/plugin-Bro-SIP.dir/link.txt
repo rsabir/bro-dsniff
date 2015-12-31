@@ -1,0 +1,2 @@
+/usr/bin/ar cr libplugin-Bro-SIP.a  CMakeFiles/plugin-Bro-SIP.dir/Plugin.cc.o CMakeFiles/plugin-Bro-SIP.dir/SIP.cc.o CMakeFiles/plugin-Bro-SIP.dir/SIP_TCP.cc.o CMakeFiles/plugin-Bro-SIP.dir/events.bif.cc.o CMakeFiles/plugin-Bro-SIP.dir/events.bif.init.cc.o CMakeFiles/plugin-Bro-SIP.dir/sip_pac.cc.o CMakeFiles/plugin-Bro-SIP.dir/sip_TCP_pac.cc.o
+/usr/bin/ranlib libplugin-Bro-SIP.a

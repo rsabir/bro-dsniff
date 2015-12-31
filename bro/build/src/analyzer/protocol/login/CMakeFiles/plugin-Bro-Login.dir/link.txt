@@ -1,0 +1,2 @@
+/usr/bin/ar cr libplugin-Bro-Login.a  CMakeFiles/plugin-Bro-Login.dir/Login.cc.o CMakeFiles/plugin-Bro-Login.dir/RSH.cc.o CMakeFiles/plugin-Bro-Login.dir/Telnet.cc.o CMakeFiles/plugin-Bro-Login.dir/Rlogin.cc.o CMakeFiles/plugin-Bro-Login.dir/NVT.cc.o CMakeFiles/plugin-Bro-Login.dir/Plugin.cc.o CMakeFiles/plugin-Bro-Login.dir/events.bif.cc.o CMakeFiles/plugin-Bro-Login.dir/events.bif.init.cc.o CMakeFiles/plugin-Bro-Login.dir/functions.bif.cc.o CMakeFiles/plugin-Bro-Login.dir/functions.bif.init.cc.o
+/usr/bin/ranlib libplugin-Bro-Login.a

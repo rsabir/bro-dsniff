@@ -1,0 +1,2 @@
+/usr/bin/ar cr libplugin-Bro-AsciiWriter.a  CMakeFiles/plugin-Bro-AsciiWriter.dir/Ascii.cc.o CMakeFiles/plugin-Bro-AsciiWriter.dir/Plugin.cc.o CMakeFiles/plugin-Bro-AsciiWriter.dir/ascii.bif.cc.o CMakeFiles/plugin-Bro-AsciiWriter.dir/ascii.bif.init.cc.o
+/usr/bin/ranlib libplugin-Bro-AsciiWriter.a

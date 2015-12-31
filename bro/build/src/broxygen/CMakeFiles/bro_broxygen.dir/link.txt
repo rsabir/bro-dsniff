@@ -1,0 +1,2 @@
+/usr/bin/ar cr libbro_broxygen.a  CMakeFiles/bro_broxygen.dir/Manager.cc.o CMakeFiles/bro_broxygen.dir/PackageInfo.cc.o CMakeFiles/bro_broxygen.dir/ScriptInfo.cc.o CMakeFiles/bro_broxygen.dir/IdentifierInfo.cc.o CMakeFiles/bro_broxygen.dir/Target.cc.o CMakeFiles/bro_broxygen.dir/Configuration.cc.o CMakeFiles/bro_broxygen.dir/ReStructuredTextTable.cc.o CMakeFiles/bro_broxygen.dir/utils.cc.o
+/usr/bin/ranlib libbro_broxygen.a

@@ -1,0 +1,2 @@
+/usr/bin/ar cr libplugin-Bro-FileHash.a  CMakeFiles/plugin-Bro-FileHash.dir/Hash.cc.o CMakeFiles/plugin-Bro-FileHash.dir/Plugin.cc.o CMakeFiles/plugin-Bro-FileHash.dir/__/__/Analyzer.cc.o CMakeFiles/plugin-Bro-FileHash.dir/events.bif.cc.o CMakeFiles/plugin-Bro-FileHash.dir/events.bif.init.cc.o
+/usr/bin/ranlib libplugin-Bro-FileHash.a

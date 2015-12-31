@@ -40,7 +40,7 @@ event bro_init() &priority=5
 	# Analyzer::register_for_ports(Analyzer::ANALYZER_LDAP, ports);
 	}
 
-event ldap_event(c: connection,username:string,password:string)
+event ldap_simple_bind(c: connection,username:string,password:string)
 	{
 	local info: Info;
 	info$ts  = network_time();

@@ -1,0 +1,2 @@
+/usr/bin/ar cr libplugin-Bro-AsciiReader.a  CMakeFiles/plugin-Bro-AsciiReader.dir/Ascii.cc.o CMakeFiles/plugin-Bro-AsciiReader.dir/Plugin.cc.o CMakeFiles/plugin-Bro-AsciiReader.dir/ascii.bif.cc.o CMakeFiles/plugin-Bro-AsciiReader.dir/ascii.bif.init.cc.o
+/usr/bin/ranlib libplugin-Bro-AsciiReader.a

@@ -1,0 +1,2 @@
+/usr/bin/ar cr libplugin-Bro-BitTorrent.a  CMakeFiles/plugin-Bro-BitTorrent.dir/BitTorrent.cc.o CMakeFiles/plugin-Bro-BitTorrent.dir/BitTorrentTracker.cc.o CMakeFiles/plugin-Bro-BitTorrent.dir/Plugin.cc.o CMakeFiles/plugin-Bro-BitTorrent.dir/events.bif.cc.o CMakeFiles/plugin-Bro-BitTorrent.dir/events.bif.init.cc.o CMakeFiles/plugin-Bro-BitTorrent.dir/bittorrent_pac.cc.o
+/usr/bin/ranlib libplugin-Bro-BitTorrent.a

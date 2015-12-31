@@ -1,0 +1,2 @@
+/usr/bin/ar cr libbro_broker_dummy.a  CMakeFiles/bro_broker_dummy.dir/store.bif.cc.o
+/usr/bin/ranlib libbro_broker_dummy.a

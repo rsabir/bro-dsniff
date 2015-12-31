@@ -1,0 +1,2 @@
+/usr/bin/ar cr libplugin-Bro-HTTP.a  CMakeFiles/plugin-Bro-HTTP.dir/HTTP.cc.o CMakeFiles/plugin-Bro-HTTP.dir/Plugin.cc.o CMakeFiles/plugin-Bro-HTTP.dir/events.bif.cc.o CMakeFiles/plugin-Bro-HTTP.dir/events.bif.init.cc.o CMakeFiles/plugin-Bro-HTTP.dir/functions.bif.cc.o CMakeFiles/plugin-Bro-HTTP.dir/functions.bif.init.cc.o
+/usr/bin/ranlib libplugin-Bro-HTTP.a

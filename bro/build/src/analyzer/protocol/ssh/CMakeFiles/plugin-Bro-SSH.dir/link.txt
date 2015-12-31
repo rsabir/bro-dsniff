@@ -1,0 +1,2 @@
+/usr/bin/ar cr libplugin-Bro-SSH.a  CMakeFiles/plugin-Bro-SSH.dir/SSH.cc.o CMakeFiles/plugin-Bro-SSH.dir/Plugin.cc.o CMakeFiles/plugin-Bro-SSH.dir/types.bif.cc.o CMakeFiles/plugin-Bro-SSH.dir/types.bif.init.cc.o CMakeFiles/plugin-Bro-SSH.dir/events.bif.cc.o CMakeFiles/plugin-Bro-SSH.dir/events.bif.init.cc.o CMakeFiles/plugin-Bro-SSH.dir/ssh_pac.cc.o
+/usr/bin/ranlib libplugin-Bro-SSH.a

@@ -1,0 +1,86 @@
+#! /usr/bin/env bash
+#
+# crash-diag <dir>
+#
+# <dir> is the node's working directory.
+
+. `dirname $0`/broctl-config.sh
+
+if [ $# -ne 1 ]; then
+    echo "crash-diag: wrong number of arguments"
+    exit 1
+fi
+
+if [ ! -d "$1" ]; then
+    echo "No work dir found"
+    exit 0
+fi
+
+cd "$1"
+if [ $? -ne 0 ]; then
+    exit 1
+fi
+
+(
+
+echo
+
+if [ -f "${bro}" ];then
+    bro_version=`"${bro}" -v 2>&1 >/dev/null | awk '{print $3}'`
+else
+    bro_version="(file not found: ${bro})"
+fi
+
+echo Bro $bro_version
+uname -sr
+echo
+
+if which gdb >/dev/null 2>&1; then
+    core=`ls -t *core* 2> /dev/null`
+    echo "thread apply all bt" >.gdb_cmds
+    for c in $core; do
+        if [ -f $c ]; then
+            echo $c
+            gdb --batch -x .gdb_cmds "${bro}" $c 2>/dev/null
+        fi
+    done
+    rm -f .gdb_cmds
+else
+    echo "No gdb installed."
+fi
+
+# Usage:
+#   show_log <filename> <num>
+# Output the last <num> lines of <filename>.  If <num> is -1, then output the
+# entire file.
+function show_log() {
+    filename=$1
+    num=$2
+
+    echo
+
+    if [ -f $filename ]; then
+       echo ==== $filename
+       if [ $num -ge 0 ]; then
+           tail -$num $filename
+       else
+           cat $filename
+       fi
+    else
+       echo ==== No $filename
+    fi
+}
+
+show_log reporter.log 10
+show_log stderr.log 10
+show_log stdout.log 10
+show_log .cmdline 30
+show_log .env_vars 30
+show_log .status 10
+show_log prof.log 10
+show_log packet_filter.log 30
+show_log loaded_scripts.log -1
+
+) >.crash-diag.log
+
+cat .crash-diag.log

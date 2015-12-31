@@ -1,0 +1,2 @@
+/usr/bin/ar cr libbinpac.a  CMakeFiles/binpac_lib.dir/binpac_buffer.cc.o CMakeFiles/binpac_lib.dir/binpac_bytestring.cc.o CMakeFiles/binpac_lib.dir/binpac_regex.cc.o
+/usr/bin/ranlib libbinpac.a

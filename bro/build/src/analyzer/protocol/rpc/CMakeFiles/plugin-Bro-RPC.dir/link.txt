@@ -1,0 +1,2 @@
+/usr/bin/ar cr libplugin-Bro-RPC.a  CMakeFiles/plugin-Bro-RPC.dir/RPC.cc.o CMakeFiles/plugin-Bro-RPC.dir/NFS.cc.o CMakeFiles/plugin-Bro-RPC.dir/Portmap.cc.o CMakeFiles/plugin-Bro-RPC.dir/XDR.cc.o CMakeFiles/plugin-Bro-RPC.dir/Plugin.cc.o CMakeFiles/plugin-Bro-RPC.dir/events.bif.cc.o CMakeFiles/plugin-Bro-RPC.dir/events.bif.init.cc.o
+/usr/bin/ranlib libplugin-Bro-RPC.a

@@ -1,0 +1,2 @@
+/usr/bin/ar cr libbro_probabilistic.a  CMakeFiles/bro_probabilistic.dir/BitVector.cc.o CMakeFiles/bro_probabilistic.dir/BloomFilter.cc.o CMakeFiles/bro_probabilistic.dir/CardinalityCounter.cc.o CMakeFiles/bro_probabilistic.dir/CounterVector.cc.o CMakeFiles/bro_probabilistic.dir/Hasher.cc.o CMakeFiles/bro_probabilistic.dir/Topk.cc.o
+/usr/bin/ranlib libbro_probabilistic.a

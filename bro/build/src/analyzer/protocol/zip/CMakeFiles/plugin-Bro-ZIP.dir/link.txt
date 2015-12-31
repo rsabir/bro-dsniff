@@ -1,0 +1,2 @@
+/usr/bin/ar cr libplugin-Bro-ZIP.a  CMakeFiles/plugin-Bro-ZIP.dir/ZIP.cc.o CMakeFiles/plugin-Bro-ZIP.dir/Plugin.cc.o CMakeFiles/plugin-Bro-ZIP.dir/events.bif.cc.o CMakeFiles/plugin-Bro-ZIP.dir/events.bif.init.cc.o
+/usr/bin/ranlib libplugin-Bro-ZIP.a

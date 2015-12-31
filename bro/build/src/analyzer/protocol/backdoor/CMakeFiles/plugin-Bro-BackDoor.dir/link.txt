@@ -1,0 +1,2 @@
+/usr/bin/ar cr libplugin-Bro-BackDoor.a  CMakeFiles/plugin-Bro-BackDoor.dir/BackDoor.cc.o CMakeFiles/plugin-Bro-BackDoor.dir/Plugin.cc.o CMakeFiles/plugin-Bro-BackDoor.dir/events.bif.cc.o CMakeFiles/plugin-Bro-BackDoor.dir/events.bif.init.cc.o
+/usr/bin/ranlib libplugin-Bro-BackDoor.a

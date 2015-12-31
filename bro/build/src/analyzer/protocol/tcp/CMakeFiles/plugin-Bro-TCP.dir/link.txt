@@ -1,0 +1,2 @@
+/usr/bin/ar cr libplugin-Bro-TCP.a  CMakeFiles/plugin-Bro-TCP.dir/TCP.cc.o CMakeFiles/plugin-Bro-TCP.dir/TCP_Endpoint.cc.o CMakeFiles/plugin-Bro-TCP.dir/TCP_Reassembler.cc.o CMakeFiles/plugin-Bro-TCP.dir/ContentLine.cc.o CMakeFiles/plugin-Bro-TCP.dir/Stats.cc.o CMakeFiles/plugin-Bro-TCP.dir/Plugin.cc.o CMakeFiles/plugin-Bro-TCP.dir/events.bif.cc.o CMakeFiles/plugin-Bro-TCP.dir/events.bif.init.cc.o CMakeFiles/plugin-Bro-TCP.dir/functions.bif.cc.o CMakeFiles/plugin-Bro-TCP.dir/functions.bif.init.cc.o
+/usr/bin/ranlib libplugin-Bro-TCP.a

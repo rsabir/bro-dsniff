@@ -1,0 +1,2 @@
+/usr/bin/ar cr libbro_logging.a  CMakeFiles/bro_logging.dir/Component.cc.o CMakeFiles/bro_logging.dir/Manager.cc.o CMakeFiles/bro_logging.dir/WriterBackend.cc.o CMakeFiles/bro_logging.dir/WriterFrontend.cc.o CMakeFiles/bro_logging.dir/Tag.cc.o CMakeFiles/bro_logging.dir/logging.bif.cc.o
+/usr/bin/ranlib libbro_logging.a

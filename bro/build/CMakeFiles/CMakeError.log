@@ -1,0 +1,1242 @@
+Determining if the function pcap_get_pfring_id exists failed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2443509536/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2443509536.dir/build.make CMakeFiles/cmTryCompileExec2443509536.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2443509536.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -Wno-unused -DCHECK_FUNCTION_EXISTS=pcap_get_pfring_id   -o CMakeFiles/cmTryCompileExec2443509536.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2443509536
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2443509536.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -DCHECK_FUNCTION_EXISTS=pcap_get_pfring_id    CMakeFiles/cmTryCompileExec2443509536.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2443509536 -rdynamic -lpcap 
+CMakeFiles/cmTryCompileExec2443509536.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x15): undefined reference to `pcap_get_pfring_id'
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec2443509536] Error 1
+make: *** [cmTryCompileExec2443509536/fast] Error 2
+
+
+Performing C SOURCE FILE Test ns_initparse_works_none failed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1072991209/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1072991209.dir/build.make CMakeFiles/cmTryCompileExec1072991209.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1072991209.dir/src.c.o
+/usr/bin/cc   -Wall -Wno-unused -Dns_initparse_works_none   -o CMakeFiles/cmTryCompileExec1072991209.dir/src.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec1072991209
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1072991209.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -Dns_initparse_works_none    CMakeFiles/cmTryCompileExec1072991209.dir/src.c.o  -o cmTryCompileExec1072991209 -rdynamic 
+CMakeFiles/cmTryCompileExec1072991209.dir/src.c.o: In function `main':
+src.c:(.text+0x14): undefined reference to `ns_initparse'
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec1072991209] Error 1
+make: *** [cmTryCompileExec1072991209/fast] Error 2
+
+Source file was:
+
+        #include <arpa/nameser.h>
+        int main() {
+            ns_initparse(0, 0, 0);
+            return 0;
+        }
+
+Performing C SOURCE FILE Test res_mkquery_works_none failed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3176212049/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3176212049.dir/build.make CMakeFiles/cmTryCompileExec3176212049.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3176212049.dir/src.c.o
+/usr/bin/cc   -Wall -Wno-unused -Dres_mkquery_works_none   -o CMakeFiles/cmTryCompileExec3176212049.dir/src.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec3176212049
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3176212049.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -Dres_mkquery_works_none    CMakeFiles/cmTryCompileExec3176212049.dir/src.c.o  -o cmTryCompileExec3176212049 -rdynamic 
+CMakeFiles/cmTryCompileExec3176212049.dir/src.c.o: In function `main':
+src.c:(.text+0x8): undefined reference to `__res_mkquery'
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec3176212049] Error 1
+make: *** [cmTryCompileExec3176212049/fast] Error 2
+
+Source file was:
+
+        #include <sys/types.h>
+        #include <sys/socket.h>
+        #include <netinet/in.h>
+        #include <arpa/nameser.h>
+        #include <resolv.h>
+        int main() {
+            int (*p)() = res_mkquery;
+            return 0;
+        }
+
+Determining if the system is big endian passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec182661121/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec182661121.dir/build.make CMakeFiles/cmTryCompileExec182661121.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec182661121.dir/TestEndianess.c.o
+/usr/bin/cc   -Wall -Wno-unused    -o CMakeFiles/cmTryCompileExec182661121.dir/TestEndianess.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/TestEndianess.c
+Linking C executable cmTryCompileExec182661121
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec182661121.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused     CMakeFiles/cmTryCompileExec182661121.dir/TestEndianess.c.o  -o cmTryCompileExec182661121 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the system is big endian passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec423978875/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec423978875.dir/build.make CMakeFiles/cmTryCompileExec423978875.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec423978875.dir/TestEndianess.c.o
+/usr/bin/cc   -Wall -Wno-unused    -o CMakeFiles/cmTryCompileExec423978875.dir/TestEndianess.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/TestEndianess.c
+Linking C executable cmTryCompileExec423978875
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec423978875.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused     CMakeFiles/cmTryCompileExec423978875.dir/TestEndianess.c.o  -o cmTryCompileExec423978875 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the htonll exist failed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec549205597/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec549205597.dir/build.make CMakeFiles/cmTryCompileExec549205597.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec549205597.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -Wall -Wno-unused    -o CMakeFiles/cmTryCompileExec549205597.dir/CheckSymbolExists.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: 'htonll' undeclared (first use in this function)
+   return ((int*)(&htonll))[argc];
+                   ^
+/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:13:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec549205597.dir/CheckSymbolExists.c.o] Error 1
+make: *** [cmTryCompileExec549205597/fast] Error 2
+
+File /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <arpa/inet.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef htonll
+  return ((int*)(&htonll))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if files sys/ethernet.h exist failed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2558499102/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2558499102.dir/build.make CMakeFiles/cmTryCompileExec2558499102.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2558499102.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -Wall -Wno-unused    -o CMakeFiles/cmTryCompileExec2558499102.dir/CheckIncludeFiles.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:26: fatal error: sys/ethernet.h: No such file or directory
+ #include <sys/ethernet.h>
+                          ^
+compilation terminated.
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec2558499102.dir/CheckIncludeFiles.c.o] Error 1
+make: *** [cmTryCompileExec2558499102/fast] Error 2
+
+Source:
+/* */
+#include <sys/ethernet.h>
+
+
+int main(){return 0;}
+
+Determining if files net/ethertypes.h exist failed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec886969954/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec886969954.dir/build.make CMakeFiles/cmTryCompileExec886969954.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec886969954.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -Wall -Wno-unused    -o CMakeFiles/cmTryCompileExec886969954.dir/CheckIncludeFiles.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:28: fatal error: net/ethertypes.h: No such file or directory
+ #include <net/ethertypes.h>
+                            ^
+compilation terminated.
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec886969954.dir/CheckIncludeFiles.c.o] Error 1
+make: *** [cmTryCompileExec886969954/fast] Error 2
+
+Source:
+/* */
+#include <net/ethertypes.h>
+
+
+int main(){return 0;}
+
+Determining if files os-proto.h exist failed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2090758155/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2090758155.dir/build.make CMakeFiles/cmTryCompileExec2090758155.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2090758155.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -Wall -Wno-unused    -o CMakeFiles/cmTryCompileExec2090758155.dir/CheckIncludeFiles.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:22: fatal error: os-proto.h: No such file or directory
+ #include <os-proto.h>
+                      ^
+compilation terminated.
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec2090758155.dir/CheckIncludeFiles.c.o] Error 1
+make: *** [cmTryCompileExec2090758155/fast] Error 2
+
+Source:
+/* */
+#include <os-proto.h>
+
+
+int main(){return 0;}
+
+Performing C SOURCE FILE Test HAVE_READLINE_HISTORY_ENTRIES failed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1389809465/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1389809465.dir/build.make CMakeFiles/cmTryCompileExec1389809465.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1389809465.dir/src.c.o
+/usr/bin/cc   -Wall -Wno-unused -DHAVE_READLINE_HISTORY_ENTRIES   -o CMakeFiles/cmTryCompileExec1389809465.dir/src.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.c
+/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.c:3:31: fatal error: readline/readline.h: No such file or directory
+ #include <readline/readline.h>
+                               ^
+compilation terminated.
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec1389809465.dir/src.c.o] Error 1
+make: *** [cmTryCompileExec1389809465/fast] Error 2
+
+Source file was:
+
+#include <stdio.h>
+#include <readline/readline.h>
+
+int main()
+{
+   HISTORY_STATE* tmp;
+   tmp->entries;
+  return 0;
+}
+
+Determining if files stdio.h;readline/readline.h exist failed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1972395434/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1972395434.dir/build.make CMakeFiles/cmTryCompileExec1972395434.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1972395434.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -Wall -Wno-unused    -o CMakeFiles/cmTryCompileExec1972395434.dir/CheckIncludeFiles.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:3:31: fatal error: readline/readline.h: No such file or directory
+ #include <readline/readline.h>
+                               ^
+compilation terminated.
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec1972395434.dir/CheckIncludeFiles.c.o] Error 1
+make: *** [cmTryCompileExec1972395434/fast] Error 2
+
+Source:
+/* */
+#include <stdio.h>
+#include <readline/readline.h>
+
+
+int main(){return 0;}
+
+Determining if files stdio.h;readline/history.h exist failed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec67523082/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec67523082.dir/build.make CMakeFiles/cmTryCompileExec67523082.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec67523082.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -Wall -Wno-unused    -o CMakeFiles/cmTryCompileExec67523082.dir/CheckIncludeFiles.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:3:30: fatal error: readline/history.h: No such file or directory
+ #include <readline/history.h>
+                              ^
+compilation terminated.
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec67523082.dir/CheckIncludeFiles.c.o] Error 1
+make: *** [cmTryCompileExec67523082/fast] Error 2
+
+Source:
+/* */
+#include <stdio.h>
+#include <readline/history.h>
+
+
+int main(){return 0;}
+
+Performing C SOURCE FILE Test SIN_LEN failed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3716436225/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3716436225.dir/build.make CMakeFiles/cmTryCompileExec3716436225.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3716436225.dir/src.c.o
+/usr/bin/cc   -Wall -Wno-unused -DSIN_LEN   -o CMakeFiles/cmTryCompileExec3716436225.dir/src.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.c
+/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.c: In function 'main':
+/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.c:7:7: error: 'struct sockaddr_in' has no member named 'sin_len'
+    tmp->sin_len;
+       ^
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec3716436225.dir/src.c.o] Error 1
+make: *** [cmTryCompileExec3716436225/fast] Error 2
+
+Source file was:
+
+#include <netinet/in.h>
+
+int main()
+{
+   struct sockaddr_in* tmp;
+   tmp->sin_len;
+  return 0;
+}
+
+Determining if the IPPROTO_IPV4 exist failed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2910646188/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2910646188.dir/build.make CMakeFiles/cmTryCompileExec2910646188.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2910646188.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -Wall -Wno-unused    -o CMakeFiles/cmTryCompileExec2910646188.dir/CheckSymbolExists.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: 'IPPROTO_IPV4' undeclared (first use in this function)
+   return ((int*)(&IPPROTO_IPV4))[argc];
+                   ^
+/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:13:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec2910646188.dir/CheckSymbolExists.c.o] Error 1
+make: *** [cmTryCompileExec2910646188/fast] Error 2
+
+File /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <netinet/in.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef IPPROTO_IPV4
+  return ((int*)(&IPPROTO_IPV4))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Performing C SOURCE FILE Test DO_SOCK_DECL failed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4240351713/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4240351713.dir/build.make CMakeFiles/cmTryCompileExec4240351713.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4240351713.dir/src.c.o
+/usr/bin/cc   -Wall -Wno-unused -DDO_SOCK_DECL   -o CMakeFiles/cmTryCompileExec4240351713.dir/src.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.c
+/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.c:5:16: error: conflicting types for 'connect'
+     extern int connect(int, const struct sockaddr *, int);
+                ^
+In file included from /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.c:3:0:
+/usr/include/x86_64-linux-gnu/sys/socket.h:137:12: note: previous declaration of 'connect' was here
+ extern int connect (int __fd, __CONST_SOCKADDR_ARG __addr, socklen_t __len);
+            ^
+/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.c:6:16: error: conflicting types for 'send'
+     extern int send(int, const void *, int, int);
+                ^
+In file included from /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.c:3:0:
+/usr/include/x86_64-linux-gnu/sys/socket.h:149:16: note: previous declaration of 'send' was here
+ extern ssize_t send (int __fd, const void *__buf, size_t __n, int __flags);
+                ^
+/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.c:7:16: error: conflicting types for 'recvfrom'
+     extern int recvfrom(int, void *, int, int, struct sockaddr *, int *);
+                ^
+In file included from /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.c:3:0:
+/usr/include/x86_64-linux-gnu/sys/socket.h:174:16: note: previous declaration of 'recvfrom' was here
+ extern ssize_t recvfrom (int __fd, void *__restrict __buf, size_t __n,
+                ^
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec4240351713.dir/src.c.o] Error 1
+make: *** [cmTryCompileExec4240351713/fast] Error 2
+
+Source file was:
+
+    #include <sys/types.h>
+    #include <sys/socket.h>
+    extern int socket(int, int, int);
+    extern int connect(int, const struct sockaddr *, int);
+    extern int send(int, const void *, int, int);
+    extern int recvfrom(int, void *, int, int, struct sockaddr *, int *);
+    int main() { return 0; }
+
+Performing C++ SOURCE FILE Test SYSLOG_INT failed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1881241958/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1881241958.dir/build.make CMakeFiles/cmTryCompileExec1881241958.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1881241958.dir/src.cxx.o
+/usr/bin/c++    -Wall -Wno-unused -DSYSLOG_INT   -o CMakeFiles/cmTryCompileExec1881241958.dir/src.cxx.o -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.cxx
+/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.cxx:5:64: error: declaration of C function 'int openlog(const char*, int, int)' conflicts with
+         int openlog(const char* ident, int logopt, int facility);
+                                                                ^
+In file included from /usr/include/syslog.h:1:0,
+                 from /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.cxx:3:
+/usr/include/x86_64-linux-gnu/sys/syslog.h:181:13: error: previous declaration 'void openlog(const char*, int, int)' here
+ extern void openlog (const char *__ident, int __option, int __facility);
+             ^
+/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.cxx:6:62: error: declaration of C function 'int syslog(int, const char*, ...)' conflicts with
+         int syslog(int priority, const char* message_fmt, ...);
+                                                              ^
+In file included from /usr/include/syslog.h:1:0,
+                 from /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.cxx:3:
+/usr/include/x86_64-linux-gnu/sys/syslog.h:190:13: error: previous declaration 'void syslog(int, const char*, ...)' here
+ extern void syslog (int __pri, const char *__fmt, ...)
+             ^
+/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.cxx:7:22: error: declaration of C function 'int closelog()' conflicts with
+         int closelog();
+                      ^
+In file included from /usr/include/syslog.h:1:0,
+                 from /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.cxx:3:
+/usr/include/x86_64-linux-gnu/sys/syslog.h:175:13: error: previous declaration 'void closelog()' here
+ extern void closelog (void);
+             ^
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec1881241958.dir/src.cxx.o] Error 1
+make: *** [cmTryCompileExec1881241958/fast] Error 2
+
+Source file was:
+
+    #include <stdlib.h>
+    #include <syslog.h>
+    extern "C" {
+        int openlog(const char* ident, int logopt, int facility);
+        int syslog(int priority, const char* message_fmt, ...);
+        int closelog();
+    }
+    int main() { return 0; }
+
+Determining if files pcap-int.h exist failed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4256451633/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4256451633.dir/build.make CMakeFiles/cmTryCompileExec4256451633.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4256451633.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -Wall -Wno-unused    -o CMakeFiles/cmTryCompileExec4256451633.dir/CheckIncludeFiles.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:22: fatal error: pcap-int.h: No such file or directory
+ #include <pcap-int.h>
+                      ^
+compilation terminated.
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec4256451633.dir/CheckIncludeFiles.c.o] Error 1
+make: *** [cmTryCompileExec4256451633/fast] Error 2
+
+Source:
+/* */
+#include <pcap-int.h>
+
+
+int main(){return 0;}
+
+Performing C SOURCE FILE Test LIBPCAP_PCAP_COMPILE_NOPCAP_HAS_ERROR_PARAMETER failed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2818431814/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2818431814.dir/build.make CMakeFiles/cmTryCompileExec2818431814.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2818431814.dir/src.c.o
+/usr/bin/cc   -Wall -Wno-unused -DLIBPCAP_PCAP_COMPILE_NOPCAP_HAS_ERROR_PARAMETER   -o CMakeFiles/cmTryCompileExec2818431814.dir/src.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.c
+/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.c: In function 'main':
+/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.c:17:9: error: too many arguments to function 'pcap_compile_nopcap'
+         snaplen, linktype, &fp, str, optimize, netmask, &error);
+         ^
+In file included from /usr/include/pcap.h:45:0,
+                 from /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.c:2:
+/usr/include/pcap/pcap.h:391:5: note: declared here
+ int pcap_compile_nopcap(int, int, struct bpf_program *,
+     ^
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec2818431814.dir/src.c.o] Error 1
+make: *** [cmTryCompileExec2818431814/fast] Error 2
+
+Source file was:
+
+#include <pcap.h>
+int main () {
+    int snaplen;
+    int linktype;
+    struct bpf_program fp;
+    int optimize;
+    bpf_u_int32 netmask;
+    char str[10];
+    char error[1024];
+    snaplen = 50;
+    linktype = DLT_EN10MB;
+    optimize = 1;
+    netmask = 0L;
+    str[0] = 'i'; str[1] = 'p'; str[2] = '\0';
+    (void)pcap_compile_nopcap(
+        snaplen, linktype, &fp, str, optimize, netmask, &error);
+    return 0;
+}
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2625093879/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2625093879.dir/build.make CMakeFiles/cmTryCompileExec2625093879.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2625093879.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -Wall -Wno-unused    -o CMakeFiles/cmTryCompileExec2625093879.dir/CheckSymbolExists.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec2625093879
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2625093879.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused     CMakeFiles/cmTryCompileExec2625093879.dir/CheckSymbolExists.c.o  -o cmTryCompileExec2625093879 -rdynamic 
+CMakeFiles/cmTryCompileExec2625093879.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec2625093879] Error 1
+make: *** [cmTryCompileExec2625093879/fast] Error 2
+
+File /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec666696962/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec666696962.dir/build.make CMakeFiles/cmTryCompileExec666696962.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec666696962.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -Wno-unused -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec666696962.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec666696962
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec666696962.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec666696962.dir/CheckFunctionExists.c.o  -o cmTryCompileExec666696962 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec666696962] Error 1
+make: *** [cmTryCompileExec666696962/fast] Error 2
+
+
+Determining if the function pcap_get_pfring_id exists failed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec470028688/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec470028688.dir/build.make CMakeFiles/cmTryCompileExec470028688.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec470028688.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG -DCHECK_FUNCTION_EXISTS=pcap_get_pfring_id   -o CMakeFiles/cmTryCompileExec470028688.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec470028688
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec470028688.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG -DCHECK_FUNCTION_EXISTS=pcap_get_pfring_id    CMakeFiles/cmTryCompileExec470028688.dir/CheckFunctionExists.c.o  -o cmTryCompileExec470028688 -rdynamic -lpcap 
+CMakeFiles/cmTryCompileExec470028688.dir/CheckFunctionExists.c.o: In function `main':
+/usr/share/cmake-2.8/Modules/CheckFunctionExists.c:11: undefined reference to `pcap_get_pfring_id'
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec470028688] Error 1
+make: *** [cmTryCompileExec470028688/fast] Error 2
+
+
+Performing C SOURCE FILE Test ns_initparse_works_none failed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec378331814/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec378331814.dir/build.make CMakeFiles/cmTryCompileExec378331814.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec378331814.dir/src.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG -Dns_initparse_works_none   -o CMakeFiles/cmTryCompileExec378331814.dir/src.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec378331814
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec378331814.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG -Dns_initparse_works_none    CMakeFiles/cmTryCompileExec378331814.dir/src.c.o  -o cmTryCompileExec378331814 -rdynamic 
+CMakeFiles/cmTryCompileExec378331814.dir/src.c.o: In function `main':
+/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.c:4: undefined reference to `ns_initparse'
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec378331814] Error 1
+make: *** [cmTryCompileExec378331814/fast] Error 2
+
+Source file was:
+
+        #include <arpa/nameser.h>
+        int main() {
+            ns_initparse(0, 0, 0);
+            return 0;
+        }
+
+Performing C SOURCE FILE Test res_mkquery_works_none failed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1575220592/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1575220592.dir/build.make CMakeFiles/cmTryCompileExec1575220592.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1575220592.dir/src.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG -Dres_mkquery_works_none   -o CMakeFiles/cmTryCompileExec1575220592.dir/src.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec1575220592
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1575220592.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG -Dres_mkquery_works_none    CMakeFiles/cmTryCompileExec1575220592.dir/src.c.o  -o cmTryCompileExec1575220592 -rdynamic 
+CMakeFiles/cmTryCompileExec1575220592.dir/src.c.o: In function `main':
+/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.c:8: undefined reference to `__res_mkquery'
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec1575220592] Error 1
+make: *** [cmTryCompileExec1575220592/fast] Error 2
+
+Source file was:
+
+        #include <sys/types.h>
+        #include <sys/socket.h>
+        #include <netinet/in.h>
+        #include <arpa/nameser.h>
+        #include <resolv.h>
+        int main() {
+            int (*p)() = res_mkquery;
+            return 0;
+        }
+
+Determining if the system is big endian passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec652302755/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec652302755.dir/build.make CMakeFiles/cmTryCompileExec652302755.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec652302755.dir/TestEndianess.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG    -o CMakeFiles/cmTryCompileExec652302755.dir/TestEndianess.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/TestEndianess.c
+Linking C executable cmTryCompileExec652302755
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec652302755.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG     CMakeFiles/cmTryCompileExec652302755.dir/TestEndianess.c.o  -o cmTryCompileExec652302755 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the system is big endian passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1755568521/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1755568521.dir/build.make CMakeFiles/cmTryCompileExec1755568521.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1755568521.dir/TestEndianess.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG    -o CMakeFiles/cmTryCompileExec1755568521.dir/TestEndianess.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/TestEndianess.c
+Linking C executable cmTryCompileExec1755568521
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1755568521.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG     CMakeFiles/cmTryCompileExec1755568521.dir/TestEndianess.c.o  -o cmTryCompileExec1755568521 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the htonll exist failed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2381947274/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2381947274.dir/build.make CMakeFiles/cmTryCompileExec2381947274.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2381947274.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG    -o CMakeFiles/cmTryCompileExec2381947274.dir/CheckSymbolExists.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: 'htonll' undeclared (first use in this function)
+   return ((int*)(&htonll))[argc];
+                   ^
+/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:13:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec2381947274.dir/CheckSymbolExists.c.o] Error 1
+make: *** [cmTryCompileExec2381947274/fast] Error 2
+
+File /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <arpa/inet.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef htonll
+  return ((int*)(&htonll))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if files sys/ethernet.h exist failed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1016942165/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1016942165.dir/build.make CMakeFiles/cmTryCompileExec1016942165.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1016942165.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG    -o CMakeFiles/cmTryCompileExec1016942165.dir/CheckIncludeFiles.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:26: fatal error: sys/ethernet.h: No such file or directory
+ #include <sys/ethernet.h>
+                          ^
+compilation terminated.
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec1016942165.dir/CheckIncludeFiles.c.o] Error 1
+make: *** [cmTryCompileExec1016942165/fast] Error 2
+
+Source:
+/* */
+#include <sys/ethernet.h>
+
+
+int main(){return 0;}
+
+Determining if files net/ethertypes.h exist failed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2512806948/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2512806948.dir/build.make CMakeFiles/cmTryCompileExec2512806948.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2512806948.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG    -o CMakeFiles/cmTryCompileExec2512806948.dir/CheckIncludeFiles.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:28: fatal error: net/ethertypes.h: No such file or directory
+ #include <net/ethertypes.h>
+                            ^
+compilation terminated.
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec2512806948.dir/CheckIncludeFiles.c.o] Error 1
+make: *** [cmTryCompileExec2512806948/fast] Error 2
+
+Source:
+/* */
+#include <net/ethertypes.h>
+
+
+int main(){return 0;}
+
+Determining if files os-proto.h exist failed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1332947158/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1332947158.dir/build.make CMakeFiles/cmTryCompileExec1332947158.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1332947158.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG    -o CMakeFiles/cmTryCompileExec1332947158.dir/CheckIncludeFiles.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:22: fatal error: os-proto.h: No such file or directory
+ #include <os-proto.h>
+                      ^
+compilation terminated.
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec1332947158.dir/CheckIncludeFiles.c.o] Error 1
+make: *** [cmTryCompileExec1332947158/fast] Error 2
+
+Source:
+/* */
+#include <os-proto.h>
+
+
+int main(){return 0;}
+
+Performing C SOURCE FILE Test HAVE_READLINE_HISTORY_ENTRIES failed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec704546759/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec704546759.dir/build.make CMakeFiles/cmTryCompileExec704546759.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec704546759.dir/src.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG -DHAVE_READLINE_HISTORY_ENTRIES   -o CMakeFiles/cmTryCompileExec704546759.dir/src.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.c
+/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.c:3:31: fatal error: readline/readline.h: No such file or directory
+ #include <readline/readline.h>
+                               ^
+compilation terminated.
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec704546759.dir/src.c.o] Error 1
+make: *** [cmTryCompileExec704546759/fast] Error 2
+
+Source file was:
+
+#include <stdio.h>
+#include <readline/readline.h>
+
+int main()
+{
+   HISTORY_STATE* tmp;
+   tmp->entries;
+  return 0;
+}
+
+Determining if files stdio.h;readline/readline.h exist failed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3120099283/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3120099283.dir/build.make CMakeFiles/cmTryCompileExec3120099283.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3120099283.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG    -o CMakeFiles/cmTryCompileExec3120099283.dir/CheckIncludeFiles.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:3:31: fatal error: readline/readline.h: No such file or directory
+ #include <readline/readline.h>
+                               ^
+compilation terminated.
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec3120099283.dir/CheckIncludeFiles.c.o] Error 1
+make: *** [cmTryCompileExec3120099283/fast] Error 2
+
+Source:
+/* */
+#include <stdio.h>
+#include <readline/readline.h>
+
+
+int main(){return 0;}
+
+Determining if files stdio.h;readline/history.h exist failed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec626452103/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec626452103.dir/build.make CMakeFiles/cmTryCompileExec626452103.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec626452103.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG    -o CMakeFiles/cmTryCompileExec626452103.dir/CheckIncludeFiles.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:3:30: fatal error: readline/history.h: No such file or directory
+ #include <readline/history.h>
+                              ^
+compilation terminated.
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec626452103.dir/CheckIncludeFiles.c.o] Error 1
+make: *** [cmTryCompileExec626452103/fast] Error 2
+
+Source:
+/* */
+#include <stdio.h>
+#include <readline/history.h>
+
+
+int main(){return 0;}
+
+Performing C SOURCE FILE Test SIN_LEN failed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2375307591/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2375307591.dir/build.make CMakeFiles/cmTryCompileExec2375307591.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2375307591.dir/src.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG -DSIN_LEN   -o CMakeFiles/cmTryCompileExec2375307591.dir/src.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.c
+/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.c: In function 'main':
+/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.c:7:7: error: 'struct sockaddr_in' has no member named 'sin_len'
+    tmp->sin_len;
+       ^
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec2375307591.dir/src.c.o] Error 1
+make: *** [cmTryCompileExec2375307591/fast] Error 2
+
+Source file was:
+
+#include <netinet/in.h>
+
+int main()
+{
+   struct sockaddr_in* tmp;
+   tmp->sin_len;
+  return 0;
+}
+
+Determining if the IPPROTO_IPV4 exist failed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2623596251/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2623596251.dir/build.make CMakeFiles/cmTryCompileExec2623596251.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2623596251.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG    -o CMakeFiles/cmTryCompileExec2623596251.dir/CheckSymbolExists.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: 'IPPROTO_IPV4' undeclared (first use in this function)
+   return ((int*)(&IPPROTO_IPV4))[argc];
+                   ^
+/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:13:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec2623596251.dir/CheckSymbolExists.c.o] Error 1
+make: *** [cmTryCompileExec2623596251/fast] Error 2
+
+File /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <netinet/in.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef IPPROTO_IPV4
+  return ((int*)(&IPPROTO_IPV4))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Performing C SOURCE FILE Test DO_SOCK_DECL failed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3341979058/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3341979058.dir/build.make CMakeFiles/cmTryCompileExec3341979058.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3341979058.dir/src.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG -DDO_SOCK_DECL   -o CMakeFiles/cmTryCompileExec3341979058.dir/src.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.c
+/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.c:5:16: error: conflicting types for 'connect'
+     extern int connect(int, const struct sockaddr *, int);
+                ^
+In file included from /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.c:3:0:
+/usr/include/x86_64-linux-gnu/sys/socket.h:137:12: note: previous declaration of 'connect' was here
+ extern int connect (int __fd, __CONST_SOCKADDR_ARG __addr, socklen_t __len);
+            ^
+/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.c:6:16: error: conflicting types for 'send'
+     extern int send(int, const void *, int, int);
+                ^
+In file included from /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.c:3:0:
+/usr/include/x86_64-linux-gnu/sys/socket.h:149:16: note: previous declaration of 'send' was here
+ extern ssize_t send (int __fd, const void *__buf, size_t __n, int __flags);
+                ^
+/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.c:7:16: error: conflicting types for 'recvfrom'
+     extern int recvfrom(int, void *, int, int, struct sockaddr *, int *);
+                ^
+In file included from /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.c:3:0:
+/usr/include/x86_64-linux-gnu/sys/socket.h:174:16: note: previous declaration of 'recvfrom' was here
+ extern ssize_t recvfrom (int __fd, void *__restrict __buf, size_t __n,
+                ^
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec3341979058.dir/src.c.o] Error 1
+make: *** [cmTryCompileExec3341979058/fast] Error 2
+
+Source file was:
+
+    #include <sys/types.h>
+    #include <sys/socket.h>
+    extern int socket(int, int, int);
+    extern int connect(int, const struct sockaddr *, int);
+    extern int send(int, const void *, int, int);
+    extern int recvfrom(int, void *, int, int, struct sockaddr *, int *);
+    int main() { return 0; }
+
+Performing C++ SOURCE FILE Test SYSLOG_INT failed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2647800230/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2647800230.dir/build.make CMakeFiles/cmTryCompileExec2647800230.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2647800230.dir/src.cxx.o
+/usr/bin/c++    -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG -DSYSLOG_INT   -o CMakeFiles/cmTryCompileExec2647800230.dir/src.cxx.o -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.cxx
+/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.cxx:5:64: error: declaration of C function 'int openlog(const char*, int, int)' conflicts with
+         int openlog(const char* ident, int logopt, int facility);
+                                                                ^
+In file included from /usr/include/syslog.h:1:0,
+                 from /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.cxx:3:
+/usr/include/x86_64-linux-gnu/sys/syslog.h:181:13: error: previous declaration 'void openlog(const char*, int, int)' here
+ extern void openlog (const char *__ident, int __option, int __facility);
+             ^
+/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.cxx:6:62: error: declaration of C function 'int syslog(int, const char*, ...)' conflicts with
+         int syslog(int priority, const char* message_fmt, ...);
+                                                              ^
+In file included from /usr/include/syslog.h:1:0,
+                 from /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.cxx:3:
+/usr/include/x86_64-linux-gnu/sys/syslog.h:190:13: error: previous declaration 'void syslog(int, const char*, ...)' here
+ extern void syslog (int __pri, const char *__fmt, ...)
+             ^
+/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.cxx:7:22: error: declaration of C function 'int closelog()' conflicts with
+         int closelog();
+                      ^
+In file included from /usr/include/syslog.h:1:0,
+                 from /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.cxx:3:
+/usr/include/x86_64-linux-gnu/sys/syslog.h:175:13: error: previous declaration 'void closelog()' here
+ extern void closelog (void);
+             ^
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec2647800230.dir/src.cxx.o] Error 1
+make: *** [cmTryCompileExec2647800230/fast] Error 2
+
+Source file was:
+
+    #include <stdlib.h>
+    #include <syslog.h>
+    extern "C" {
+        int openlog(const char* ident, int logopt, int facility);
+        int syslog(int priority, const char* message_fmt, ...);
+        int closelog();
+    }
+    int main() { return 0; }
+
+Determining if files pcap-int.h exist failed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec961145472/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec961145472.dir/build.make CMakeFiles/cmTryCompileExec961145472.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec961145472.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG    -o CMakeFiles/cmTryCompileExec961145472.dir/CheckIncludeFiles.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:22: fatal error: pcap-int.h: No such file or directory
+ #include <pcap-int.h>
+                      ^
+compilation terminated.
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec961145472.dir/CheckIncludeFiles.c.o] Error 1
+make: *** [cmTryCompileExec961145472/fast] Error 2
+
+Source:
+/* */
+#include <pcap-int.h>
+
+
+int main(){return 0;}
+
+Performing C SOURCE FILE Test LIBPCAP_PCAP_COMPILE_NOPCAP_HAS_ERROR_PARAMETER failed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2215940021/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2215940021.dir/build.make CMakeFiles/cmTryCompileExec2215940021.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2215940021.dir/src.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG -DLIBPCAP_PCAP_COMPILE_NOPCAP_HAS_ERROR_PARAMETER   -o CMakeFiles/cmTryCompileExec2215940021.dir/src.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.c
+/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.c: In function 'main':
+/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.c:17:9: error: too many arguments to function 'pcap_compile_nopcap'
+         snaplen, linktype, &fp, str, optimize, netmask, &error);
+         ^
+In file included from /usr/include/pcap.h:45:0,
+                 from /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.c:2:
+/usr/include/pcap/pcap.h:391:5: note: declared here
+ int pcap_compile_nopcap(int, int, struct bpf_program *,
+     ^
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec2215940021.dir/src.c.o] Error 1
+make: *** [cmTryCompileExec2215940021/fast] Error 2
+
+Source file was:
+
+#include <pcap.h>
+int main () {
+    int snaplen;
+    int linktype;
+    struct bpf_program fp;
+    int optimize;
+    bpf_u_int32 netmask;
+    char str[10];
+    char error[1024];
+    snaplen = 50;
+    linktype = DLT_EN10MB;
+    optimize = 1;
+    netmask = 0L;
+    str[0] = 'i'; str[1] = 'p'; str[2] = '\0';
+    (void)pcap_compile_nopcap(
+        snaplen, linktype, &fp, str, optimize, netmask, &error);
+    return 0;
+}
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2170006218/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2170006218.dir/build.make CMakeFiles/cmTryCompileExec2170006218.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2170006218.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG    -o CMakeFiles/cmTryCompileExec2170006218.dir/CheckSymbolExists.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec2170006218
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2170006218.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG     CMakeFiles/cmTryCompileExec2170006218.dir/CheckSymbolExists.c.o  -o cmTryCompileExec2170006218 -rdynamic 
+CMakeFiles/cmTryCompileExec2170006218.dir/CheckSymbolExists.c.o: In function `main':
+/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8: undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec2170006218] Error 1
+make: *** [cmTryCompileExec2170006218/fast] Error 2
+
+File /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3759717810/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3759717810.dir/build.make CMakeFiles/cmTryCompileExec3759717810.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3759717810.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec3759717810.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3759717810
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3759717810.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec3759717810.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3759717810 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec3759717810] Error 1
+make: *** [cmTryCompileExec3759717810/fast] Error 2
+
+

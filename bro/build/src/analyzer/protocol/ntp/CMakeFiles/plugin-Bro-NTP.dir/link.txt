@@ -1,0 +1,2 @@
+/usr/bin/ar cr libplugin-Bro-NTP.a  CMakeFiles/plugin-Bro-NTP.dir/NTP.cc.o CMakeFiles/plugin-Bro-NTP.dir/Plugin.cc.o CMakeFiles/plugin-Bro-NTP.dir/events.bif.cc.o CMakeFiles/plugin-Bro-NTP.dir/events.bif.init.cc.o
+/usr/bin/ranlib libplugin-Bro-NTP.a

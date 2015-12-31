@@ -1,0 +1,2 @@
+/usr/bin/ar cr libplugin-Bro-FileDataEvent.a  CMakeFiles/plugin-Bro-FileDataEvent.dir/DataEvent.cc.o CMakeFiles/plugin-Bro-FileDataEvent.dir/Plugin.cc.o CMakeFiles/plugin-Bro-FileDataEvent.dir/__/__/Analyzer.cc.o
+/usr/bin/ranlib libplugin-Bro-FileDataEvent.a
