@@ -1,0 +1,4 @@
+type POPPASSD_PDU = record {
+	command: RE/(user )|(pass )|(newpass )/;
+	data : bytestring &restofdata;
+} &byteorder=bigendian;
