@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/rhost/Downloads/bro-2.4.1/aux/broccoli/test/broenum.c
+sys/types.h
+-
+sys/time.h
+-
+stdio.h
+-
+stdlib.h
+-
+time.h
+-
+errno.h
+-
+broccoli.h
+-
+config.h
+-
+
+aux/broccoli/config.h
+
+aux/broccoli/test/../src/broccoli.h
+inttypes.h
+-
+unistd.h
+-
+sys/types.h
+-
+stdlib.h
+-
+winsock.h
+-
+netinet/in.h
+-
+openssl/crypto.h
+-
+pcap.h
+-
+

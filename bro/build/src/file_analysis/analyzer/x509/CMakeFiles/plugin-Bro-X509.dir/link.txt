@@ -1,0 +1,2 @@
+/usr/bin/ar cr libplugin-Bro-X509.a  CMakeFiles/plugin-Bro-X509.dir/X509.cc.o CMakeFiles/plugin-Bro-X509.dir/Plugin.cc.o CMakeFiles/plugin-Bro-X509.dir/events.bif.cc.o CMakeFiles/plugin-Bro-X509.dir/events.bif.init.cc.o CMakeFiles/plugin-Bro-X509.dir/types.bif.cc.o CMakeFiles/plugin-Bro-X509.dir/types.bif.init.cc.o CMakeFiles/plugin-Bro-X509.dir/functions.bif.cc.o CMakeFiles/plugin-Bro-X509.dir/functions.bif.init.cc.o
+/usr/bin/ranlib libplugin-Bro-X509.a

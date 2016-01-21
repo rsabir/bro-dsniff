@@ -1,1 +1,178 @@
-../../aux/binpac/CHANGES
+
+0.44 | 2015-04-27 08:25:17 -0700
+
+	* Release 0.44.
+
+0.43-8 | 2015-04-21 20:11:06 -0700
+
+  * Adding missing include. (Robin Sommer)
+
+0.43-7 | 2015-04-21 13:45:20 -0700
+
+  * BIT-1343: Extend %include to work with relative paths. (Jon Siwek)
+
+0.43-5 | 2015-04-09 12:09:04 -0700
+
+  * BIT-1361: Improve boundary checks of records that use &length.
+    (Jon Siwek)
+
+0.43 | 2015-01-23 09:56:59 -0600
+
+  * Fix potential out-of-bounds memory reads in generated code.
+    CVE-2014-9586.  (John Villamil and Chris Rohlf - Yahoo Paranoids,
+    Jon Siwek)
+
+0.42-9 | 2014-11-03 10:05:17 -0600
+
+  * Separate declaration of binpac::init from definition. (Jon Siwek)
+
+0.42-6 | 2014-10-31 17:42:21 -0700
+
+  * Adding a new binpac::init() function that must be called by the
+    host before anything else. Internally, this function compiles all
+    regular expressions, avoiding to do that inside the regexp
+    constructor. (Robin Sommer)
+
+0.42 | 2014-04-08 15:24:11 -0700
+
+  * Release 0.42.
+
+0.41-5 | 2014-04-08 15:23:48 -0700
+
+  * Request format macros from inttypes.h explicitly. This helps
+    ensure the availability of PRI* macros from .pac files, which
+    cannot create this definition themselves since the inclusion of
+    binpac.h is hardcoded to be placed very early in the generated
+    code and already includes inttypes.h itself. (Jon Siwek)
+
+0.41 | 2013-10-14 09:24:54 -0700
+
+  * Updating copyright notice. (Robin Sommer)
+    
+0.4-5 | 2013-10-02 10:33:05 -0700
+
+  * Fix uninitialized (or unused) fields. (Jon Siwek)
+
+  * Generate initialization code for external types. Numeric/pointer
+    types can be initialized to 0. (Jon Siwek)
+
+  * Optimize negative string length check. (Jon Siwek)
+    
+  * Fix for setting REPO in Makefile. (Robin Sommer)
+
+0.4 | 2013-09-23 20:56:19 -0700
+
+  * Update 'make dist' target. (Jon Siwek)
+
+  * Change submodules to fixed URL. (Jon Siwek)
+
+  * Add virtual dtor to RefCount base class. (Jon Siwek)
+
+0.34-24 | 2013-09-12 15:49:51 -0500
+
+  * Add missing break to switch statement case. (Jon Siwek)
+
+  * Remove unreachable code. (Jon Siwek)
+
+  * Add missing va_end()'s to match va_start()'s. (Jon Siwek)
+
+  * Fix two use-after-free bugs. (Jon Siwek)
+
+  * Fix double-free. (Jon Siwek)
+
+  * Remove some answers from the Q&A section of README (Daniel Thayer)
+
+  * Add BinPAC documentation from the old Bro wiki (Daniel Thayer)
+
+0.34-11 | 2013-07-24 18:35:28 -0700
+
+  * Adding an interface to manually control the buffering for
+    generated parsers. (Robin Sommer)
+
+    This consists of two parts:
+
+        1. The generated Flow classes expose their flow buffers via a new
+           method flow_buffer().
+
+        2. Flow buffers get two new methods:
+
+            // Interface for delayed parsing. Sometimes BinPAC doesn't get the
+            // buffering right and then one can use these to feed parts
+            // individually and assemble them internally. After calling
+            // FinishBuffer(), one can send the uppper-layer flow an FlowEOF()
+            // to trigger parsing.
+            void BufferData(const_byteptr data, const_byteptr end);
+            void FinishBuffer(); (Robin Sommer)
+
+0.34-8 | 2013-04-27 15:04:23 -0700
+
+  * Fix an exception slicing issue in binpac generated cleanup code.
+    (Jon Siwek)
+
+  * s/bro-ids.org/bro.org/g (Robin Sommer)
+    
+0.34-3 | 2012-11-13 17:24:24 -0800
+
+  * Add scoping to usages of binpac::Exception classes in generated
+    code. This allows analyzers to define their own types of the same
+    name without mistakingly overshadowing the usages of
+    binpac::Exception and its derived types in the generated parser
+    code. (Jon Siwek)
+
+0.34 | 2012-08-01 13:54:39 -0500
+
+  * Fix configure script to exit with non-zero status on error (Jon
+    Siwek)
+
+0.33 | 2012-07-24 09:05:37 -0700
+
+  * Silence warning for generated code when compiling with clang.
+    (Robin Sommer)
+
+0.32 | 2012-06-11 17:25:04 -0700
+
+  * Change binpac.h integral typedefs and reimplement 64-bit
+    pac_swap(). Addresses #761. (Jon Siwek)
+
+  * Adding int64 and uint64 types to binpac. (Seth Hall)
+
+  * Raise minimum required CMake version to 2.6.3 (Jon Siwek)
+
+0.31 | 2012-01-09 16:11:01 -0800
+
+  * Submodule README conformity changes. (Jon Siwek)
+
+  * Fix parallel make portability. (Jon Siwek)
+
+0.3 | 2011-10-25 17:41:31 -0700
+
+  * Change distclean to only remove build dir. (Jon Siwek)
+
+  * Make dist now cleans the copied source. (Jon Siwek)
+
+  * Distribution cleanup. (Jon Siwek and Robin Sommer)
+
+  * Arrays now suport the &transient attribute.
+
+    If set, parsed elements won't actually be added to the array, and
+    read access to the array aren't permitted. This is helpful to save
+    memory in the case of large arrays for which elements don't need
+    (or can't) be buffered. (Robin Sommer)
+
+  * Install binaries with an RPATH. (Jon Siwek)
+
+  * Workaround for FreeBSD CMake port missing debug flags. (Jon Siwek)
+
+
+0.2 | 2011-04-18 12:50:21 -0700
+
+  * Converting build process to CMake (Jon Siwek).
+
+  * Fixing crash with undefined case expressions. (Robin Sommer)
+
+    Found by Emmanuele Zambon.
+
+  * A command line -q flag to quiet the output, plus a fix for a small
+    compiler warning. (Seth Hall)
+
+  * Initial import of Bro's binpac subdirectory from SVN r7088. (Jon Siwek)

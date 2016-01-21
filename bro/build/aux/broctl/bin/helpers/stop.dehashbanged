@@ -1,0 +1,6 @@
+#!/bin/bash
+#
+#  stop <pid> <signal>
+
+kill -$2 $1
+

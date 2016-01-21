@@ -1,0 +1,2 @@
+/usr/bin/ar cr libplugin-Bro-RDP.a  CMakeFiles/plugin-Bro-RDP.dir/RDP.cc.o CMakeFiles/plugin-Bro-RDP.dir/Plugin.cc.o CMakeFiles/plugin-Bro-RDP.dir/events.bif.cc.o CMakeFiles/plugin-Bro-RDP.dir/events.bif.init.cc.o CMakeFiles/plugin-Bro-RDP.dir/types.bif.cc.o CMakeFiles/plugin-Bro-RDP.dir/types.bif.init.cc.o CMakeFiles/plugin-Bro-RDP.dir/rdp_pac.cc.o
+/usr/bin/ranlib libplugin-Bro-RDP.a

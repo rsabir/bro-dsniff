@@ -1,4 +1,0 @@
-
-module InputRaw;
-
-const record_separator: string;

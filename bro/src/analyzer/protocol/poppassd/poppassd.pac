@@ -1,7 +1,3 @@
-# Analyzer for Poppassd Protocol
-#  - poppassd-protocol.pac: describes the poppassd protocol messages
-#  - poppassd-analyzer.pac: describes the poppassd analyzer code
-
 %include binpac.pac
 %include bro.pac
 

@@ -1,0 +1,2 @@
+/usr/bin/ar cr libplugin-Bro-DCE_RPC.a  CMakeFiles/plugin-Bro-DCE_RPC.dir/DCE_RPC.cc.o CMakeFiles/plugin-Bro-DCE_RPC.dir/Plugin.cc.o CMakeFiles/plugin-Bro-DCE_RPC.dir/events.bif.cc.o CMakeFiles/plugin-Bro-DCE_RPC.dir/events.bif.init.cc.o CMakeFiles/plugin-Bro-DCE_RPC.dir/dce_rpc_pac.cc.o CMakeFiles/plugin-Bro-DCE_RPC.dir/dce_rpc_simple_pac.cc.o
+/usr/bin/ranlib libplugin-Bro-DCE_RPC.a

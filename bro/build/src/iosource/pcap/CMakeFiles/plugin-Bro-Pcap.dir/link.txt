@@ -1,0 +1,2 @@
+/usr/bin/ar cr libplugin-Bro-Pcap.a  CMakeFiles/plugin-Bro-Pcap.dir/Source.cc.o CMakeFiles/plugin-Bro-Pcap.dir/Dumper.cc.o CMakeFiles/plugin-Bro-Pcap.dir/Plugin.cc.o
+/usr/bin/ranlib libplugin-Bro-Pcap.a

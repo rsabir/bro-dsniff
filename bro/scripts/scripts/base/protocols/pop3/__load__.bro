@@ -1,2 +1,0 @@
-
-@load-sigs ./dpd.sig

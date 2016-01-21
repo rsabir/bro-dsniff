@@ -1,0 +1,163 @@
+#! /usr/bin/env python
+#
+# stats-to-csv <stats.log> <meta.dat> <wwwdir>
+#
+# Reads information from stats log and outputs csv files
+# <wwwdir>/<node>.<type>.csv.
+# If any of these files already exists, we append (without writing the header
+# line again).
+
+from __future__ import print_function
+import os
+import sys
+
+Workers = set()
+Proxies = set()
+
+def readNodes(meta):
+    with open(meta, "r") as f:
+        for line in f:
+            m = line.split()
+
+            if m[0] == "node":
+                if len(m) < 3:
+                    print("error: 'node' line in meta.dat is missing some fields")
+                    sys.exit(1)
+
+                if m[2] == "worker":
+                    Workers.add(m[1])
+
+                if m[2] == "proxy":
+                    Workers.add(m[1])
+
+def processNode(stats, wwwdir, node, iface, use_cflow=False):
+
+    print(node, "...")
+
+    def openFile(tag, columns):
+
+        name = os.path.join(wwwdir, "%s.%s.csv" % (node, tag))
+
+        if os.path.exists(name):
+            f = open(name, "a")
+        else:
+            f = open(name, "w")
+            f.write("time,%s\n" % ",".join(columns))
+
+        return f
+
+    if use_cflow:
+        cflow = openFile("in", ["MBits/sec"])
+    else:
+        cpu = openFile("cpu", ["CPU"])
+        mem = openFile("mem", ["Memory"])
+        if iface:
+            iface_mbps = openFile("mbps", ["MBits/sec"])
+            iface_pkts = openFile("pkts", ["TCP", "UDP", "ICMP", "Other"])
+
+    def printEntry(t, entry):
+        if not entry:
+            return
+
+        if use_cflow:
+            e = entry.get("in-mbps")
+            if e:
+                cflow.write("%s,%s\n" % (t, e))
+            return
+
+        try:
+            val = int(entry["parent-cpu"]) + int(entry["child-cpu"])
+            cpu.write("%s,%s\n" % (t, val))
+        except KeyError:
+            pass
+
+        try:
+            val = int(entry["parent-vsize"]) + int(entry["child-vsize"])
+            mem.write("%s,%s\n" % (t, val))
+        except KeyError:
+            pass
+
+        if iface:
+            e = entry.get("interface-mbps")
+            if e:
+                iface_mbps.write("%s,%s\n" % (t, e))
+
+            try:
+                tc = entry["interface-t"]
+                ud = entry["interface-u"]
+                ic = entry["interface-i"]
+                ot = entry["interface-o"]
+                iface_pkts.write("%s,%s,%s,%s,%s\n" % (t, tc, ud, ic, ot))
+
+            except KeyError:
+                pass
+
+    entry = {}
+    first = -1
+
+    with open(stats, "r") as ff:
+        for line in ff:
+            m = line.split()
+
+            if len(m) < 2:
+                print("error: line in stats.log has less than two fields")
+                sys.exit(1)
+
+            if m[1] != node:
+                continue
+
+            try:
+                t = float(m[0])
+            except ValueError:
+                print("error: line in stats.log has no timestamp")
+                sys.exit(1)
+
+            if t != first and first >= 0:
+                printEntry(t, entry)
+                entry = {}
+
+            first = t
+
+            if len(m) > 4:
+                entry["%s-%s" % (m[2], m[3])] = m[4]
+
+    if first >= 0:
+        printEntry(t, entry)
+
+    if use_cflow:
+        cflow.close()
+    else:
+        cpu.close()
+        mem.close()
+        if iface:
+            iface_mbps.close()
+            iface_pkts.close()
+
+if len(sys.argv) != 4:
+    print("usage: %s <stats.log> <meta.dat> <www-dir>" % sys.argv[0])
+    sys.exit(1)
+
+stats = sys.argv[1]
+meta = sys.argv[2]
+wwwdir = sys.argv[3]
+
+try:
+    os.mkdir(wwwdir)
+except OSError:
+    pass
+
+readNodes(meta)
+
+try:
+    for w in Workers:
+        processNode(stats, wwwdir, w, True)
+
+    for p in Proxies:
+        processNode(stats, wwwdir, p, False)
+
+    processNode(stats, wwwdir, "manager", False)
+    processNode(stats, wwwdir, "cflow", False, use_cflow=True)
+except IOError as err:
+    print("Error: %s" % err)
+    sys.exit(1)
+

@@ -1,6 +1,0 @@
-
-module InputSQLite;
-
-const set_separator: string;
-const unset_field: string;
-const empty_field: string;

@@ -1,0 +1,2 @@
+/usr/bin/ar cr libplugin-Bro-SMB.a  CMakeFiles/plugin-Bro-SMB.dir/SMB.cc.o CMakeFiles/plugin-Bro-SMB.dir/Plugin.cc.o CMakeFiles/plugin-Bro-SMB.dir/events.bif.cc.o CMakeFiles/plugin-Bro-SMB.dir/events.bif.init.cc.o CMakeFiles/plugin-Bro-SMB.dir/smb_pac.cc.o
+/usr/bin/ranlib libplugin-Bro-SMB.a

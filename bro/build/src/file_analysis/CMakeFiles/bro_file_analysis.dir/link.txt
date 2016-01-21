@@ -1,0 +1,2 @@
+/usr/bin/ar cr libbro_file_analysis.a  CMakeFiles/bro_file_analysis.dir/Manager.cc.o CMakeFiles/bro_file_analysis.dir/File.cc.o CMakeFiles/bro_file_analysis.dir/FileTimer.cc.o CMakeFiles/bro_file_analysis.dir/FileReassembler.cc.o CMakeFiles/bro_file_analysis.dir/Analyzer.cc.o CMakeFiles/bro_file_analysis.dir/AnalyzerSet.cc.o CMakeFiles/bro_file_analysis.dir/Component.cc.o CMakeFiles/bro_file_analysis.dir/Tag.cc.o CMakeFiles/bro_file_analysis.dir/file_analysis.bif.cc.o
+/usr/bin/ranlib libbro_file_analysis.a

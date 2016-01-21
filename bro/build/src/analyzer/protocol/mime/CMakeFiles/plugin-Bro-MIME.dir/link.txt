@@ -1,0 +1,2 @@
+/usr/bin/ar cr libplugin-Bro-MIME.a  CMakeFiles/plugin-Bro-MIME.dir/MIME.cc.o CMakeFiles/plugin-Bro-MIME.dir/Plugin.cc.o CMakeFiles/plugin-Bro-MIME.dir/events.bif.cc.o CMakeFiles/plugin-Bro-MIME.dir/events.bif.init.cc.o
+/usr/bin/ranlib libplugin-Bro-MIME.a

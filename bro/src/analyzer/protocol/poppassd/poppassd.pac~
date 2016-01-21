@@ -24,10 +24,7 @@ connection POPPASSD_Conn(bro_analyzer: BroAnalyzer) {
 
 # Now we define the flow:
 flow POPPASSD_Flow {
-
-
 	datagram = POPPASSD_PDU withcontext(connection, this);
-
 };
 
 %include poppassd-analyzer.pac

@@ -1,0 +1,2 @@
+/usr/bin/ar cr libplugin-Bro-Teredo.a  CMakeFiles/plugin-Bro-Teredo.dir/Teredo.cc.o CMakeFiles/plugin-Bro-Teredo.dir/Plugin.cc.o CMakeFiles/plugin-Bro-Teredo.dir/events.bif.cc.o CMakeFiles/plugin-Bro-Teredo.dir/events.bif.init.cc.o
+/usr/bin/ranlib libplugin-Bro-Teredo.a

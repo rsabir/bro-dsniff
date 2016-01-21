@@ -1,0 +1,20 @@
+This package will install Bro into the following location:
+
+    /usr/local/bro
+
+You may choose to update your PATH environment variable:
+
+    # For Bash
+    export PATH=/usr/local/bro/bin:$PATH
+
+    # For CSH
+    setenv PATH /usr/local/bro/bin:$PATH
+ 
+If you have more than one volume, please choose the install
+destination as the one that contains the root filesystem.
+
+If you have existing configuration files that are modified or
+otherwise different from the version included in the package,
+this installer will attempt to prevent overwirting them,
+but its also advisable to make your own backups of important
+files before proceeding.

@@ -1,0 +1,2 @@
+/usr/bin/ar cr libplugin-Bro-SMTP.a  CMakeFiles/plugin-Bro-SMTP.dir/SMTP.cc.o CMakeFiles/plugin-Bro-SMTP.dir/Plugin.cc.o CMakeFiles/plugin-Bro-SMTP.dir/events.bif.cc.o CMakeFiles/plugin-Bro-SMTP.dir/events.bif.init.cc.o CMakeFiles/plugin-Bro-SMTP.dir/functions.bif.cc.o CMakeFiles/plugin-Bro-SMTP.dir/functions.bif.init.cc.o
+/usr/bin/ranlib libplugin-Bro-SMTP.a

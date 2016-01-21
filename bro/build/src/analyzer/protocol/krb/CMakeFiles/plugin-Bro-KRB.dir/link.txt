@@ -1,0 +1,2 @@
+/usr/bin/ar cr libplugin-Bro-KRB.a  CMakeFiles/plugin-Bro-KRB.dir/Plugin.cc.o CMakeFiles/plugin-Bro-KRB.dir/KRB.cc.o CMakeFiles/plugin-Bro-KRB.dir/KRB_TCP.cc.o CMakeFiles/plugin-Bro-KRB.dir/types.bif.cc.o CMakeFiles/plugin-Bro-KRB.dir/types.bif.init.cc.o CMakeFiles/plugin-Bro-KRB.dir/events.bif.cc.o CMakeFiles/plugin-Bro-KRB.dir/events.bif.init.cc.o CMakeFiles/plugin-Bro-KRB.dir/krb_pac.cc.o CMakeFiles/plugin-Bro-KRB.dir/krb_TCP_pac.cc.o
+/usr/bin/ranlib libplugin-Bro-KRB.a

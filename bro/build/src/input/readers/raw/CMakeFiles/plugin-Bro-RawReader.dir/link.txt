@@ -1,0 +1,2 @@
+/usr/bin/ar cr libplugin-Bro-RawReader.a  CMakeFiles/plugin-Bro-RawReader.dir/Raw.cc.o CMakeFiles/plugin-Bro-RawReader.dir/Plugin.cc.o CMakeFiles/plugin-Bro-RawReader.dir/raw.bif.cc.o CMakeFiles/plugin-Bro-RawReader.dir/raw.bif.init.cc.o
+/usr/bin/ranlib libplugin-Bro-RawReader.a

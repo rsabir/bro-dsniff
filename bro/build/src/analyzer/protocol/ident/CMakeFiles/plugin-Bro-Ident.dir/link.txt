@@ -1,0 +1,2 @@
+/usr/bin/ar cr libplugin-Bro-Ident.a  CMakeFiles/plugin-Bro-Ident.dir/Ident.cc.o CMakeFiles/plugin-Bro-Ident.dir/Plugin.cc.o CMakeFiles/plugin-Bro-Ident.dir/events.bif.cc.o CMakeFiles/plugin-Bro-Ident.dir/events.bif.init.cc.o
+/usr/bin/ranlib libplugin-Bro-Ident.a

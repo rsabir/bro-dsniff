@@ -1,0 +1,2 @@
+/usr/bin/ar cr libplugin-Bro-SQLiteWriter.a  CMakeFiles/plugin-Bro-SQLiteWriter.dir/SQLite.cc.o CMakeFiles/plugin-Bro-SQLiteWriter.dir/Plugin.cc.o CMakeFiles/plugin-Bro-SQLiteWriter.dir/sqlite.bif.cc.o CMakeFiles/plugin-Bro-SQLiteWriter.dir/sqlite.bif.init.cc.o
+/usr/bin/ranlib libplugin-Bro-SQLiteWriter.a

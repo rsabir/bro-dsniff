@@ -1,0 +1,10 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	postgresql
+#open	2016-01-19-20-19-48
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p
+#types	time	string	addr	port	addr	port
+1453198974.586357	CS8Rjv79y7rEtYmP8	172.20.0.44	54330	172.20.0.43	5432
+#close	2016-01-19-20-19-48

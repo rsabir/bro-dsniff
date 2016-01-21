@@ -1,0 +1,2 @@
+/usr/bin/ar cr libplugin-Bro-Finger.a  CMakeFiles/plugin-Bro-Finger.dir/Finger.cc.o CMakeFiles/plugin-Bro-Finger.dir/Plugin.cc.o CMakeFiles/plugin-Bro-Finger.dir/events.bif.cc.o CMakeFiles/plugin-Bro-Finger.dir/events.bif.init.cc.o
+/usr/bin/ranlib libplugin-Bro-Finger.a

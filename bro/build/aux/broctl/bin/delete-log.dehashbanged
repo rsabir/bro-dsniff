@@ -1,0 +1,7 @@
+#!/bin/bash
+#
+# This script can be used as a Bro log postprocessor to simply *delete* 
+# the files after rotation.
+
+rm $1
+

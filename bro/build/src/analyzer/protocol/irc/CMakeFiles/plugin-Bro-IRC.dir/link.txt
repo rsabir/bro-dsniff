@@ -1,0 +1,2 @@
+/usr/bin/ar cr libplugin-Bro-IRC.a  CMakeFiles/plugin-Bro-IRC.dir/IRC.cc.o CMakeFiles/plugin-Bro-IRC.dir/Plugin.cc.o CMakeFiles/plugin-Bro-IRC.dir/events.bif.cc.o CMakeFiles/plugin-Bro-IRC.dir/events.bif.init.cc.o
+/usr/bin/ranlib libplugin-Bro-IRC.a

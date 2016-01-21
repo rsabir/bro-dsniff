@@ -1,0 +1,1 @@
+/usr/bin/c++    -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG -g    CMakeFiles/bifcl.dir/bif_parse.cc.o CMakeFiles/bifcl.dir/bif_lex.cc.o CMakeFiles/bifcl.dir/bif_arg.cc.o CMakeFiles/bifcl.dir/module_util.cc.o  -o bifcl -rdynamic 

@@ -1,0 +1,2 @@
+/usr/bin/ar cr libplugin-Bro-POP3.a  CMakeFiles/plugin-Bro-POP3.dir/POP3.cc.o CMakeFiles/plugin-Bro-POP3.dir/Plugin.cc.o CMakeFiles/plugin-Bro-POP3.dir/events.bif.cc.o CMakeFiles/plugin-Bro-POP3.dir/events.bif.init.cc.o
+/usr/bin/ranlib libplugin-Bro-POP3.a

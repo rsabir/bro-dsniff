@@ -1,0 +1,2227 @@
+The system is: Linux - 3.19.0-25-generic - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/2.8.12.2/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/2.8.12.2/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2332700106/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2332700106.dir/build.make CMakeFiles/cmTryCompileExec2332700106.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2332700106.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2332700106.dir/testCCompiler.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTryCompileExec2332700106
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2332700106.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec2332700106.dir/testCCompiler.c.o  -o cmTryCompileExec2332700106 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2482186340/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2482186340.dir/build.make CMakeFiles/cmTryCompileExec2482186340.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2482186340.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2482186340.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-2.8/Modules/CMakeCCompilerABI.c
+Linking C executable cmTryCompileExec2482186340
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2482186340.dir/link.txt --verbose=1
+/usr/bin/cc     -v CMakeFiles/cmTryCompileExec2482186340.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec2482186340 -rdynamic  
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.8.4-2ubuntu1~14.04' --with-bugurl=file:///usr/share/doc/gcc-4.8/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.8 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.8 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-libmudflap --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-4.8-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec2482186340' '-rdynamic' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec2482186340 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTryCompileExec2482186340.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec2482186340/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec2482186340.dir/build.make CMakeFiles/cmTryCompileExec2482186340.dir/build]
+  ignore line: [make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building C object CMakeFiles/cmTryCompileExec2482186340.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2482186340.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-2.8/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTryCompileExec2482186340]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2482186340.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc     -v CMakeFiles/cmTryCompileExec2482186340.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec2482186340 -rdynamic  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.8.4-2ubuntu1~14.04' --with-bugurl=file:///usr/share/doc/gcc-4.8/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.8 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.8 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-libmudflap --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-4.8-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec2482186340' '-rdynamic' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec2482186340 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTryCompileExec2482186340.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/collect2] ==> ignore
+    arg [--sysroot=/] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec2482186340] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..]
+    arg [CMakeFiles/cmTryCompileExec2482186340.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o] ==> ignore
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8] ==> [/usr/lib/gcc/x86_64-linux-gnu/4.8]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..] ==> [/usr/lib]
+  implicit libs: [c]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/4.8;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit fwks: []
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3032502683/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3032502683.dir/build.make CMakeFiles/cmTryCompileExec3032502683.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3032502683.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec3032502683.dir/testCXXCompiler.cxx.o -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTryCompileExec3032502683
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3032502683.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTryCompileExec3032502683.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec3032502683 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2553191732/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2553191732.dir/build.make CMakeFiles/cmTryCompileExec2553191732.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2553191732.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec2553191732.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTryCompileExec2553191732
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2553191732.dir/link.txt --verbose=1
+/usr/bin/c++      -v CMakeFiles/cmTryCompileExec2553191732.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec2553191732 -rdynamic  
+Using built-in specs.
+COLLECT_GCC=/usr/bin/c++
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.8.4-2ubuntu1~14.04' --with-bugurl=file:///usr/share/doc/gcc-4.8/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.8 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.8 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-libmudflap --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-4.8-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec2553191732' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec2553191732 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTryCompileExec2553191732.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec2553191732/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec2553191732.dir/build.make CMakeFiles/cmTryCompileExec2553191732.dir/build]
+  ignore line: [make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec2553191732.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTryCompileExec2553191732.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTryCompileExec2553191732]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2553191732.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++      -v CMakeFiles/cmTryCompileExec2553191732.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec2553191732 -rdynamic  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/c++]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.8.4-2ubuntu1~14.04' --with-bugurl=file:///usr/share/doc/gcc-4.8/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.8 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.8 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-libmudflap --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-4.8-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec2553191732' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec2553191732 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTryCompileExec2553191732.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/collect2] ==> ignore
+    arg [--sysroot=/] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec2553191732] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..]
+    arg [CMakeFiles/cmTryCompileExec2553191732.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o] ==> ignore
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8] ==> [/usr/lib/gcc/x86_64-linux-gnu/4.8]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..] ==> [/usr/lib]
+  implicit libs: [stdc++;m;c]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/4.8;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit fwks: []
+
+
+Performing C SOURCE FILE Test PCAP_LINKS_SOLO succeded with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec327904854/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec327904854.dir/build.make CMakeFiles/cmTryCompileExec327904854.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec327904854.dir/src.c.o
+/usr/bin/cc   -Wall -Wno-unused -DPCAP_LINKS_SOLO   -o CMakeFiles/cmTryCompileExec327904854.dir/src.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec327904854
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec327904854.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -DPCAP_LINKS_SOLO    CMakeFiles/cmTryCompileExec327904854.dir/src.c.o  -o cmTryCompileExec327904854 -rdynamic -lpcap 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C SOURCE FILE Test ns_initparse_works_libresolv.a succeded with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2242597479/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2242597479.dir/build.make CMakeFiles/cmTryCompileExec2242597479.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2242597479.dir/src.c.o
+/usr/bin/cc   -Wall -Wno-unused -Dns_initparse_works_libresolv.a   -o CMakeFiles/cmTryCompileExec2242597479.dir/src.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.c
+<command-line>:0:29: warning: missing whitespace after the macro name [enabled by default]
+Linking C executable cmTryCompileExec2242597479
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2242597479.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -Dns_initparse_works_libresolv.a    CMakeFiles/cmTryCompileExec2242597479.dir/src.c.o  -o cmTryCompileExec2242597479 -rdynamic -Wl,-Bstatic -lresolv -Wl,-Bdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+        #include <arpa/nameser.h>
+        int main() {
+            ns_initparse(0, 0, 0);
+            return 0;
+        }
+
+Performing C SOURCE FILE Test res_mkquery_works_libresolv.a succeded with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec257117349/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec257117349.dir/build.make CMakeFiles/cmTryCompileExec257117349.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec257117349.dir/src.c.o
+/usr/bin/cc   -Wall -Wno-unused -Dres_mkquery_works_libresolv.a   -o CMakeFiles/cmTryCompileExec257117349.dir/src.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.c
+<command-line>:0:28: warning: missing whitespace after the macro name [enabled by default]
+Linking C executable cmTryCompileExec257117349
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec257117349.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -Dres_mkquery_works_libresolv.a    CMakeFiles/cmTryCompileExec257117349.dir/src.c.o  -o cmTryCompileExec257117349 -rdynamic -Wl,-Bstatic -lresolv -Wl,-Bdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+        #include <sys/types.h>
+        #include <sys/socket.h>
+        #include <netinet/in.h>
+        #include <arpa/nameser.h>
+        #include <resolv.h>
+        int main() {
+            int (*p)() = res_mkquery;
+            return 0;
+        }
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec548991879/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec548991879.dir/build.make CMakeFiles/cmTryCompileExec548991879.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec548991879.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Wno-unused    -o CMakeFiles/cmTryCompileExec548991879.dir/CheckIncludeFile.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec548991879
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec548991879.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused     CMakeFiles/cmTryCompileExec548991879.dir/CheckIncludeFile.c.o  -o cmTryCompileExec548991879 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec884843465/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec884843465.dir/build.make CMakeFiles/cmTryCompileExec884843465.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec884843465.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Wno-unused    -o CMakeFiles/cmTryCompileExec884843465.dir/CheckIncludeFile.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec884843465
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec884843465.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused     CMakeFiles/cmTryCompileExec884843465.dir/CheckIncludeFile.c.o  -o cmTryCompileExec884843465 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1215391794/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1215391794.dir/build.make CMakeFiles/cmTryCompileExec1215391794.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1215391794.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Wno-unused    -o CMakeFiles/cmTryCompileExec1215391794.dir/CheckIncludeFile.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec1215391794
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1215391794.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused     CMakeFiles/cmTryCompileExec1215391794.dir/CheckIncludeFile.c.o  -o cmTryCompileExec1215391794 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Determining size of unsigned short passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3514593571/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3514593571.dir/build.make CMakeFiles/cmTryCompileExec3514593571.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3514593571.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o
+/usr/bin/cc   -Wall -Wno-unused    -o CMakeFiles/cmTryCompileExec3514593571.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CheckTypeSize/CMAKE_SIZEOF_UNSIGNED_SHORT.c
+Linking C executable cmTryCompileExec3514593571
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3514593571.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused     CMakeFiles/cmTryCompileExec3514593571.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o  -o cmTryCompileExec3514593571 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Determining size of unsigned int passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4234711109/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4234711109.dir/build.make CMakeFiles/cmTryCompileExec4234711109.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4234711109.dir/SIZEOF_UNSIGNED_INT.c.o
+/usr/bin/cc   -Wall -Wno-unused    -o CMakeFiles/cmTryCompileExec4234711109.dir/SIZEOF_UNSIGNED_INT.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CheckTypeSize/SIZEOF_UNSIGNED_INT.c
+Linking C executable cmTryCompileExec4234711109
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4234711109.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused     CMakeFiles/cmTryCompileExec4234711109.dir/SIZEOF_UNSIGNED_INT.c.o  -o cmTryCompileExec4234711109 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Determining size of long int passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1302962503/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1302962503.dir/build.make CMakeFiles/cmTryCompileExec1302962503.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1302962503.dir/SIZEOF_LONG_INT.c.o
+/usr/bin/cc   -Wall -Wno-unused    -o CMakeFiles/cmTryCompileExec1302962503.dir/SIZEOF_LONG_INT.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CheckTypeSize/SIZEOF_LONG_INT.c
+Linking C executable cmTryCompileExec1302962503
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1302962503.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused     CMakeFiles/cmTryCompileExec1302962503.dir/SIZEOF_LONG_INT.c.o  -o cmTryCompileExec1302962503 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Determining size of long long passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3217901557/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3217901557.dir/build.make CMakeFiles/cmTryCompileExec3217901557.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3217901557.dir/SIZEOF_LONG_LONG.c.o
+/usr/bin/cc   -Wall -Wno-unused    -o CMakeFiles/cmTryCompileExec3217901557.dir/SIZEOF_LONG_LONG.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CheckTypeSize/SIZEOF_LONG_LONG.c
+Linking C executable cmTryCompileExec3217901557
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3217901557.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused     CMakeFiles/cmTryCompileExec3217901557.dir/SIZEOF_LONG_LONG.c.o  -o cmTryCompileExec3217901557 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Determining size of void * passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1789424833/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1789424833.dir/build.make CMakeFiles/cmTryCompileExec1789424833.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1789424833.dir/SIZEOF_VOID_P.c.o
+/usr/bin/cc   -Wall -Wno-unused    -o CMakeFiles/cmTryCompileExec1789424833.dir/SIZEOF_VOID_P.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CheckTypeSize/SIZEOF_VOID_P.c
+Linking C executable cmTryCompileExec1789424833
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1789424833.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused     CMakeFiles/cmTryCompileExec1789424833.dir/SIZEOF_VOID_P.c.o  -o cmTryCompileExec1789424833 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Determining size of int32_t passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3901213159/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3901213159.dir/build.make CMakeFiles/cmTryCompileExec3901213159.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3901213159.dir/int32_t.c.o
+/usr/bin/cc   -Wall -Wno-unused    -o CMakeFiles/cmTryCompileExec3901213159.dir/int32_t.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CheckTypeSize/int32_t.c
+Linking C executable cmTryCompileExec3901213159
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3901213159.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused     CMakeFiles/cmTryCompileExec3901213159.dir/int32_t.c.o  -o cmTryCompileExec3901213159 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Determining size of u_int32_t passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2244263250/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2244263250.dir/build.make CMakeFiles/cmTryCompileExec2244263250.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2244263250.dir/u_int32_t.c.o
+/usr/bin/cc   -Wall -Wno-unused    -o CMakeFiles/cmTryCompileExec2244263250.dir/u_int32_t.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CheckTypeSize/u_int32_t.c
+Linking C executable cmTryCompileExec2244263250
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2244263250.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused     CMakeFiles/cmTryCompileExec2244263250.dir/u_int32_t.c.o  -o cmTryCompileExec2244263250 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Determining size of u_int16_t passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3550030287/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3550030287.dir/build.make CMakeFiles/cmTryCompileExec3550030287.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3550030287.dir/u_int16_t.c.o
+/usr/bin/cc   -Wall -Wno-unused    -o CMakeFiles/cmTryCompileExec3550030287.dir/u_int16_t.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CheckTypeSize/u_int16_t.c
+Linking C executable cmTryCompileExec3550030287
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3550030287.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused     CMakeFiles/cmTryCompileExec3550030287.dir/u_int16_t.c.o  -o cmTryCompileExec3550030287 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Determining size of u_int8_t passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3702345826/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3702345826.dir/build.make CMakeFiles/cmTryCompileExec3702345826.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3702345826.dir/u_int8_t.c.o
+/usr/bin/cc   -Wall -Wno-unused    -o CMakeFiles/cmTryCompileExec3702345826.dir/u_int8_t.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CheckTypeSize/u_int8_t.c
+Linking C executable cmTryCompileExec3702345826
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3702345826.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused     CMakeFiles/cmTryCompileExec3702345826.dir/u_int8_t.c.o  -o cmTryCompileExec3702345826 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Determining size of socklen_t passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec316732599/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec316732599.dir/build.make CMakeFiles/cmTryCompileExec316732599.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec316732599.dir/socklen_t.c.o
+/usr/bin/cc   -Wall -Wno-unused    -o CMakeFiles/cmTryCompileExec316732599.dir/socklen_t.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CheckTypeSize/socklen_t.c
+Linking C executable cmTryCompileExec316732599
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec316732599.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused     CMakeFiles/cmTryCompileExec316732599.dir/socklen_t.c.o  -o cmTryCompileExec316732599 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Determining size of struct ip6_opt passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2211682056/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2211682056.dir/build.make CMakeFiles/cmTryCompileExec2211682056.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2211682056.dir/IP6_OPT.c.o
+/usr/bin/cc   -Wall -Wno-unused    -o CMakeFiles/cmTryCompileExec2211682056.dir/IP6_OPT.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CheckTypeSize/IP6_OPT.c
+Linking C executable cmTryCompileExec2211682056
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2211682056.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused     CMakeFiles/cmTryCompileExec2211682056.dir/IP6_OPT.c.o  -o cmTryCompileExec2211682056 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Determining size of struct ip6_ext passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec884326423/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec884326423.dir/build.make CMakeFiles/cmTryCompileExec884326423.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec884326423.dir/IP6_EXT.c.o
+/usr/bin/cc   -Wall -Wno-unused    -o CMakeFiles/cmTryCompileExec884326423.dir/IP6_EXT.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CheckTypeSize/IP6_EXT.c
+Linking C executable cmTryCompileExec884326423
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec884326423.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused     CMakeFiles/cmTryCompileExec884326423.dir/IP6_EXT.c.o  -o cmTryCompileExec884326423 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Determining if files getopt.h exist passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec958983878/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec958983878.dir/build.make CMakeFiles/cmTryCompileExec958983878.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec958983878.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -Wall -Wno-unused    -o CMakeFiles/cmTryCompileExec958983878.dir/CheckIncludeFiles.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec958983878
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec958983878.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused     CMakeFiles/cmTryCompileExec958983878.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec958983878 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Determining if files memory.h exist passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1057603538/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1057603538.dir/build.make CMakeFiles/cmTryCompileExec1057603538.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1057603538.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -Wall -Wno-unused    -o CMakeFiles/cmTryCompileExec1057603538.dir/CheckIncludeFiles.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec1057603538
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1057603538.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused     CMakeFiles/cmTryCompileExec1057603538.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec1057603538 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Determining if files sys/socket.h;netinet/in.h;net/if.h;netinet/if_ether.h exist passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec317844352/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec317844352.dir/build.make CMakeFiles/cmTryCompileExec317844352.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec317844352.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -Wall -Wno-unused    -o CMakeFiles/cmTryCompileExec317844352.dir/CheckIncludeFiles.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec317844352
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec317844352.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused     CMakeFiles/cmTryCompileExec317844352.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec317844352 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Determining if files sys/socket.h;netinet/in.h;net/if.h;netinet/ip6.h exist passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2509396757/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2509396757.dir/build.make CMakeFiles/cmTryCompileExec2509396757.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2509396757.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -Wall -Wno-unused    -o CMakeFiles/cmTryCompileExec2509396757.dir/CheckIncludeFiles.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec2509396757
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2509396757.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused     CMakeFiles/cmTryCompileExec2509396757.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec2509396757 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Determining if files sys/socket.h;net/if.h;net/ethernet.h exist passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3825205918/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3825205918.dir/build.make CMakeFiles/cmTryCompileExec3825205918.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3825205918.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -Wall -Wno-unused    -o CMakeFiles/cmTryCompileExec3825205918.dir/CheckIncludeFiles.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec3825205918
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3825205918.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused     CMakeFiles/cmTryCompileExec3825205918.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec3825205918 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Determining if files sys/time.h exist passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1335107889/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1335107889.dir/build.make CMakeFiles/cmTryCompileExec1335107889.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1335107889.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -Wall -Wno-unused    -o CMakeFiles/cmTryCompileExec1335107889.dir/CheckIncludeFiles.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec1335107889
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1335107889.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused     CMakeFiles/cmTryCompileExec1335107889.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec1335107889 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Determining if files time.h;sys/time.h exist passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec291462252/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec291462252.dir/build.make CMakeFiles/cmTryCompileExec291462252.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec291462252.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -Wall -Wno-unused    -o CMakeFiles/cmTryCompileExec291462252.dir/CheckIncludeFiles.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec291462252
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec291462252.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused     CMakeFiles/cmTryCompileExec291462252.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec291462252 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the IPPROTO_HOPOPTS exist passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4288504706/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4288504706.dir/build.make CMakeFiles/cmTryCompileExec4288504706.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4288504706.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -Wall -Wno-unused    -o CMakeFiles/cmTryCompileExec4288504706.dir/CheckSymbolExists.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec4288504706
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4288504706.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused     CMakeFiles/cmTryCompileExec4288504706.dir/CheckSymbolExists.c.o  -o cmTryCompileExec4288504706 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+File /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <netinet/in.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef IPPROTO_HOPOPTS
+  return ((int*)(&IPPROTO_HOPOPTS))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the IPPROTO_IPV6 exist passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec488547713/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec488547713.dir/build.make CMakeFiles/cmTryCompileExec488547713.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec488547713.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -Wall -Wno-unused    -o CMakeFiles/cmTryCompileExec488547713.dir/CheckSymbolExists.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec488547713
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec488547713.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused     CMakeFiles/cmTryCompileExec488547713.dir/CheckSymbolExists.c.o  -o cmTryCompileExec488547713 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+File /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <netinet/in.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef IPPROTO_IPV6
+  return ((int*)(&IPPROTO_IPV6))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the IPPROTO_ROUTING exist passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec575179374/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec575179374.dir/build.make CMakeFiles/cmTryCompileExec575179374.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec575179374.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -Wall -Wno-unused    -o CMakeFiles/cmTryCompileExec575179374.dir/CheckSymbolExists.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec575179374
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec575179374.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused     CMakeFiles/cmTryCompileExec575179374.dir/CheckSymbolExists.c.o  -o cmTryCompileExec575179374 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+File /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <netinet/in.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef IPPROTO_ROUTING
+  return ((int*)(&IPPROTO_ROUTING))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the IPPROTO_FRAGMENT exist passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1571062456/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1571062456.dir/build.make CMakeFiles/cmTryCompileExec1571062456.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1571062456.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -Wall -Wno-unused    -o CMakeFiles/cmTryCompileExec1571062456.dir/CheckSymbolExists.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec1571062456
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1571062456.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused     CMakeFiles/cmTryCompileExec1571062456.dir/CheckSymbolExists.c.o  -o cmTryCompileExec1571062456 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+File /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <netinet/in.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef IPPROTO_FRAGMENT
+  return ((int*)(&IPPROTO_FRAGMENT))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the IPPROTO_ESP exist passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1698560582/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1698560582.dir/build.make CMakeFiles/cmTryCompileExec1698560582.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1698560582.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -Wall -Wno-unused    -o CMakeFiles/cmTryCompileExec1698560582.dir/CheckSymbolExists.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec1698560582
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1698560582.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused     CMakeFiles/cmTryCompileExec1698560582.dir/CheckSymbolExists.c.o  -o cmTryCompileExec1698560582 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+File /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <netinet/in.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef IPPROTO_ESP
+  return ((int*)(&IPPROTO_ESP))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the IPPROTO_AH exist passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec910656755/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec910656755.dir/build.make CMakeFiles/cmTryCompileExec910656755.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec910656755.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -Wall -Wno-unused    -o CMakeFiles/cmTryCompileExec910656755.dir/CheckSymbolExists.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec910656755
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec910656755.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused     CMakeFiles/cmTryCompileExec910656755.dir/CheckSymbolExists.c.o  -o cmTryCompileExec910656755 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+File /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <netinet/in.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef IPPROTO_AH
+  return ((int*)(&IPPROTO_AH))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the IPPROTO_ICMPV6 exist passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2251855082/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2251855082.dir/build.make CMakeFiles/cmTryCompileExec2251855082.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2251855082.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -Wall -Wno-unused    -o CMakeFiles/cmTryCompileExec2251855082.dir/CheckSymbolExists.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec2251855082
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2251855082.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused     CMakeFiles/cmTryCompileExec2251855082.dir/CheckSymbolExists.c.o  -o cmTryCompileExec2251855082 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+File /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <netinet/in.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef IPPROTO_ICMPV6
+  return ((int*)(&IPPROTO_ICMPV6))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the IPPROTO_NONE exist passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec582035430/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec582035430.dir/build.make CMakeFiles/cmTryCompileExec582035430.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec582035430.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -Wall -Wno-unused    -o CMakeFiles/cmTryCompileExec582035430.dir/CheckSymbolExists.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec582035430
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec582035430.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused     CMakeFiles/cmTryCompileExec582035430.dir/CheckSymbolExists.c.o  -o cmTryCompileExec582035430 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+File /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <netinet/in.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef IPPROTO_NONE
+  return ((int*)(&IPPROTO_NONE))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the IPPROTO_DSTOPTS exist passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2543261398/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2543261398.dir/build.make CMakeFiles/cmTryCompileExec2543261398.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2543261398.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -Wall -Wno-unused    -o CMakeFiles/cmTryCompileExec2543261398.dir/CheckSymbolExists.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec2543261398
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2543261398.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused     CMakeFiles/cmTryCompileExec2543261398.dir/CheckSymbolExists.c.o  -o cmTryCompileExec2543261398 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+File /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <netinet/in.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef IPPROTO_DSTOPTS
+  return ((int*)(&IPPROTO_DSTOPTS))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function getopt_long exists passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1891791496/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1891791496.dir/build.make CMakeFiles/cmTryCompileExec1891791496.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1891791496.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -Wno-unused -DCHECK_FUNCTION_EXISTS=getopt_long   -o CMakeFiles/cmTryCompileExec1891791496.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1891791496
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1891791496.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -DCHECK_FUNCTION_EXISTS=getopt_long    CMakeFiles/cmTryCompileExec1891791496.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1891791496 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function mallinfo exists passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1772347955/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1772347955.dir/build.make CMakeFiles/cmTryCompileExec1772347955.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1772347955.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -Wno-unused -DCHECK_FUNCTION_EXISTS=mallinfo   -o CMakeFiles/cmTryCompileExec1772347955.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1772347955
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1772347955.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -DCHECK_FUNCTION_EXISTS=mallinfo    CMakeFiles/cmTryCompileExec1772347955.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1772347955 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function strcasestr exists passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec903316546/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec903316546.dir/build.make CMakeFiles/cmTryCompileExec903316546.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec903316546.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -Wno-unused -DCHECK_FUNCTION_EXISTS=strcasestr   -o CMakeFiles/cmTryCompileExec903316546.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec903316546
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec903316546.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -DCHECK_FUNCTION_EXISTS=strcasestr    CMakeFiles/cmTryCompileExec903316546.dir/CheckFunctionExists.c.o  -o cmTryCompileExec903316546 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function strerror exists passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec32808832/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec32808832.dir/build.make CMakeFiles/cmTryCompileExec32808832.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec32808832.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -Wno-unused -DCHECK_FUNCTION_EXISTS=strerror   -o CMakeFiles/cmTryCompileExec32808832.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec32808832
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec32808832.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -DCHECK_FUNCTION_EXISTS=strerror    CMakeFiles/cmTryCompileExec32808832.dir/CheckFunctionExists.c.o  -o cmTryCompileExec32808832 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function strsep exists passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec381268248/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec381268248.dir/build.make CMakeFiles/cmTryCompileExec381268248.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec381268248.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -Wno-unused -DCHECK_FUNCTION_EXISTS=strsep   -o CMakeFiles/cmTryCompileExec381268248.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec381268248
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec381268248.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -DCHECK_FUNCTION_EXISTS=strsep    CMakeFiles/cmTryCompileExec381268248.dir/CheckFunctionExists.c.o  -o cmTryCompileExec381268248 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function sigset exists passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3965924006/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3965924006.dir/build.make CMakeFiles/cmTryCompileExec3965924006.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3965924006.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -Wno-unused -DCHECK_FUNCTION_EXISTS=sigset   -o CMakeFiles/cmTryCompileExec3965924006.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3965924006
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3965924006.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -DCHECK_FUNCTION_EXISTS=sigset    CMakeFiles/cmTryCompileExec3965924006.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3965924006 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function pcap_freecode exists passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3757160942/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3757160942.dir/build.make CMakeFiles/cmTryCompileExec3757160942.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3757160942.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -Wno-unused -DCHECK_FUNCTION_EXISTS=pcap_freecode   -o CMakeFiles/cmTryCompileExec3757160942.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3757160942
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3757160942.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -DCHECK_FUNCTION_EXISTS=pcap_freecode    CMakeFiles/cmTryCompileExec3757160942.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3757160942 -rdynamic -lpcap 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Performing C SOURCE FILE Test LIBPCAP_PCAP_COMPILE_NOPCAP_NO_ERROR_PARAMETER succeded with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2465777587/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2465777587.dir/build.make CMakeFiles/cmTryCompileExec2465777587.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2465777587.dir/src.c.o
+/usr/bin/cc   -Wall -Wno-unused -DLIBPCAP_PCAP_COMPILE_NOPCAP_NO_ERROR_PARAMETER   -o CMakeFiles/cmTryCompileExec2465777587.dir/src.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec2465777587
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2465777587.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -DLIBPCAP_PCAP_COMPILE_NOPCAP_NO_ERROR_PARAMETER    CMakeFiles/cmTryCompileExec2465777587.dir/src.c.o  -o cmTryCompileExec2465777587 -rdynamic -lpcap 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <pcap.h>
+int main () {
+    int snaplen;
+    int linktype;
+    struct bpf_program fp;
+    int optimize;
+    bpf_u_int32 netmask;
+    char str[10];
+    snaplen = 50;
+    linktype = DLT_EN10MB;
+    optimize = 1;
+    netmask = 0L;
+    str[0] = 'i'; str[1] = 'p'; str[2] = '\0';
+    (void)pcap_compile_nopcap(snaplen, linktype, &fp, str, optimize, netmask);
+    return 0;
+}
+
+Determining if the DLT_PPP_SERIAL exist passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec937019621/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec937019621.dir/build.make CMakeFiles/cmTryCompileExec937019621.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec937019621.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -Wall -Wno-unused    -o CMakeFiles/cmTryCompileExec937019621.dir/CheckSymbolExists.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec937019621
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec937019621.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused     CMakeFiles/cmTryCompileExec937019621.dir/CheckSymbolExists.c.o  -o cmTryCompileExec937019621 -rdynamic -lpcap 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+File /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pcap.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef DLT_PPP_SERIAL
+  return ((int*)(&DLT_PPP_SERIAL))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Performing C SOURCE FILE Test including_ssl_h_works succeded with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2893152784/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2893152784.dir/build.make CMakeFiles/cmTryCompileExec2893152784.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2893152784.dir/src.c.o
+/usr/bin/cc   -Wall -Wno-unused -Dincluding_ssl_h_works   -o CMakeFiles/cmTryCompileExec2893152784.dir/src.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec2893152784
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2893152784.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -Dincluding_ssl_h_works    CMakeFiles/cmTryCompileExec2893152784.dir/src.c.o  -o cmTryCompileExec2893152784 -rdynamic -lssl -lcrypto 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+    #include <openssl/ssl.h>
+    int main() { return 0; }
+
+Performing C SOURCE FILE Test openssl_greater_than_0_9_7 succeded with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2285071121/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2285071121.dir/build.make CMakeFiles/cmTryCompileExec2285071121.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2285071121.dir/src.c.o
+/usr/bin/cc   -Wall -Wno-unused -Dopenssl_greater_than_0_9_7   -o CMakeFiles/cmTryCompileExec2285071121.dir/src.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec2285071121
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2285071121.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -Dopenssl_greater_than_0_9_7    CMakeFiles/cmTryCompileExec2285071121.dir/src.c.o  -o cmTryCompileExec2285071121 -rdynamic -lssl -lcrypto 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+    #include <openssl/evp.h>
+    int main() {
+        OPENSSL_add_all_algorithms_conf();
+        return 0;
+    }
+
+Performing C++ SOURCE FILE Test OPENSSL_D2I_X509_USES_CONST_CHAR succeded with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1358263472/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1358263472.dir/build.make CMakeFiles/cmTryCompileExec1358263472.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1358263472.dir/src.cxx.o
+/usr/bin/c++    -Wall -Wno-unused -DOPENSSL_D2I_X509_USES_CONST_CHAR   -o CMakeFiles/cmTryCompileExec1358263472.dir/src.cxx.o -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec1358263472
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1358263472.dir/link.txt --verbose=1
+/usr/bin/c++    -Wall -Wno-unused -DOPENSSL_D2I_X509_USES_CONST_CHAR    CMakeFiles/cmTryCompileExec1358263472.dir/src.cxx.o  -o cmTryCompileExec1358263472 -rdynamic -lssl -lcrypto 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <openssl/x509.h>
+    int main() {
+        const unsigned char** cpp = 0;
+        X509** x =0;
+        d2i_X509(x, cpp, 0);
+        return 0;
+    }
+
+Performing C SOURCE FILE Test have_nameser_header succeded with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2793004466/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2793004466.dir/build.make CMakeFiles/cmTryCompileExec2793004466.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2793004466.dir/src.c.o
+/usr/bin/cc   -Wall -Wno-unused -Dhave_nameser_header   -o CMakeFiles/cmTryCompileExec2793004466.dir/src.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec2793004466
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2793004466.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -Dhave_nameser_header    CMakeFiles/cmTryCompileExec2793004466.dir/src.c.o  -o cmTryCompileExec2793004466 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+    #include <arpa/nameser.h>
+    int main() { HEADER *hdr; int d = NS_IN6ADDRSZ; return 0; }
+Determining if files pthread.h exist passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3454829371/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3454829371.dir/build.make CMakeFiles/cmTryCompileExec3454829371.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3454829371.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -Wall -Wno-unused    -o CMakeFiles/cmTryCompileExec3454829371.dir/CheckIncludeFiles.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec3454829371
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3454829371.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused     CMakeFiles/cmTryCompileExec3454829371.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec3454829371 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3409967100/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3409967100.dir/build.make CMakeFiles/cmTryCompileExec3409967100.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3409967100.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -Wno-unused -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec3409967100.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3409967100
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3409967100.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec3409967100.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3409967100 -rdynamic -lpthread 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function geteuid exists passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3049072598/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3049072598.dir/build.make CMakeFiles/cmTryCompileExec3049072598.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3049072598.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -Wno-unused -DCHECK_FUNCTION_EXISTS=geteuid   -o CMakeFiles/cmTryCompileExec3049072598.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3049072598
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3049072598.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -DCHECK_FUNCTION_EXISTS=geteuid    CMakeFiles/cmTryCompileExec3049072598.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3049072598 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function getpwuid exists passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1891571812/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1891571812.dir/build.make CMakeFiles/cmTryCompileExec1891571812.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1891571812.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -Wno-unused -DCHECK_FUNCTION_EXISTS=getpwuid   -o CMakeFiles/cmTryCompileExec1891571812.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1891571812
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1891571812.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -DCHECK_FUNCTION_EXISTS=getpwuid    CMakeFiles/cmTryCompileExec1891571812.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1891571812 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Determining size of uint passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3372667601/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3372667601.dir/build.make CMakeFiles/cmTryCompileExec3372667601.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3372667601.dir/UINT.c.o
+/usr/bin/cc   -Wall -Wno-unused    -o CMakeFiles/cmTryCompileExec3372667601.dir/UINT.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CheckTypeSize/UINT.c
+Linking C executable cmTryCompileExec3372667601
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3372667601.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused     CMakeFiles/cmTryCompileExec3372667601.dir/UINT.c.o  -o cmTryCompileExec3372667601 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Performing C SOURCE FILE Test PCAP_LINKS_SOLO succeded with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec883326097/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec883326097.dir/build.make CMakeFiles/cmTryCompileExec883326097.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec883326097.dir/src.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG -DPCAP_LINKS_SOLO   -o CMakeFiles/cmTryCompileExec883326097.dir/src.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec883326097
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec883326097.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG -DPCAP_LINKS_SOLO    CMakeFiles/cmTryCompileExec883326097.dir/src.c.o  -o cmTryCompileExec883326097 -rdynamic -lpcap 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C SOURCE FILE Test ns_initparse_works_libresolv.a succeded with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4258038466/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4258038466.dir/build.make CMakeFiles/cmTryCompileExec4258038466.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4258038466.dir/src.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG -Dns_initparse_works_libresolv.a   -o CMakeFiles/cmTryCompileExec4258038466.dir/src.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.c
+<command-line>:0:29: warning: missing whitespace after the macro name [enabled by default]
+Linking C executable cmTryCompileExec4258038466
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4258038466.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG -Dns_initparse_works_libresolv.a    CMakeFiles/cmTryCompileExec4258038466.dir/src.c.o  -o cmTryCompileExec4258038466 -rdynamic -Wl,-Bstatic -lresolv -Wl,-Bdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+        #include <arpa/nameser.h>
+        int main() {
+            ns_initparse(0, 0, 0);
+            return 0;
+        }
+
+Performing C SOURCE FILE Test res_mkquery_works_libresolv.a succeded with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec970668231/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec970668231.dir/build.make CMakeFiles/cmTryCompileExec970668231.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec970668231.dir/src.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG -Dres_mkquery_works_libresolv.a   -o CMakeFiles/cmTryCompileExec970668231.dir/src.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.c
+<command-line>:0:28: warning: missing whitespace after the macro name [enabled by default]
+Linking C executable cmTryCompileExec970668231
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec970668231.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG -Dres_mkquery_works_libresolv.a    CMakeFiles/cmTryCompileExec970668231.dir/src.c.o  -o cmTryCompileExec970668231 -rdynamic -Wl,-Bstatic -lresolv -Wl,-Bdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+        #include <sys/types.h>
+        #include <sys/socket.h>
+        #include <netinet/in.h>
+        #include <arpa/nameser.h>
+        #include <resolv.h>
+        int main() {
+            int (*p)() = res_mkquery;
+            return 0;
+        }
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2947470905/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2947470905.dir/build.make CMakeFiles/cmTryCompileExec2947470905.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2947470905.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG    -o CMakeFiles/cmTryCompileExec2947470905.dir/CheckIncludeFile.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec2947470905
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2947470905.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG     CMakeFiles/cmTryCompileExec2947470905.dir/CheckIncludeFile.c.o  -o cmTryCompileExec2947470905 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2687627719/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2687627719.dir/build.make CMakeFiles/cmTryCompileExec2687627719.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2687627719.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG    -o CMakeFiles/cmTryCompileExec2687627719.dir/CheckIncludeFile.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec2687627719
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2687627719.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG     CMakeFiles/cmTryCompileExec2687627719.dir/CheckIncludeFile.c.o  -o cmTryCompileExec2687627719 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3297600260/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3297600260.dir/build.make CMakeFiles/cmTryCompileExec3297600260.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3297600260.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG    -o CMakeFiles/cmTryCompileExec3297600260.dir/CheckIncludeFile.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec3297600260
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3297600260.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG     CMakeFiles/cmTryCompileExec3297600260.dir/CheckIncludeFile.c.o  -o cmTryCompileExec3297600260 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Determining size of unsigned short passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec259474867/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec259474867.dir/build.make CMakeFiles/cmTryCompileExec259474867.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec259474867.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG    -o CMakeFiles/cmTryCompileExec259474867.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CheckTypeSize/CMAKE_SIZEOF_UNSIGNED_SHORT.c
+Linking C executable cmTryCompileExec259474867
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec259474867.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG     CMakeFiles/cmTryCompileExec259474867.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o  -o cmTryCompileExec259474867 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Determining size of unsigned int passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3805882067/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3805882067.dir/build.make CMakeFiles/cmTryCompileExec3805882067.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3805882067.dir/SIZEOF_UNSIGNED_INT.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG    -o CMakeFiles/cmTryCompileExec3805882067.dir/SIZEOF_UNSIGNED_INT.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CheckTypeSize/SIZEOF_UNSIGNED_INT.c
+Linking C executable cmTryCompileExec3805882067
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3805882067.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG     CMakeFiles/cmTryCompileExec3805882067.dir/SIZEOF_UNSIGNED_INT.c.o  -o cmTryCompileExec3805882067 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Determining size of long int passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec180099999/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec180099999.dir/build.make CMakeFiles/cmTryCompileExec180099999.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec180099999.dir/SIZEOF_LONG_INT.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG    -o CMakeFiles/cmTryCompileExec180099999.dir/SIZEOF_LONG_INT.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CheckTypeSize/SIZEOF_LONG_INT.c
+Linking C executable cmTryCompileExec180099999
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec180099999.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG     CMakeFiles/cmTryCompileExec180099999.dir/SIZEOF_LONG_INT.c.o  -o cmTryCompileExec180099999 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Determining size of long long passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3612438432/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3612438432.dir/build.make CMakeFiles/cmTryCompileExec3612438432.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3612438432.dir/SIZEOF_LONG_LONG.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG    -o CMakeFiles/cmTryCompileExec3612438432.dir/SIZEOF_LONG_LONG.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CheckTypeSize/SIZEOF_LONG_LONG.c
+Linking C executable cmTryCompileExec3612438432
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3612438432.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG     CMakeFiles/cmTryCompileExec3612438432.dir/SIZEOF_LONG_LONG.c.o  -o cmTryCompileExec3612438432 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Determining size of void * passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2432524867/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2432524867.dir/build.make CMakeFiles/cmTryCompileExec2432524867.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2432524867.dir/SIZEOF_VOID_P.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG    -o CMakeFiles/cmTryCompileExec2432524867.dir/SIZEOF_VOID_P.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CheckTypeSize/SIZEOF_VOID_P.c
+Linking C executable cmTryCompileExec2432524867
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2432524867.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG     CMakeFiles/cmTryCompileExec2432524867.dir/SIZEOF_VOID_P.c.o  -o cmTryCompileExec2432524867 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Determining size of int32_t passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2232361154/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2232361154.dir/build.make CMakeFiles/cmTryCompileExec2232361154.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2232361154.dir/int32_t.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG    -o CMakeFiles/cmTryCompileExec2232361154.dir/int32_t.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CheckTypeSize/int32_t.c
+Linking C executable cmTryCompileExec2232361154
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2232361154.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG     CMakeFiles/cmTryCompileExec2232361154.dir/int32_t.c.o  -o cmTryCompileExec2232361154 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Determining size of u_int32_t passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec834934035/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec834934035.dir/build.make CMakeFiles/cmTryCompileExec834934035.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec834934035.dir/u_int32_t.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG    -o CMakeFiles/cmTryCompileExec834934035.dir/u_int32_t.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CheckTypeSize/u_int32_t.c
+Linking C executable cmTryCompileExec834934035
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec834934035.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG     CMakeFiles/cmTryCompileExec834934035.dir/u_int32_t.c.o  -o cmTryCompileExec834934035 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Determining size of u_int16_t passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3251860746/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3251860746.dir/build.make CMakeFiles/cmTryCompileExec3251860746.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3251860746.dir/u_int16_t.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG    -o CMakeFiles/cmTryCompileExec3251860746.dir/u_int16_t.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CheckTypeSize/u_int16_t.c
+Linking C executable cmTryCompileExec3251860746
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3251860746.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG     CMakeFiles/cmTryCompileExec3251860746.dir/u_int16_t.c.o  -o cmTryCompileExec3251860746 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Determining size of u_int8_t passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3808000969/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3808000969.dir/build.make CMakeFiles/cmTryCompileExec3808000969.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3808000969.dir/u_int8_t.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG    -o CMakeFiles/cmTryCompileExec3808000969.dir/u_int8_t.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CheckTypeSize/u_int8_t.c
+Linking C executable cmTryCompileExec3808000969
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3808000969.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG     CMakeFiles/cmTryCompileExec3808000969.dir/u_int8_t.c.o  -o cmTryCompileExec3808000969 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Determining size of socklen_t passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1347301317/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1347301317.dir/build.make CMakeFiles/cmTryCompileExec1347301317.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1347301317.dir/socklen_t.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG    -o CMakeFiles/cmTryCompileExec1347301317.dir/socklen_t.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CheckTypeSize/socklen_t.c
+Linking C executable cmTryCompileExec1347301317
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1347301317.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG     CMakeFiles/cmTryCompileExec1347301317.dir/socklen_t.c.o  -o cmTryCompileExec1347301317 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Determining size of struct ip6_opt passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1216913395/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1216913395.dir/build.make CMakeFiles/cmTryCompileExec1216913395.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1216913395.dir/IP6_OPT.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG    -o CMakeFiles/cmTryCompileExec1216913395.dir/IP6_OPT.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CheckTypeSize/IP6_OPT.c
+Linking C executable cmTryCompileExec1216913395
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1216913395.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG     CMakeFiles/cmTryCompileExec1216913395.dir/IP6_OPT.c.o  -o cmTryCompileExec1216913395 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Determining size of struct ip6_ext passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3910128794/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3910128794.dir/build.make CMakeFiles/cmTryCompileExec3910128794.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3910128794.dir/IP6_EXT.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG    -o CMakeFiles/cmTryCompileExec3910128794.dir/IP6_EXT.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CheckTypeSize/IP6_EXT.c
+Linking C executable cmTryCompileExec3910128794
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3910128794.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG     CMakeFiles/cmTryCompileExec3910128794.dir/IP6_EXT.c.o  -o cmTryCompileExec3910128794 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Determining if files getopt.h exist passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec823513428/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec823513428.dir/build.make CMakeFiles/cmTryCompileExec823513428.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec823513428.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG    -o CMakeFiles/cmTryCompileExec823513428.dir/CheckIncludeFiles.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec823513428
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec823513428.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG     CMakeFiles/cmTryCompileExec823513428.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec823513428 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Determining if files memory.h exist passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec822346609/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec822346609.dir/build.make CMakeFiles/cmTryCompileExec822346609.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec822346609.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG    -o CMakeFiles/cmTryCompileExec822346609.dir/CheckIncludeFiles.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec822346609
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec822346609.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG     CMakeFiles/cmTryCompileExec822346609.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec822346609 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Determining if files sys/socket.h;netinet/in.h;net/if.h;netinet/if_ether.h exist passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2683653818/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2683653818.dir/build.make CMakeFiles/cmTryCompileExec2683653818.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2683653818.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG    -o CMakeFiles/cmTryCompileExec2683653818.dir/CheckIncludeFiles.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec2683653818
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2683653818.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG     CMakeFiles/cmTryCompileExec2683653818.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec2683653818 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Determining if files sys/socket.h;netinet/in.h;net/if.h;netinet/ip6.h exist passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec263572498/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec263572498.dir/build.make CMakeFiles/cmTryCompileExec263572498.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec263572498.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG    -o CMakeFiles/cmTryCompileExec263572498.dir/CheckIncludeFiles.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec263572498
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec263572498.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG     CMakeFiles/cmTryCompileExec263572498.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec263572498 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Determining if files sys/socket.h;net/if.h;net/ethernet.h exist passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1115390115/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1115390115.dir/build.make CMakeFiles/cmTryCompileExec1115390115.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1115390115.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG    -o CMakeFiles/cmTryCompileExec1115390115.dir/CheckIncludeFiles.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec1115390115
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1115390115.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG     CMakeFiles/cmTryCompileExec1115390115.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec1115390115 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Determining if files sys/time.h exist passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4200391733/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4200391733.dir/build.make CMakeFiles/cmTryCompileExec4200391733.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4200391733.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG    -o CMakeFiles/cmTryCompileExec4200391733.dir/CheckIncludeFiles.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec4200391733
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4200391733.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG     CMakeFiles/cmTryCompileExec4200391733.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec4200391733 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Determining if files time.h;sys/time.h exist passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3479121457/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3479121457.dir/build.make CMakeFiles/cmTryCompileExec3479121457.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3479121457.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG    -o CMakeFiles/cmTryCompileExec3479121457.dir/CheckIncludeFiles.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec3479121457
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3479121457.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG     CMakeFiles/cmTryCompileExec3479121457.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec3479121457 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the IPPROTO_HOPOPTS exist passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec940294151/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec940294151.dir/build.make CMakeFiles/cmTryCompileExec940294151.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec940294151.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG    -o CMakeFiles/cmTryCompileExec940294151.dir/CheckSymbolExists.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec940294151
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec940294151.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG     CMakeFiles/cmTryCompileExec940294151.dir/CheckSymbolExists.c.o  -o cmTryCompileExec940294151 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+File /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <netinet/in.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef IPPROTO_HOPOPTS
+  return ((int*)(&IPPROTO_HOPOPTS))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the IPPROTO_IPV6 exist passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3145415455/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3145415455.dir/build.make CMakeFiles/cmTryCompileExec3145415455.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3145415455.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG    -o CMakeFiles/cmTryCompileExec3145415455.dir/CheckSymbolExists.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec3145415455
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3145415455.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG     CMakeFiles/cmTryCompileExec3145415455.dir/CheckSymbolExists.c.o  -o cmTryCompileExec3145415455 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+File /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <netinet/in.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef IPPROTO_IPV6
+  return ((int*)(&IPPROTO_IPV6))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the IPPROTO_ROUTING exist passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec661114366/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec661114366.dir/build.make CMakeFiles/cmTryCompileExec661114366.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec661114366.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG    -o CMakeFiles/cmTryCompileExec661114366.dir/CheckSymbolExists.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec661114366
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec661114366.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG     CMakeFiles/cmTryCompileExec661114366.dir/CheckSymbolExists.c.o  -o cmTryCompileExec661114366 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+File /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <netinet/in.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef IPPROTO_ROUTING
+  return ((int*)(&IPPROTO_ROUTING))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the IPPROTO_FRAGMENT exist passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2692644238/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2692644238.dir/build.make CMakeFiles/cmTryCompileExec2692644238.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2692644238.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG    -o CMakeFiles/cmTryCompileExec2692644238.dir/CheckSymbolExists.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec2692644238
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2692644238.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG     CMakeFiles/cmTryCompileExec2692644238.dir/CheckSymbolExists.c.o  -o cmTryCompileExec2692644238 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+File /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <netinet/in.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef IPPROTO_FRAGMENT
+  return ((int*)(&IPPROTO_FRAGMENT))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the IPPROTO_ESP exist passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec119351996/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec119351996.dir/build.make CMakeFiles/cmTryCompileExec119351996.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec119351996.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG    -o CMakeFiles/cmTryCompileExec119351996.dir/CheckSymbolExists.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec119351996
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec119351996.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG     CMakeFiles/cmTryCompileExec119351996.dir/CheckSymbolExists.c.o  -o cmTryCompileExec119351996 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+File /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <netinet/in.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef IPPROTO_ESP
+  return ((int*)(&IPPROTO_ESP))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the IPPROTO_AH exist passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4282853132/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4282853132.dir/build.make CMakeFiles/cmTryCompileExec4282853132.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4282853132.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG    -o CMakeFiles/cmTryCompileExec4282853132.dir/CheckSymbolExists.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec4282853132
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4282853132.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG     CMakeFiles/cmTryCompileExec4282853132.dir/CheckSymbolExists.c.o  -o cmTryCompileExec4282853132 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+File /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <netinet/in.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef IPPROTO_AH
+  return ((int*)(&IPPROTO_AH))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the IPPROTO_ICMPV6 exist passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2982064139/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2982064139.dir/build.make CMakeFiles/cmTryCompileExec2982064139.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2982064139.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG    -o CMakeFiles/cmTryCompileExec2982064139.dir/CheckSymbolExists.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec2982064139
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2982064139.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG     CMakeFiles/cmTryCompileExec2982064139.dir/CheckSymbolExists.c.o  -o cmTryCompileExec2982064139 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+File /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <netinet/in.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef IPPROTO_ICMPV6
+  return ((int*)(&IPPROTO_ICMPV6))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the IPPROTO_NONE exist passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1574313991/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1574313991.dir/build.make CMakeFiles/cmTryCompileExec1574313991.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1574313991.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG    -o CMakeFiles/cmTryCompileExec1574313991.dir/CheckSymbolExists.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec1574313991
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1574313991.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG     CMakeFiles/cmTryCompileExec1574313991.dir/CheckSymbolExists.c.o  -o cmTryCompileExec1574313991 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+File /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <netinet/in.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef IPPROTO_NONE
+  return ((int*)(&IPPROTO_NONE))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the IPPROTO_DSTOPTS exist passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4257760820/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4257760820.dir/build.make CMakeFiles/cmTryCompileExec4257760820.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4257760820.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG    -o CMakeFiles/cmTryCompileExec4257760820.dir/CheckSymbolExists.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec4257760820
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4257760820.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG     CMakeFiles/cmTryCompileExec4257760820.dir/CheckSymbolExists.c.o  -o cmTryCompileExec4257760820 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+File /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <netinet/in.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef IPPROTO_DSTOPTS
+  return ((int*)(&IPPROTO_DSTOPTS))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function getopt_long exists passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1029008785/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1029008785.dir/build.make CMakeFiles/cmTryCompileExec1029008785.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1029008785.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG -DCHECK_FUNCTION_EXISTS=getopt_long   -o CMakeFiles/cmTryCompileExec1029008785.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1029008785
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1029008785.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG -DCHECK_FUNCTION_EXISTS=getopt_long    CMakeFiles/cmTryCompileExec1029008785.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1029008785 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function mallinfo exists passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1642750770/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1642750770.dir/build.make CMakeFiles/cmTryCompileExec1642750770.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1642750770.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG -DCHECK_FUNCTION_EXISTS=mallinfo   -o CMakeFiles/cmTryCompileExec1642750770.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1642750770
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1642750770.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG -DCHECK_FUNCTION_EXISTS=mallinfo    CMakeFiles/cmTryCompileExec1642750770.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1642750770 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function strcasestr exists passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1572442251/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1572442251.dir/build.make CMakeFiles/cmTryCompileExec1572442251.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1572442251.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG -DCHECK_FUNCTION_EXISTS=strcasestr   -o CMakeFiles/cmTryCompileExec1572442251.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1572442251
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1572442251.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG -DCHECK_FUNCTION_EXISTS=strcasestr    CMakeFiles/cmTryCompileExec1572442251.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1572442251 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function strerror exists passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3872273236/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3872273236.dir/build.make CMakeFiles/cmTryCompileExec3872273236.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3872273236.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG -DCHECK_FUNCTION_EXISTS=strerror   -o CMakeFiles/cmTryCompileExec3872273236.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3872273236
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3872273236.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG -DCHECK_FUNCTION_EXISTS=strerror    CMakeFiles/cmTryCompileExec3872273236.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3872273236 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function strsep exists passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3298920881/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3298920881.dir/build.make CMakeFiles/cmTryCompileExec3298920881.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3298920881.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG -DCHECK_FUNCTION_EXISTS=strsep   -o CMakeFiles/cmTryCompileExec3298920881.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3298920881
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3298920881.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG -DCHECK_FUNCTION_EXISTS=strsep    CMakeFiles/cmTryCompileExec3298920881.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3298920881 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function sigset exists passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3595564834/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3595564834.dir/build.make CMakeFiles/cmTryCompileExec3595564834.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3595564834.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG -DCHECK_FUNCTION_EXISTS=sigset   -o CMakeFiles/cmTryCompileExec3595564834.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3595564834
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3595564834.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG -DCHECK_FUNCTION_EXISTS=sigset    CMakeFiles/cmTryCompileExec3595564834.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3595564834 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function pcap_freecode exists passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3179456080/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3179456080.dir/build.make CMakeFiles/cmTryCompileExec3179456080.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3179456080.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG -DCHECK_FUNCTION_EXISTS=pcap_freecode   -o CMakeFiles/cmTryCompileExec3179456080.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3179456080
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3179456080.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG -DCHECK_FUNCTION_EXISTS=pcap_freecode    CMakeFiles/cmTryCompileExec3179456080.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3179456080 -rdynamic -lpcap 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Performing C SOURCE FILE Test LIBPCAP_PCAP_COMPILE_NOPCAP_NO_ERROR_PARAMETER succeded with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec773822818/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec773822818.dir/build.make CMakeFiles/cmTryCompileExec773822818.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec773822818.dir/src.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG -DLIBPCAP_PCAP_COMPILE_NOPCAP_NO_ERROR_PARAMETER   -o CMakeFiles/cmTryCompileExec773822818.dir/src.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec773822818
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec773822818.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG -DLIBPCAP_PCAP_COMPILE_NOPCAP_NO_ERROR_PARAMETER    CMakeFiles/cmTryCompileExec773822818.dir/src.c.o  -o cmTryCompileExec773822818 -rdynamic -lpcap 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <pcap.h>
+int main () {
+    int snaplen;
+    int linktype;
+    struct bpf_program fp;
+    int optimize;
+    bpf_u_int32 netmask;
+    char str[10];
+    snaplen = 50;
+    linktype = DLT_EN10MB;
+    optimize = 1;
+    netmask = 0L;
+    str[0] = 'i'; str[1] = 'p'; str[2] = '\0';
+    (void)pcap_compile_nopcap(snaplen, linktype, &fp, str, optimize, netmask);
+    return 0;
+}
+
+Determining if the DLT_PPP_SERIAL exist passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1508406975/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1508406975.dir/build.make CMakeFiles/cmTryCompileExec1508406975.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1508406975.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG    -o CMakeFiles/cmTryCompileExec1508406975.dir/CheckSymbolExists.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec1508406975
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1508406975.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG     CMakeFiles/cmTryCompileExec1508406975.dir/CheckSymbolExists.c.o  -o cmTryCompileExec1508406975 -rdynamic -lpcap 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+File /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pcap.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef DLT_PPP_SERIAL
+  return ((int*)(&DLT_PPP_SERIAL))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Performing C SOURCE FILE Test including_ssl_h_works succeded with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3666923726/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3666923726.dir/build.make CMakeFiles/cmTryCompileExec3666923726.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3666923726.dir/src.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG -Dincluding_ssl_h_works   -o CMakeFiles/cmTryCompileExec3666923726.dir/src.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec3666923726
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3666923726.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG -Dincluding_ssl_h_works    CMakeFiles/cmTryCompileExec3666923726.dir/src.c.o  -o cmTryCompileExec3666923726 -rdynamic -lssl -lcrypto 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+    #include <openssl/ssl.h>
+    int main() { return 0; }
+
+Performing C SOURCE FILE Test openssl_greater_than_0_9_7 succeded with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3371009703/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3371009703.dir/build.make CMakeFiles/cmTryCompileExec3371009703.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3371009703.dir/src.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG -Dopenssl_greater_than_0_9_7   -o CMakeFiles/cmTryCompileExec3371009703.dir/src.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec3371009703
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3371009703.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG -Dopenssl_greater_than_0_9_7    CMakeFiles/cmTryCompileExec3371009703.dir/src.c.o  -o cmTryCompileExec3371009703 -rdynamic -lssl -lcrypto 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+    #include <openssl/evp.h>
+    int main() {
+        OPENSSL_add_all_algorithms_conf();
+        return 0;
+    }
+
+Performing C++ SOURCE FILE Test OPENSSL_D2I_X509_USES_CONST_CHAR succeded with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2288624831/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2288624831.dir/build.make CMakeFiles/cmTryCompileExec2288624831.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2288624831.dir/src.cxx.o
+/usr/bin/c++    -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG -DOPENSSL_D2I_X509_USES_CONST_CHAR   -o CMakeFiles/cmTryCompileExec2288624831.dir/src.cxx.o -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec2288624831
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2288624831.dir/link.txt --verbose=1
+/usr/bin/c++    -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG -DOPENSSL_D2I_X509_USES_CONST_CHAR    CMakeFiles/cmTryCompileExec2288624831.dir/src.cxx.o  -o cmTryCompileExec2288624831 -rdynamic -lssl -lcrypto 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <openssl/x509.h>
+    int main() {
+        const unsigned char** cpp = 0;
+        X509** x =0;
+        d2i_X509(x, cpp, 0);
+        return 0;
+    }
+
+Performing C SOURCE FILE Test have_nameser_header succeded with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3447660412/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3447660412.dir/build.make CMakeFiles/cmTryCompileExec3447660412.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3447660412.dir/src.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG -Dhave_nameser_header   -o CMakeFiles/cmTryCompileExec3447660412.dir/src.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec3447660412
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3447660412.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG -Dhave_nameser_header    CMakeFiles/cmTryCompileExec3447660412.dir/src.c.o  -o cmTryCompileExec3447660412 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+    #include <arpa/nameser.h>
+    int main() { HEADER *hdr; int d = NS_IN6ADDRSZ; return 0; }
+Determining if files pthread.h exist passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2495598413/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2495598413.dir/build.make CMakeFiles/cmTryCompileExec2495598413.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2495598413.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG    -o CMakeFiles/cmTryCompileExec2495598413.dir/CheckIncludeFiles.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec2495598413
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2495598413.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG     CMakeFiles/cmTryCompileExec2495598413.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec2495598413 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1879107406/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1879107406.dir/build.make CMakeFiles/cmTryCompileExec1879107406.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1879107406.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec1879107406.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1879107406
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1879107406.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec1879107406.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1879107406 -rdynamic -lpthread 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function geteuid exists passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1879537237/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1879537237.dir/build.make CMakeFiles/cmTryCompileExec1879537237.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1879537237.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG -DCHECK_FUNCTION_EXISTS=geteuid   -o CMakeFiles/cmTryCompileExec1879537237.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1879537237
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1879537237.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG -DCHECK_FUNCTION_EXISTS=geteuid    CMakeFiles/cmTryCompileExec1879537237.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1879537237 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function getpwuid exists passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1835898517/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1835898517.dir/build.make CMakeFiles/cmTryCompileExec1835898517.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1835898517.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG -DCHECK_FUNCTION_EXISTS=getpwuid   -o CMakeFiles/cmTryCompileExec1835898517.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1835898517
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1835898517.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG -DCHECK_FUNCTION_EXISTS=getpwuid    CMakeFiles/cmTryCompileExec1835898517.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1835898517 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+
+Determining size of uint passed with the following output:
+Change Dir: /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec842903721/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec842903721.dir/build.make CMakeFiles/cmTryCompileExec842903721.dir/build
+make[1]: Entering directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec842903721.dir/UINT.c.o
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG    -o CMakeFiles/cmTryCompileExec842903721.dir/UINT.c.o   -c /home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CheckTypeSize/UINT.c
+Linking C executable cmTryCompileExec842903721
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec842903721.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG     CMakeFiles/cmTryCompileExec842903721.dir/UINT.c.o  -o cmTryCompileExec842903721 -rdynamic 
+make[1]: Leaving directory `/home/rhost/Downloads/bro-2.4.1/build/CMakeFiles/CMakeTmp'
+
+

@@ -1,0 +1,2 @@
+/usr/bin/ar cr libplugin-Bro-InterConn.a  CMakeFiles/plugin-Bro-InterConn.dir/InterConn.cc.o CMakeFiles/plugin-Bro-InterConn.dir/Plugin.cc.o CMakeFiles/plugin-Bro-InterConn.dir/events.bif.cc.o CMakeFiles/plugin-Bro-InterConn.dir/events.bif.init.cc.o
+/usr/bin/ranlib libplugin-Bro-InterConn.a

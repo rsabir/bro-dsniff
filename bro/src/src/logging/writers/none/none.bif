@@ -1,6 +1,0 @@
-
-# Options for the None writer.
-
-module LogNone;
-
-const debug: bool;

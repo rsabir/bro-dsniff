@@ -1,0 +1,2 @@
+/usr/bin/ar cr libplugin-Bro-DNS.a  CMakeFiles/plugin-Bro-DNS.dir/DNS.cc.o CMakeFiles/plugin-Bro-DNS.dir/Plugin.cc.o CMakeFiles/plugin-Bro-DNS.dir/events.bif.cc.o CMakeFiles/plugin-Bro-DNS.dir/events.bif.init.cc.o
+/usr/bin/ranlib libplugin-Bro-DNS.a

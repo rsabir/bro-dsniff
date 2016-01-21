@@ -1,0 +1,2 @@
+/usr/bin/ar cr libbro_analyzer.a  CMakeFiles/bro_analyzer.dir/Analyzer.cc.o CMakeFiles/bro_analyzer.dir/Manager.cc.o CMakeFiles/bro_analyzer.dir/Component.cc.o CMakeFiles/bro_analyzer.dir/Tag.cc.o CMakeFiles/bro_analyzer.dir/analyzer.bif.cc.o
+/usr/bin/ranlib libbro_analyzer.a

@@ -1,0 +1,2 @@
+/usr/bin/ar cr libplugin-Bro-BinaryReader.a  CMakeFiles/plugin-Bro-BinaryReader.dir/Binary.cc.o CMakeFiles/plugin-Bro-BinaryReader.dir/Plugin.cc.o CMakeFiles/plugin-Bro-BinaryReader.dir/binary.bif.cc.o CMakeFiles/plugin-Bro-BinaryReader.dir/binary.bif.init.cc.o
+/usr/bin/ranlib libplugin-Bro-BinaryReader.a

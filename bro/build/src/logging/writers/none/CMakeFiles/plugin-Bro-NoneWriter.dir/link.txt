@@ -1,0 +1,2 @@
+/usr/bin/ar cr libplugin-Bro-NoneWriter.a  CMakeFiles/plugin-Bro-NoneWriter.dir/None.cc.o CMakeFiles/plugin-Bro-NoneWriter.dir/Plugin.cc.o CMakeFiles/plugin-Bro-NoneWriter.dir/none.bif.cc.o CMakeFiles/plugin-Bro-NoneWriter.dir/none.bif.init.cc.o
+/usr/bin/ranlib libplugin-Bro-NoneWriter.a

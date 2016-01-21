@@ -1,6 +1,0 @@
-module SSH;
-
-type Algorithm_Prefs: record;
-type Capabilities: record;
-
-module GLOBAL;

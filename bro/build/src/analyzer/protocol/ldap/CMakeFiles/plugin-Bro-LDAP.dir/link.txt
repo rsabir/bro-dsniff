@@ -1,0 +1,2 @@
+/usr/bin/ar cr libplugin-Bro-LDAP.a  CMakeFiles/plugin-Bro-LDAP.dir/LDAP.cc.o CMakeFiles/plugin-Bro-LDAP.dir/Plugin.cc.o CMakeFiles/plugin-Bro-LDAP.dir/events.bif.cc.o CMakeFiles/plugin-Bro-LDAP.dir/events.bif.init.cc.o CMakeFiles/plugin-Bro-LDAP.dir/ldap_pac.cc.o
+/usr/bin/ranlib libplugin-Bro-LDAP.a

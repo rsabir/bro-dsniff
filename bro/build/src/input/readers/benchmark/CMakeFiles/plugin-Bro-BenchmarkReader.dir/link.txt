@@ -1,0 +1,2 @@
+/usr/bin/ar cr libplugin-Bro-BenchmarkReader.a  CMakeFiles/plugin-Bro-BenchmarkReader.dir/Benchmark.cc.o CMakeFiles/plugin-Bro-BenchmarkReader.dir/Plugin.cc.o CMakeFiles/plugin-Bro-BenchmarkReader.dir/benchmark.bif.cc.o CMakeFiles/plugin-Bro-BenchmarkReader.dir/benchmark.bif.init.cc.o
+/usr/bin/ranlib libplugin-Bro-BenchmarkReader.a

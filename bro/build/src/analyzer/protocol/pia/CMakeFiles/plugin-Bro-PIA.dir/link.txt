@@ -1,0 +1,2 @@
+/usr/bin/ar cr libplugin-Bro-PIA.a  CMakeFiles/plugin-Bro-PIA.dir/PIA.cc.o CMakeFiles/plugin-Bro-PIA.dir/Plugin.cc.o CMakeFiles/plugin-Bro-PIA.dir/events.bif.cc.o CMakeFiles/plugin-Bro-PIA.dir/events.bif.init.cc.o
+/usr/bin/ranlib libplugin-Bro-PIA.a

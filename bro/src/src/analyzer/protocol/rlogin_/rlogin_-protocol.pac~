@@ -1,4 +1,0 @@
-
-type RLOGIN__PDU = record {
-	data: bytestring &restofdata;
-} &byteorder=bigendian;

@@ -1,0 +1,2 @@
+/usr/bin/ar cr libplugin-Bro-AYIYA.a  CMakeFiles/plugin-Bro-AYIYA.dir/AYIYA.cc.o CMakeFiles/plugin-Bro-AYIYA.dir/Plugin.cc.o CMakeFiles/plugin-Bro-AYIYA.dir/events.bif.cc.o CMakeFiles/plugin-Bro-AYIYA.dir/events.bif.init.cc.o CMakeFiles/plugin-Bro-AYIYA.dir/ayiya_pac.cc.o
+/usr/bin/ranlib libplugin-Bro-AYIYA.a

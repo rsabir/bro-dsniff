@@ -1,0 +1,2 @@
+/usr/bin/ar cr libplugin-Bro-ARP.a  CMakeFiles/plugin-Bro-ARP.dir/ARP.cc.o CMakeFiles/plugin-Bro-ARP.dir/Plugin.cc.o CMakeFiles/plugin-Bro-ARP.dir/events.bif.cc.o CMakeFiles/plugin-Bro-ARP.dir/events.bif.init.cc.o
+/usr/bin/ranlib libplugin-Bro-ARP.a

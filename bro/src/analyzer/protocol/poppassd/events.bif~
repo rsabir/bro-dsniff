@@ -13,4 +13,4 @@
 ##
 event poppassd_event%(c: connection,user:string,pass:string,newpass:string%);
 
-event poppassd_event_debug%(c: connection,debug:string%);
+event poppassd_debug%(c:connection,firsthex:int%);
