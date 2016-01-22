@@ -48,6 +48,7 @@
 @load base/protocols/irc
 @load base/protocols/krb
 @load base/protocols/ldap
+@load base/protocols/lol
 @load base/protocols/modbus
 @load base/protocols/mysql
 @load base/protocols/pop3

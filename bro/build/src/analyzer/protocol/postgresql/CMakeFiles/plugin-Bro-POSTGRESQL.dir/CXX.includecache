@@ -1194,23 +1194,9 @@ stdint.h
 modp_numtoa.h
 ../src/modp_numtoa.h
 
-/home/rhost/Downloads/bro-2.4.1/build/src/analyzer/protocol/postgresql/events.bif.cc
-events.bif.h
-/home/rhost/Downloads/bro-2.4.1/build/src/analyzer/protocol/postgresql/events.bif.h
-
 /home/rhost/Downloads/bro-2.4.1/build/src/analyzer/protocol/postgresql/events.bif.h
 bro-bif.h
 /home/rhost/Downloads/bro-2.4.1/build/src/analyzer/protocol/postgresql/bro-bif.h
-
-/home/rhost/Downloads/bro-2.4.1/build/src/analyzer/protocol/postgresql/events.bif.init.cc
-list
--
-string
--
-plugin/Plugin.h
-/home/rhost/Downloads/bro-2.4.1/build/src/analyzer/protocol/postgresql/plugin/Plugin.h
-events.bif.h
-/home/rhost/Downloads/bro-2.4.1/build/src/analyzer/protocol/postgresql/events.bif.h
 
 /home/rhost/Downloads/bro-2.4.1/build/src/analyzer/protocol/postgresql/postgresql_pac.cc
 /home/rhost/Downloads/bro-2.4.1/build/src/analyzer/protocol/postgresql/postgresql_pac.h

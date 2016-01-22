@@ -169,15 +169,8 @@ event ftp_request(c: connection, command: string, arg: string) &priority=5
 	if ( command == "USER" )
 		c$ftp$user = arg;
 
-	else if ( command == "PASS" ){
+	else if ( command == "PASS" )
 		c$ftp$password = arg;
-		print fmt("date : %s , ip_src : %s , ip_dst : %s,  user : %s , password : %s",
-                      strftime("%Y/%m/%d %H:%M:%S", c$start_time),
-                      c$id$orig_h,
-                      c$id$resp_h,
-                      c$ftp$user,
-                      c$ftp$password);
-	}
 
 	else if ( command == "PORT" || command == "EPRT" )
 		{

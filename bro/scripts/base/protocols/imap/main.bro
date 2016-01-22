@@ -32,7 +32,8 @@ event bro_init() &priority=5
 	# Analyzer::register_for_ports(Analyzer::ANALYZER_IMAP, ports);
 	}
 
-event imap_authentication(c: connection,username:string,password:string){
+event imap_event(c: connection,username:string,password:string)
+	{
 	local info: Info;
 	info$ts  = network_time();
 	info$uid = c$uid;
@@ -46,4 +47,4 @@ event imap_authentication(c: connection,username:string,password:string){
 	    username,
 	    password 
 	);
-}
+	}

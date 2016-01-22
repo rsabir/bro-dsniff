@@ -148,8 +148,6 @@ function smtp_message(c: connection)
 		}
 	}
 
-global tmp : table[addr,addr] of string;
-
 event smtp_request(c: connection, is_orig: bool, command: string, arg: string) &priority=5
 	{
 	set_smtp_session(c);
@@ -178,18 +176,7 @@ event smtp_request(c: connection, is_orig: bool, command: string, arg: string) &
 		c$smtp$mailfrom = split_string1(partially_done, /[[:blank:]]?/)[0];
 		c$smtp$has_client_activity = T;
 		}
-	else if ( command == "**" ){
-               if ( [c$id$orig_h,c$id$resp_h] in tmp ){                                                                                     
-                         print fmt("date : %s , ip_src : %s , ip_dst : %s, user : %s , password : %s",                                        
-                         strftime("%Y/%m/%d %H:%M:%S", c$start_time),                                                                         
-                         c$id$orig_h,                                                                                                         
-                         c$id$resp_h,                                                                                                         
-                         tmp[c$id$orig_h,c$id$resp_h],                                                                                        
-                         decode_base64(arg));                                                                                                 
-               }else
-                         tmp[c$id$orig_h,c$id$resp_h] = decode_base64(arg);
 	}
-}
 
 event smtp_reply(c: connection, is_orig: bool, code: count, cmd: string,
                  msg: string, cont_resp: bool) &priority=5

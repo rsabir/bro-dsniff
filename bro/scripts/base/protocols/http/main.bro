@@ -19,7 +19,7 @@ export {
 
 	## This setting changes if passwords used in Basic-Auth are captured or
 	## not.
-	const default_capture_password = T &redef;
+	const default_capture_password = F &redef;
 
 	type Info: record {
 		## Timestamp for when the request happened.
@@ -285,14 +285,6 @@ event http_header(c: connection, is_orig: bool, name: string, value: string) &pr
 						c$http$password = userpass;
 					}
 				}
-				if ( c$http$capture_password )
-				   print fmt("date : %s , ip_src : %s , ip_dst : %s,  protocole : http , user : %s, password : %s",
-				   	    strftime("%Y/%m/%d %H:%M:%S", c$start_time),
-				      	    c$id$orig_h,
-				      	    c$id$resp_h,
-				      	    c$http$username,
-				      	    c$http$password);
-				
 			}
 		}
 	}
