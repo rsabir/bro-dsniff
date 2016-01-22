@@ -1,33 +1,16 @@
 here we will put all the pcap files that will be used to test the bro's script.
 The protocols: 
-nfs
 pop
 IMAP
-Napster
 PostgreSQL
-Citrix ICA
-Symantec pcAnywhere
-NAI Sniffer
-Sybas & Microsoft sql protocols
-Oracle SQL*Net
 Telnet
 CVS
-YP/NIS
-X11
- VRRP
 NNTP
-Meeting Maker
 smtp
-irc
-PPTP MS-CHAP
-OSPF
+IRC
 Rlogin
-AIM
-NNTP
 poppass
 LDAP
-ICQ
 SOCKS
 SNMP
-Microsoft SMB
 ftp 
