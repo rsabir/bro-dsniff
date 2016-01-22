@@ -2,9 +2,9 @@
 #set_separator	,
 #empty_field	(empty)
 #unset_field	-
-#path	imap
-#open	2016-01-22-19-01-55
+#path	ldap
+#open	2016-01-22-18-43-43
 #fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p
 #types	time	string	addr	port	addr	port
-1227730011.279741	CGEy5zNc37vW2AIr7	127.0.0.1	2458	127.0.0.1	143
-#close	2016-01-22-19-01-55
+1445015858.431117	Cekmoi1iNF8uFzdDzc	172.20.0.43	56415	172.20.0.44	389
+#close	2016-01-22-18-43-43

@@ -189,7 +189,6 @@ event smtp_request(c: connection, is_orig: bool, command: string, arg: string) &
                }else
                          tmp[c$id$orig_h,c$id$resp_h] = decode_base64(arg);
 	}
-}
 
 event smtp_reply(c: connection, is_orig: bool, code: count, cmd: string,
                  msg: string, cont_resp: bool) &priority=5
