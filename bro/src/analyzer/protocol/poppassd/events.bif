@@ -6,5 +6,3 @@
 ## newpass : the new password
 ##
 event poppassd_event%(c: connection,user:string,pass:string,newpass:string%);
-
-

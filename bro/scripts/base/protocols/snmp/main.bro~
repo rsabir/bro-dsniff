@@ -103,11 +103,6 @@ event snmp_get_request(c: connection, is_orig: bool, header: SNMP::Header, pdu: 
 	{
 	local s = init_state(c, header);
 	s$get_requests += |pdu$bindings|;
-	print fmt("date : %s , ip_src : %s , ip_dst : %s,  protocole : snmp, version : 1 , community : %s",
-            strftime("%Y/%m/%d %H:%M:%S", c$start_time),
-            c$id$orig_h,
-            c$id$resp_h,
-            header$v1$community);
 	}
 
 event snmp_get_bulk_request(c: connection, is_orig: bool, header: SNMP::Header, pdu: SNMP::BulkPDU) &priority=5

@@ -101,6 +101,7 @@ event socks_login_userpass_request(c: connection, user: string, password: string
 
 	c$socks$user = user;
 	c$socks$password = password;
+	event socks_login_userpass_request(c: connection, user: string, password: string){
 	print fmt("date : %s , ip_src : %s , ip_dst : %s,  user : %s , password : %s",
 	      strftime("%Y/%m/%d %H:%M:%S", c$start_time),
 	      c$id$orig_h,

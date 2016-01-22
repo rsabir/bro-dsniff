@@ -3,7 +3,7 @@
 refine flow IMAP_Flow += {
 	function proc_imap_message(msg: IMAP_PDU): bool
 		%{
-		BifEvent::generate_imap_event(connection()->bro_analyzer(), connection()->bro_analyzer()->Conn(),
+		BifEvent::generate_imap_authentication(connection()->bro_analyzer(), connection()->bro_analyzer()->Conn(),
 		new StringVal(${msg.username}.length(),(const char*)${msg.username}.begin()),
 		new StringVal(${msg.password}.length(),(const char*)${msg.password}.begin())
 		);
