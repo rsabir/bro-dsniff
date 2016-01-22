@@ -1,0 +1,14 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	lol
+#open	2016-01-22-15-50-52
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p
+#types	time	string	addr	port	addr	port
+1227730011.279674	Cob47CKiOVcuS1lEj	127.0.0.1	2458	127.0.0.1	143
+1227730011.279741	Cob47CKiOVcuS1lEj	127.0.0.1	2458	127.0.0.1	143
+1227730011.279782	Cob47CKiOVcuS1lEj	127.0.0.1	2458	127.0.0.1	143
+1227730011.279821	Cob47CKiOVcuS1lEj	127.0.0.1	2458	127.0.0.1	143
+1227730011.279859	Cob47CKiOVcuS1lEj	127.0.0.1	2458	127.0.0.1	143
+#close	2016-01-22-15-50-52

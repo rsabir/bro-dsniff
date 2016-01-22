@@ -792,6 +792,10 @@ plugin/Manager.h
 plugin/Manager.h
 /home/rhost/Downloads/bro-2.4.1/build/src/analyzer/protocol/ident/plugin/Manager.h
 
+/home/rhost/Downloads/bro-2.4.1/build/src/analyzer/protocol/imap/events.bif.register.cc
+plugin/Manager.h
+/home/rhost/Downloads/bro-2.4.1/build/src/analyzer/protocol/imap/plugin/Manager.h
+
 /home/rhost/Downloads/bro-2.4.1/build/src/analyzer/protocol/interconn/events.bif.register.cc
 plugin/Manager.h
 /home/rhost/Downloads/bro-2.4.1/build/src/analyzer/protocol/interconn/plugin/Manager.h
@@ -819,10 +823,6 @@ plugin/Manager.h
 /home/rhost/Downloads/bro-2.4.1/build/src/analyzer/protocol/login/functions.bif.register.cc
 plugin/Manager.h
 /home/rhost/Downloads/bro-2.4.1/build/src/analyzer/protocol/login/plugin/Manager.h
-
-/home/rhost/Downloads/bro-2.4.1/build/src/analyzer/protocol/lol/events.bif.register.cc
-plugin/Manager.h
-/home/rhost/Downloads/bro-2.4.1/build/src/analyzer/protocol/lol/plugin/Manager.h
 
 /home/rhost/Downloads/bro-2.4.1/build/src/analyzer/protocol/mime/events.bif.register.cc
 plugin/Manager.h
@@ -2221,6 +2221,8 @@ src/__all__.bif.register.cc
 -
 /home/rhost/Downloads/bro-2.4.1/build/src/analyzer/protocol/ident/events.bif.register.cc
 -
+/home/rhost/Downloads/bro-2.4.1/build/src/analyzer/protocol/imap/events.bif.register.cc
+-
 /home/rhost/Downloads/bro-2.4.1/build/src/analyzer/protocol/interconn/events.bif.register.cc
 -
 /home/rhost/Downloads/bro-2.4.1/build/src/analyzer/protocol/irc/events.bif.register.cc
@@ -2234,8 +2236,6 @@ src/__all__.bif.register.cc
 /home/rhost/Downloads/bro-2.4.1/build/src/analyzer/protocol/login/events.bif.register.cc
 -
 /home/rhost/Downloads/bro-2.4.1/build/src/analyzer/protocol/login/functions.bif.register.cc
--
-/home/rhost/Downloads/bro-2.4.1/build/src/analyzer/protocol/lol/events.bif.register.cc
 -
 /home/rhost/Downloads/bro-2.4.1/build/src/analyzer/protocol/mime/events.bif.register.cc
 -

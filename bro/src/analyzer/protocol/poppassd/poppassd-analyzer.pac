@@ -6,21 +6,21 @@ refine flow POPPASSD_Flow += {
 	StringVal* newpassword;
 %}
 
-
+	# function used to save the username
 	function proc_poppassd_username(msg: USERNAME_PDU): bool
 		%{
 		username =  new StringVal(${msg.username}.length(),(const char*)${msg.username}.begin());
 		return true;
 		%}
 
-
+	# function used to save the old password
 	function proc_poppassd_oldpassword(msg: OLDPASSWORD_PDU): bool
 		%{
 		password = new StringVal(${msg.password}.length(),(const char*)${msg.password}.begin());
 		return true;
 		%}
 	
-	
+	# function used to fire the poppassd_event
 	function proc_poppassd_password(msg: PASSWORD_PDU): bool
 		%{
 		newpassword = new StringVal(${msg.newpassword}.length(),(const char*)${msg.newpassword}.begin());
@@ -32,20 +32,9 @@ refine flow POPPASSD_Flow += {
 		return true;
 		%}
 
-	function proc_poppassd(msg: POPPASSD_PDU): bool
-		%{
-		// BifEvent::generate_poppassd_debug(connection()->bro_analyzer(), connection()->bro_analyzer()->Conn() ,
-		// new StringVal(${msg.restofdata}.length(),(const char*)${msg.restofdata}.begin())
-		// );
-		return true;
-		%}
 
 };
 	
-
-refine typeattr POPPASSD_PDU += &let {
-	proc: bool = $context.flow.proc_poppassd(this);
-};
 
 refine typeattr USERNAME_PDU += &let {
 	proc: bool = $context.flow.proc_poppassd_username(this);

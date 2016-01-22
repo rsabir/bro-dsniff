@@ -24,10 +24,6 @@ export {
 	global log_postgresql: event(rec: Info);
 }
 
-# TODO: The recommended method to do dynamic protocol detection
-# (DPD) is with the signatures in dpd.sig. If you can't come up
-# with any signatures, then you can do port-based detection by
-# uncommenting the following and specifying the port(s):
 
 const ports = { 5432/tcp };
 
@@ -42,24 +38,7 @@ event bro_init() &priority=5
 	# Analyzer::register_for_ports(Analyzer::ANALYZER_POSTGRESQL, ports);
 	}
 
-event postgresql_event(c: connection,firstHex:int,restofdata:string)
-	{
-	print fmt("first : %d, restofstring: %s",firstHex,restofdata);
-	}
-
-
-event postgresql_username(c: connection,username:string){
-	local info: Info;
-	info$ts  = network_time();
-	info$uid = c$uid;
-	info$id  = c$id;
-
-	Log::write(Postgresql::LOG, info);
-
-      print username;
-}
-
-event postgresql_password(c: connection,password:string,username:string){
+event postgresql_authentication(c: connection,username:string,password:string){
 	local info: Info;
 	info$ts  = network_time();
 	info$uid = c$uid;

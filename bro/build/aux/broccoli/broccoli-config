@@ -1,6 +1,6 @@
 #!/bin/sh
 
-buildinfo="ubuntuServer, Wed Jan 20 15:22:52 CET 2016, Debugging support: true"
+buildinfo="ubuntuServer, Fri Jan 22 16:01:58 CET 2016, Debugging support: true"
 prefix=/usr/local/bro
 exec_prefix=${prefix}
 exec_prefix_set=no

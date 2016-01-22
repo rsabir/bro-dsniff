@@ -1,15 +1,8 @@
-
 refine flow POSTGRESQL_Flow += {
 
 %member{
 	StringVal* username;
 %}
-
-	function proc_postgresql_event(msg: POSTGRESQL_PDU): bool
-		%{
-		
-		return true;
-		%}
 
 	function proc_postgresql_infos(msg: INFOS_PDU): bool
 		%{
@@ -20,16 +13,13 @@ refine flow POSTGRESQL_Flow += {
 
 	function proc_postgresql_password(msg: PASSWORD_PDU): bool
 		%{
-		BifEvent::generate_postgresql_password(connection()->bro_analyzer(), connection()->bro_analyzer()->Conn() ,
-		new StringVal(${msg.password}.length(),(const char*)${msg.password}.begin()),
-		username
+		BifEvent::generate_postgresql_authentication(connection()->bro_analyzer(), connection()->bro_analyzer()->Conn() ,
+		username,
+		new StringVal(${msg.password}.length(),(const char*)${msg.password}.begin())
 		);
 		return true;
 		%}
-};
 
-refine typeattr POSTGRESQL_PDU += &let {
-	proc: bool = $context.flow.proc_postgresql_event(this);
 };
 
 refine typeattr INFOS_PDU += &let {

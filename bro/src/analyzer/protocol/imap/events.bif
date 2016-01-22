@@ -1,0 +1,7 @@
+##  The Internet Message Access Protocol (IMAP) is an Internet standard protocol used by e-mail clients to retrieve e-mail messages from a mail server over a TCP/IP connection. IMAP is defined by RFC 3501.
+## wiki : https://en.wikipedia.org/wiki/Internet_Message_Access_Protocol
+## c: The connection
+## username : the username of authentication captured
+## password : the password of the user
+##
+event imap_authentication%(c: connection,username:string,password:string%);

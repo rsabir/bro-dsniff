@@ -2985,12 +2985,12 @@ src/bro: src/analyzer/protocol/gtpv1/libplugin-Bro-GTPv1.a
 src/bro: src/analyzer/protocol/http/libplugin-Bro-HTTP.a
 src/bro: src/analyzer/protocol/icmp/libplugin-Bro-ICMP.a
 src/bro: src/analyzer/protocol/ident/libplugin-Bro-Ident.a
+src/bro: src/analyzer/protocol/imap/libplugin-Bro-IMAP.a
 src/bro: src/analyzer/protocol/interconn/libplugin-Bro-InterConn.a
 src/bro: src/analyzer/protocol/irc/libplugin-Bro-IRC.a
 src/bro: src/analyzer/protocol/krb/libplugin-Bro-KRB.a
 src/bro: src/analyzer/protocol/ldap/libplugin-Bro-LDAP.a
 src/bro: src/analyzer/protocol/login/libplugin-Bro-Login.a
-src/bro: src/analyzer/protocol/lol/libplugin-Bro-LOL.a
 src/bro: src/analyzer/protocol/mime/libplugin-Bro-MIME.a
 src/bro: src/analyzer/protocol/modbus/libplugin-Bro-Modbus.a
 src/bro: src/analyzer/protocol/mysql/libplugin-Bro-MySQL.a
@@ -3305,12 +3305,12 @@ src/CMakeFiles/CMakeRelink.dir/bro: src/analyzer/protocol/gtpv1/libplugin-Bro-GT
 src/CMakeFiles/CMakeRelink.dir/bro: src/analyzer/protocol/http/libplugin-Bro-HTTP.a
 src/CMakeFiles/CMakeRelink.dir/bro: src/analyzer/protocol/icmp/libplugin-Bro-ICMP.a
 src/CMakeFiles/CMakeRelink.dir/bro: src/analyzer/protocol/ident/libplugin-Bro-Ident.a
+src/CMakeFiles/CMakeRelink.dir/bro: src/analyzer/protocol/imap/libplugin-Bro-IMAP.a
 src/CMakeFiles/CMakeRelink.dir/bro: src/analyzer/protocol/interconn/libplugin-Bro-InterConn.a
 src/CMakeFiles/CMakeRelink.dir/bro: src/analyzer/protocol/irc/libplugin-Bro-IRC.a
 src/CMakeFiles/CMakeRelink.dir/bro: src/analyzer/protocol/krb/libplugin-Bro-KRB.a
 src/CMakeFiles/CMakeRelink.dir/bro: src/analyzer/protocol/ldap/libplugin-Bro-LDAP.a
 src/CMakeFiles/CMakeRelink.dir/bro: src/analyzer/protocol/login/libplugin-Bro-Login.a
-src/CMakeFiles/CMakeRelink.dir/bro: src/analyzer/protocol/lol/libplugin-Bro-LOL.a
 src/CMakeFiles/CMakeRelink.dir/bro: src/analyzer/protocol/mime/libplugin-Bro-MIME.a
 src/CMakeFiles/CMakeRelink.dir/bro: src/analyzer/protocol/modbus/libplugin-Bro-Modbus.a
 src/CMakeFiles/CMakeRelink.dir/bro: src/analyzer/protocol/mysql/libplugin-Bro-MySQL.a

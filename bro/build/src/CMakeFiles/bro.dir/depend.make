@@ -1832,6 +1832,7 @@ src/CMakeFiles/bro.dir/Func.cc.o: src/analyzer/protocol/http/events.bif.register
 src/CMakeFiles/bro.dir/Func.cc.o: src/analyzer/protocol/http/functions.bif.register.cc
 src/CMakeFiles/bro.dir/Func.cc.o: src/analyzer/protocol/icmp/events.bif.register.cc
 src/CMakeFiles/bro.dir/Func.cc.o: src/analyzer/protocol/ident/events.bif.register.cc
+src/CMakeFiles/bro.dir/Func.cc.o: src/analyzer/protocol/imap/events.bif.register.cc
 src/CMakeFiles/bro.dir/Func.cc.o: src/analyzer/protocol/interconn/events.bif.register.cc
 src/CMakeFiles/bro.dir/Func.cc.o: src/analyzer/protocol/irc/events.bif.register.cc
 src/CMakeFiles/bro.dir/Func.cc.o: src/analyzer/protocol/krb/events.bif.register.cc
@@ -1839,7 +1840,6 @@ src/CMakeFiles/bro.dir/Func.cc.o: src/analyzer/protocol/krb/types.bif.register.c
 src/CMakeFiles/bro.dir/Func.cc.o: src/analyzer/protocol/ldap/events.bif.register.cc
 src/CMakeFiles/bro.dir/Func.cc.o: src/analyzer/protocol/login/events.bif.register.cc
 src/CMakeFiles/bro.dir/Func.cc.o: src/analyzer/protocol/login/functions.bif.register.cc
-src/CMakeFiles/bro.dir/Func.cc.o: src/analyzer/protocol/lol/events.bif.register.cc
 src/CMakeFiles/bro.dir/Func.cc.o: src/analyzer/protocol/mime/events.bif.register.cc
 src/CMakeFiles/bro.dir/Func.cc.o: src/analyzer/protocol/modbus/events.bif.register.cc
 src/CMakeFiles/bro.dir/Func.cc.o: src/analyzer/protocol/mysql/events.bif.register.cc

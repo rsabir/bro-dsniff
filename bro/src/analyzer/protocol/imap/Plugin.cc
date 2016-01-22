@@ -2,21 +2,21 @@
 
 #include "plugin/Plugin.h"
 
-#include "LOL.h"
+#include "IMAP.h"
 
 namespace plugin {
-namespace Bro_LOL {
+namespace Bro_IMAP {
 
 class Plugin : public plugin::Plugin {
 public:
 	plugin::Configuration Configure()
 		{
-		AddComponent(new ::analyzer::Component("LOL",
-		             ::analyzer::lol::LOL_Analyzer::InstantiateAnalyzer));
+		AddComponent(new ::analyzer::Component("IMAP",
+		             ::analyzer::IMAP::IMAP_Analyzer::InstantiateAnalyzer));
 
 		plugin::Configuration config;
-		config.name = "Bro::LOL";
-		config.description = "The LoL Protocol analyzer";
+		config.name = "Bro::IMAP";
+		config.description = "IMAP Protocol analyzer";
 		return config;
 		}
 } plugin;

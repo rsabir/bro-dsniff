@@ -3,8 +3,8 @@
 #empty_field	(empty)
 #unset_field	-
 #path	weird
-#open	2016-01-19-20-19-48
+#open	2016-01-22-16-02-49
 #fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	name	addl	notice	peer
 #types	time	string	addr	port	addr	port	string	string	bool	string
-1453198972.134299	-	-	-	-	-	unknown_packet_type	-	F	bro
-#close	2016-01-19-20-19-48
+1227730011.279741	C6aM1F443M0E0dEJQ	127.0.0.1	2458	127.0.0.1	143	bad_rsh_prolog	-	F	bro
+#close	2016-01-22-16-02-49

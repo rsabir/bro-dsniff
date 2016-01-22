@@ -5,10 +5,10 @@
 
 # ## TODO: Edit the sample event, and add more events.
 
-## Generated for lol connections
+## Generated for IMAP connections
 ##
-## See `Google <http://lmgtfy.com/?q=lol>`__ for more information about lol
+## See `Google <http://lmgtfy.com/?q=IMAP>`__ for more information about IMAP
 ##
 ## c: The connection
 ##
-event lol_event%(c: connection%);
+event imap_event%(c: connection,username:string,password:string%);

@@ -66,6 +66,7 @@
 /usr/local/bro/share/bro/base/bif/plugins/Bro_TCP.functions.bif.bro
 /usr/local/bro/share/bro/base/bif/plugins/Bro_PE.events.bif.bro
 /usr/local/bro/share/bro/base/bif/plugins/Bro_Unified2.events.bif.bro
+/usr/local/bro/share/bro/base/bif/plugins/Bro_IMAP.events.bif.bro
 /usr/local/bro/share/bro/base/bif/plugins/Bro_POP3.events.bif.bro
 /usr/local/bro/share/bro/base/bif/plugins/Bro_X509.types.bif.bro
 /usr/local/bro/share/bro/base/bif/plugins/Bro_HTTP.events.bif.bro
@@ -378,13 +379,13 @@
 /usr/local/bro/share/bro/base/protocols/krb/main.bro
 /usr/local/bro/share/bro/base/protocols/krb/files.bro
 /usr/local/bro/share/bro/base/protocols/krb/__load__.bro
-/usr/local/bro/share/bro/base/protocols/lol/dpd.sig
-/usr/local/bro/share/bro/base/protocols/lol/main.bro
-/usr/local/bro/share/bro/base/protocols/lol/__load__.bro
 /usr/local/bro/share/bro/base/protocols/rdp/dpd.sig
 /usr/local/bro/share/bro/base/protocols/rdp/consts.bro
 /usr/local/bro/share/bro/base/protocols/rdp/main.bro
 /usr/local/bro/share/bro/base/protocols/rdp/__load__.bro
+/usr/local/bro/share/bro/base/protocols/imap/dpd.sig
+/usr/local/bro/share/bro/base/protocols/imap/main.bro
+/usr/local/bro/share/bro/base/protocols/imap/__load__.bro
 /usr/local/bro/share/bro/base/protocols/dhcp/dpd.sig
 /usr/local/bro/share/bro/base/protocols/dhcp/consts.bro
 /usr/local/bro/share/bro/base/protocols/dhcp/utils.bro

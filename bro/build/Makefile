@@ -1000,6 +1000,45 @@ plugin-Bro-Ident/fast:
 .PHONY : plugin-Bro-Ident/fast
 
 #=============================================================================
+# Target rules for targets named bif-plugin-Bro_IMAP-events.bif
+
+# Build rule for target.
+bif-plugin-Bro_IMAP-events.bif: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 bif-plugin-Bro_IMAP-events.bif
+.PHONY : bif-plugin-Bro_IMAP-events.bif
+
+# fast build rule for target.
+bif-plugin-Bro_IMAP-events.bif/fast:
+	$(MAKE) -f src/analyzer/protocol/imap/CMakeFiles/bif-plugin-Bro_IMAP-events.bif.dir/build.make src/analyzer/protocol/imap/CMakeFiles/bif-plugin-Bro_IMAP-events.bif.dir/build
+.PHONY : bif-plugin-Bro_IMAP-events.bif/fast
+
+#=============================================================================
+# Target rules for targets named pac-analyzer-protocol-imap-imap.pac
+
+# Build rule for target.
+pac-analyzer-protocol-imap-imap.pac: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pac-analyzer-protocol-imap-imap.pac
+.PHONY : pac-analyzer-protocol-imap-imap.pac
+
+# fast build rule for target.
+pac-analyzer-protocol-imap-imap.pac/fast:
+	$(MAKE) -f src/analyzer/protocol/imap/CMakeFiles/pac-analyzer-protocol-imap-imap.pac.dir/build.make src/analyzer/protocol/imap/CMakeFiles/pac-analyzer-protocol-imap-imap.pac.dir/build
+.PHONY : pac-analyzer-protocol-imap-imap.pac/fast
+
+#=============================================================================
+# Target rules for targets named plugin-Bro-IMAP
+
+# Build rule for target.
+plugin-Bro-IMAP: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 plugin-Bro-IMAP
+.PHONY : plugin-Bro-IMAP
+
+# fast build rule for target.
+plugin-Bro-IMAP/fast:
+	$(MAKE) -f src/analyzer/protocol/imap/CMakeFiles/plugin-Bro-IMAP.dir/build.make src/analyzer/protocol/imap/CMakeFiles/plugin-Bro-IMAP.dir/build
+.PHONY : plugin-Bro-IMAP/fast
+
+#=============================================================================
 # Target rules for targets named bif-plugin-Bro_InterConn-events.bif
 
 # Build rule for target.
@@ -1193,45 +1232,6 @@ plugin-Bro-Login: cmake_check_build_system
 plugin-Bro-Login/fast:
 	$(MAKE) -f src/analyzer/protocol/login/CMakeFiles/plugin-Bro-Login.dir/build.make src/analyzer/protocol/login/CMakeFiles/plugin-Bro-Login.dir/build
 .PHONY : plugin-Bro-Login/fast
-
-#=============================================================================
-# Target rules for targets named bif-plugin-Bro_LOL-events.bif
-
-# Build rule for target.
-bif-plugin-Bro_LOL-events.bif: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 bif-plugin-Bro_LOL-events.bif
-.PHONY : bif-plugin-Bro_LOL-events.bif
-
-# fast build rule for target.
-bif-plugin-Bro_LOL-events.bif/fast:
-	$(MAKE) -f src/analyzer/protocol/lol/CMakeFiles/bif-plugin-Bro_LOL-events.bif.dir/build.make src/analyzer/protocol/lol/CMakeFiles/bif-plugin-Bro_LOL-events.bif.dir/build
-.PHONY : bif-plugin-Bro_LOL-events.bif/fast
-
-#=============================================================================
-# Target rules for targets named pac-analyzer-protocol-lol-lol.pac
-
-# Build rule for target.
-pac-analyzer-protocol-lol-lol.pac: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pac-analyzer-protocol-lol-lol.pac
-.PHONY : pac-analyzer-protocol-lol-lol.pac
-
-# fast build rule for target.
-pac-analyzer-protocol-lol-lol.pac/fast:
-	$(MAKE) -f src/analyzer/protocol/lol/CMakeFiles/pac-analyzer-protocol-lol-lol.pac.dir/build.make src/analyzer/protocol/lol/CMakeFiles/pac-analyzer-protocol-lol-lol.pac.dir/build
-.PHONY : pac-analyzer-protocol-lol-lol.pac/fast
-
-#=============================================================================
-# Target rules for targets named plugin-Bro-LOL
-
-# Build rule for target.
-plugin-Bro-LOL: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 plugin-Bro-LOL
-.PHONY : plugin-Bro-LOL
-
-# fast build rule for target.
-plugin-Bro-LOL/fast:
-	$(MAKE) -f src/analyzer/protocol/lol/CMakeFiles/plugin-Bro-LOL.dir/build.make src/analyzer/protocol/lol/CMakeFiles/plugin-Bro-LOL.dir/build
-.PHONY : plugin-Bro-LOL/fast
 
 #=============================================================================
 # Target rules for targets named bif-plugin-Bro_MIME-events.bif
@@ -3541,6 +3541,9 @@ help:
 	@echo "... plugin-Bro-ICMP"
 	@echo "... bif-plugin-Bro_Ident-events.bif"
 	@echo "... plugin-Bro-Ident"
+	@echo "... bif-plugin-Bro_IMAP-events.bif"
+	@echo "... pac-analyzer-protocol-imap-imap.pac"
+	@echo "... plugin-Bro-IMAP"
 	@echo "... bif-plugin-Bro_InterConn-events.bif"
 	@echo "... plugin-Bro-InterConn"
 	@echo "... bif-plugin-Bro_IRC-events.bif"
@@ -3556,9 +3559,6 @@ help:
 	@echo "... bif-plugin-Bro_Login-events.bif"
 	@echo "... bif-plugin-Bro_Login-functions.bif"
 	@echo "... plugin-Bro-Login"
-	@echo "... bif-plugin-Bro_LOL-events.bif"
-	@echo "... pac-analyzer-protocol-lol-lol.pac"
-	@echo "... plugin-Bro-LOL"
 	@echo "... bif-plugin-Bro_MIME-events.bif"
 	@echo "... plugin-Bro-MIME"
 	@echo "... bif-plugin-Bro_Modbus-events.bif"
