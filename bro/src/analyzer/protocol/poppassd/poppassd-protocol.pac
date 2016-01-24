@@ -5,7 +5,6 @@ type POPPASSD_PDU = record {
 	      112 -> oldpassword : OLDPASSWORD_PDU;
 	      110 -> newpassword : PASSWORD_PDU;
 	};
-	##	restofdata : bytestring &restofdata;	
 } &byteorder=bigendian;
 
 

@@ -102,31 +102,17 @@ event irc_user_message(c: connection, is_orig: bool, user: string, host: string,
 		c$irc$user = user;
 		}
 	}
-global username: string = "" ;
-global password: string = "" ;
+
 event irc_join_message(c: connection, is_orig: bool, info_list: irc_join_list) &priority=5
 	{
 	set_session(c);
 	if ( is_orig )
 		c$irc$command = "JOIN";
-for ( l in info_list )
-      {
-	if(l$password!="")
-	   	password = l$password;
-	if (l$nick!="")
-		username = l$nick;
-	if (username!="" && password !=""){
-		print fmt(" date : %s , ip_src : %s , ip_dst : %s,  username:%s, password: %s, channel:%s ",
-               strftime("%Y/%m/%d %H:%M:%S", c$start_time),
-                c$id$orig_h,
-                c$id$resp_h,
-		username,
-		password,
-		l$channel);
-		username = "";
-		password = "";
-	}
-       }
+
+print fmt("date : %s , ip_src : %s , ip_dst : %s,  user information \n:%s ",
+                      strftime("%Y/%m/%d %H:%M:%S", c$start_time),
+                      c$id$orig_h,
+                      c$id$resp_h,info_list);
 	}
 
 event irc_join_message(c: connection, is_orig: bool, info_list: irc_join_list) &priority=-5

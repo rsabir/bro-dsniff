@@ -1,1 +1,0 @@
-/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG -g    CMakeFiles/nfcollector.dir/nfcollector.c.o  -o nfcollector -rdynamic 

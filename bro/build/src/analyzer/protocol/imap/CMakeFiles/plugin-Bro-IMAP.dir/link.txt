@@ -1,2 +1,0 @@
-/usr/bin/ar cr libplugin-Bro-IMAP.a  CMakeFiles/plugin-Bro-IMAP.dir/IMAP.cc.o CMakeFiles/plugin-Bro-IMAP.dir/Plugin.cc.o CMakeFiles/plugin-Bro-IMAP.dir/events.bif.cc.o CMakeFiles/plugin-Bro-IMAP.dir/events.bif.init.cc.o CMakeFiles/plugin-Bro-IMAP.dir/imap_pac.cc.o
-/usr/bin/ranlib libplugin-Bro-IMAP.a

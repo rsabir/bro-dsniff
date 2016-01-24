@@ -1,2 +1,0 @@
-/usr/bin/ar cr libplugin-Bro-RLOGIN_.a  CMakeFiles/plugin-Bro-RLOGIN_.dir/RLOGIN_.cc.o CMakeFiles/plugin-Bro-RLOGIN_.dir/Plugin.cc.o CMakeFiles/plugin-Bro-RLOGIN_.dir/events.bif.cc.o CMakeFiles/plugin-Bro-RLOGIN_.dir/events.bif.init.cc.o CMakeFiles/plugin-Bro-RLOGIN_.dir/rlogin__pac.cc.o
-/usr/bin/ranlib libplugin-Bro-RLOGIN_.a

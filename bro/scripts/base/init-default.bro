@@ -39,6 +39,7 @@
 @load base/frameworks/tunnels
 
 @load base/protocols/conn
+@load base/protocols/cvs
 @load base/protocols/dhcp
 @load base/protocols/dnp3
 @load base/protocols/dns
@@ -50,6 +51,7 @@
 @load base/protocols/ldap
 @load base/protocols/modbus
 @load base/protocols/mysql
+@load base/protocols/nntp
 @load base/protocols/pop3
 @load base/protocols/poppassd
 @load base/protocols/postgresql
@@ -64,6 +66,8 @@
 @load base/protocols/ssh
 @load base/protocols/ssl
 @load base/protocols/syslog
+@load base/protocols/tacacs
+@load base/protocols/telnet_
 @load base/protocols/tunnels
 
 @load base/files/pe

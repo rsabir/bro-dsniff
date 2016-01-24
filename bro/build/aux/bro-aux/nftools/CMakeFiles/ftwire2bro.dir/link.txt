@@ -1,1 +1,0 @@
-/usr/bin/cc   -Wall -Wno-unused -g -DDEBUG -DBRO_DEBUG -g    CMakeFiles/ftwire2bro.dir/ftwire2bro.c.o  -o ftwire2bro -rdynamic -Wl,-Bstatic -lresolv -Wl,-Bdynamic 

@@ -1,2 +1,0 @@
-/usr/bin/ar cr libbro_iosource.a  CMakeFiles/bro_iosource.dir/BPF_Program.cc.o CMakeFiles/bro_iosource.dir/Component.cc.o CMakeFiles/bro_iosource.dir/Manager.cc.o CMakeFiles/bro_iosource.dir/PktDumper.cc.o CMakeFiles/bro_iosource.dir/PktSrc.cc.o
-/usr/bin/ranlib libbro_iosource.a

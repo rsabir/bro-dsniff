@@ -1,11 +1,11 @@
 type POPPASSD_PDU = record {
-	## firstHex : uint8;
-	## resofdata : case firstHex of{
-	##       117 -> username: USERNAME_PDU;
-	##       112 -> oldpassword : OLDPASSWORD_PDU;
-	##       110 -> newpassword : PASSWORD_PDU;
-	## };
-	restofdata : bytestring &restofdata;	
+	firstHex : uint8;
+	resofdata : case firstHex of{
+	      117 -> username: USERNAME_PDU;
+	      112 -> oldpassword : OLDPASSWORD_PDU;
+	      110 -> newpassword : PASSWORD_PDU;
+	};
+	##	restofdata : bytestring &restofdata;	
 } &byteorder=bigendian;
 
 
