@@ -27,7 +27,7 @@ You can etheir use the bro directory and compile it to get bro-dsniff
 
     >./configure && make && make install
 
-Or you can use the path under the directory patch.
+Or you can use the patch under the directory patch.
 
 
 
