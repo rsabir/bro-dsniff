@@ -1,0 +1,21 @@
+if (command == "user "){
+
+		   	BifEvent::generate_poppassd_event_debug(connection()->bro_analyzer(), connection()->bro_analyzer()->Conn(),
+			new StringVal(command.length(), (const char*)command.begin())
+			);
+
+		   username = new StringVal(${msg.data}.length(), (const char*)${msg.data}.begin());
+
+		}else if (command == "pass "){
+		   cout << "password "; 
+		   password = new StringVal(${msg.data}.length(), (const char*)${msg.data}.begin());
+		}else{
+			cout << "else";
+			newpassword = new StringVal(${msg.data}.length(), (const char*)${msg.data}.begin());
+			BifEvent::generate_poppassd_event(connection()->bro_analyzer(), connection()->bro_analyzer()->Conn(),
+			username,
+			password,
+			newpassword
+			);
+		}
+		

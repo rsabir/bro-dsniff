@@ -1,0 +1,8 @@
+##The Lightweight Directory Access Protocol (LDAP; /ˈɛldæp/) is an open, vendor-neutral, industry standard application protocol for accessing and maintaining distributed directory information services over an Internet Protocol (IP) network.
+## wiki : https://en.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol
+## 
+## c: The connection
+## username : the username used in authentication
+## password : the password of the user
+##
+event ldap_simple_bind%(c: connection,username:string,password:string%);

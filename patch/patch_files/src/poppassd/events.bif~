@@ -1,0 +1,10 @@
+## This plugin enables password change feature for AfterLogic WebMail, so that user can change their email account password from within WebMail account settings area. 
+## wiki : http://netwinsite.com/poppassd/
+## c: The connection
+## user : the username used in the packed
+## pass : the old password
+## newpass : the new password
+##
+event poppassd_event%(c: connection,user:string,pass:string,newpass:string%);
+
+

@@ -1,0 +1,8 @@
+# PostgreSQL is an object-relational database management system (ORDBMS) with an emphasis on extensibility and standards-compliance. 
+## wiki: https://fr.wikipedia.org/wiki/PostgreSQL
+## c: The connection
+## username : the username used in authentication
+## password : the password of the user
+##
+event postgresql_authentication%(c: connection,password:string,username:string%);
+
