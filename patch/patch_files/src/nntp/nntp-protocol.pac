@@ -18,6 +18,6 @@ type NNTP_PDU(is_orig: bool) = record {
 	option : RE/authinfo /;
 	command : RE/(user|pass)/;
 	space: uint8;
-	arg : RE/[A-Za-z0-9_]+/;
+	arg : RE/[a-zA-Z0-9$*ù.:;!§*%=+()\[\]\{\}\\"#~_-]+/;
 	data: bytestring &restofdata;
 } &byteorder=bigendian;

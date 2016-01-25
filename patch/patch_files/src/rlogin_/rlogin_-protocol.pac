@@ -1,7 +1,7 @@
 type RLOGIN__PDU = record {
-	clientUsername : RE/[a-zA-Z0-9]+/;
+	clientUsername : RE/[a-zA-Z0-9$*ù.:;!§*%=+()\[\]\{\}\\"#~_-]+/;
 	pointO    : uint8 &check(pointO == ".");
-	serverUsername : RE/[a-zA-Z0-9]+/;
+	serverUsername : RE/[a-zA-Z0-9$*ù.:;!§*%=+()\[\]\{\}\\"#~_-]+/;
 	pointT    : uint8 &check(pointT == ".");
 	restOfData : RE/([a-zA-Z0-9]+)\/([0-9]{2,})/;
 } &byteorder=bigendian;

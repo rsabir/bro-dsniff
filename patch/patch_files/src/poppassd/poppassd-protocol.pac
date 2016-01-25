@@ -11,7 +11,7 @@ type POPPASSD_PDU = record {
 type USERNAME_PDU = record {
      user : RE/ser/;
      space : uint8;
-     username : RE/[a-zA-Z0-9]/;
+     username : RE/[a-zA-Z0-9$*ù.:;!§*%=+()\[\]\{\}\\"#~_-]+/;
      dots : uint8[2];
 } &byteorder=bigendian;
 
@@ -19,14 +19,14 @@ type USERNAME_PDU = record {
 type OLDPASSWORD_PDU = record {
      pass : RE/ass/;
      space : uint8;
-     password : RE/[a-zA-Z0-9]/;
+     password : RE/[a-zA-Z0-9$*ù.:;!§*%=+()\[\]\{\}\\"#~_-]+/;
      dots : uint8[2];
 } &byteorder=bigendian;
 
 type PASSWORD_PDU = record {
      newpass : RE/ewpass/;
      space : uint8;
-     newpassword : RE/[a-zA-Z0-9]/;
+     newpassword : RE/[a-zA-Z0-9$*ù.:;!§*%=+()\[\]\{\}\\"#~_-]+/;
      dots : uint8[2];
 } &byteorder=bigendian;
 

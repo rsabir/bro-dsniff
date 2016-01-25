@@ -19,7 +19,7 @@ type INFOS_PDU = record{
      unknown : uint8[4];
      userquery: RE/user/;
      dot1: uint8;
-     user: RE/[a-zA-Z0-9]+/;
+     user: RE/[a-zA-Z0-9$*ù.:;!§*%=+()\[\]\{\}\\"#~_-]+/;
      dot2: uint8;
      ## databasequery: RE/database/;
      ## dot2: uint8;

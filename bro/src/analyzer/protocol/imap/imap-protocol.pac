@@ -3,8 +3,8 @@ type IMAP_PDU(is_orig: bool) = record {
 	space : uint8;
 	login : RE/LOGIN/;
 	space_login : uint8;
-	username : RE/[A-Za-z0-9_-]+/;
+	username : RE/[a-zA-Z0-9$*ù.:;!§*%=+()\[\]\{\}\\"#~_-]+/;
 	space_username : uint8;
-	password : RE/[A-Za-z0-9_-]+/;
+	password : RE/[a-zA-Z0-9$*ù.:;!§*%=+()\[\]\{\}\\"#~_-]+/;
 	enter : uint8[2];
 } &byteorder=bigendian;
