@@ -21,7 +21,7 @@ Here's the list of protocols where bro-dsniff can sniff password :
     -Telnet
     -poppassd
     -LDAP
-    -TACACS
+    -TACACS+
 
 You can etheir use the bro directory and compile it to get bro-dsniff
 
